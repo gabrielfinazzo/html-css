@@ -1,0 +1,35 @@
+@charset "UTF-8";
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(158, 115, 115);
+
+}
+
+div.principal {
+    margin: auto;
+    max-width: 1000px;
+    min-width: 300px;
+    
+    display: flex;
+}
+
+main {
+    display: inline-block;
+    float: left;
+    margin-right: 30px;
+    background-color: white;
+}
+
+aside {
+    display: inline-block;
+    float: right;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: rgb(136, 136, 194);
+
+
+}

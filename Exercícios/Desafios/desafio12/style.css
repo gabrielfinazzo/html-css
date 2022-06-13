@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+
+
+
+*   {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: white;
+}
+
+
+header {
+    text-align: center;
+    background-color: black;
+    font-family: 'Passion One', sans-serif;
+    color: white;
+    padding: 50px;
+    font-size: 2em;
+}
+
+header > p {
+    font-size: 0.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+main {
+    margin: auto;
+    background-color: white;
+    width: 50%;
+    border-top: 0px;
+    border-style: solid;
+    border-color: black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.342);
+}
+
+article > p {
+    margin: auto;
+    font-family: 'Sriracha', 'cursive';
+    font-size: 1.5em;
+    text-align: justify;
+    padding: 40px;
+    min-width: 300px;
+    max-width: 800px;
+    margin-right: 50%;
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.342);
+}
+
+section#flor {
+    text-align: center;
+    background: url(imagens/flor.jpg);
+    padding: 10px 10px 0px 10px;
+    height: 500px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    
+}
+
+section#escrita {
+    text-align: center;
+    background: url(imagens/background002-p.jpg);
+    padding: 10px 10px 0px 10px;
+    height: 500px;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+}
+p#p1 {
+    background-color: #17270a67;
+    text-align: left;
+    margin-right: 50px;
+    margin-top: 0px;
+    font-family: 'Sriracha', 'cursive';
+    font-size: 1.25em;
+    text-align: justify;
+    padding: 20px;
+    width: 50%;
+    margin-top: 50px;
+    color: white;
+}
+
+p#p2 {
+    background-color: #17270a67;
+    text-align: left;
+    margin-right: 50px;
+    margin-top: 0px;
+    font-family: 'Sriracha', 'cursive';
+    font-size: 1.25em;
+    text-align: justify;
+    padding: 20px;
+    margin-top: 50px;
+    margin-right: 130px;
+    color: white;
+    width: 50%;
+
+
+
+}
+
+

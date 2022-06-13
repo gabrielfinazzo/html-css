@@ -1,0 +1,258 @@
+@charset "UTF-8";
+
+
+@font-face {
+    font-family: android;
+    src: url(fontes/idroid.otf);
+}
+@font-face {
+    font-family: titulo;
+    src: url(fontes/BN\ Pinky.ttf);
+}
+@font-face {
+    font-family: titulobold;
+    src: url(fontes/BN\ Pinky\ Bold.ttf);
+}
+
+
+
+
+
+body {
+    background-color: #84E1AD;
+    margin: 0px;
+    height: 100%;
+    
+
+}
+
+header {
+    background-image: linear-gradient(to top, #1A5C38, #286F46,#247C4B, #2B985B);
+    padding: 20px 20px 5px 20px;
+
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(0.75em, 2vw, 1em);
+    color: black;
+    text-align: justify;
+    padding: 10px;
+    margin: 10px;
+    text-indent: 30px;
+    
+
+}
+
+
+p#paragrafoheader {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25em;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.315);
+    
+}
+
+h1#tituloprincipal {
+    font-family: titulo,sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.315);
+}
+
+
+nav {
+    margin-top: 20px;
+    padding-top: 20px ;
+}
+a {
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #1A5C38;
+    transition-duration: 0.5s;
+    border-radius: 7px;
+    background-color: #2B985B;
+    padding: 5px;
+
+}
+
+main {
+    background-color: white;
+    margin: auto;
+    height: 100%;
+    width: 800px;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    margin-bottom: -10px;
+    border-bottom: 0px;
+}
+
+h2 {
+    font-family: android, sans-serif;
+    text-align: justify;
+    color: #1A5C38;
+    padding: 10px;
+    margin: 10px;
+
+
+
+}
+
+figure#robos {
+    margin-left: 0px ;
+    text-align: center;
+
+}
+
+h3 {
+    background-image: linear-gradient(to right,#84E1AD, #C8ECD8);
+    font-family: android, sans-serif;
+    color: #1A5C38;
+    text-align: justify;
+    margin: 10px;
+    padding: 10px;
+}
+figcaption#android {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    color: black;
+    text-align: justify;
+    margin-left: 40px;
+    padding: 10px;
+
+    
+}
+
+img#irina {
+    text-align: center;
+    width: 750px;
+    margin-top: 14px;
+    margin-right: 14px;
+    margin-left: 14px;
+    margin-bottom: 0px;
+    padding: 10px;
+}
+
+figure#irina2 {
+    margin: 0px;
+}
+
+figcaption#irinablock {
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: black;
+    font-weight: bold;
+    margin-left: 25px;
+    margin-top: 0px;
+}
+figure#androidhumano {
+    text-align: center;
+
+
+}
+
+section#video {
+    background-color: #1A5C38;
+    margin: auto;
+    height: 500px;
+    width: 800px;
+    padding-top: 0px;
+    padding-right: 0px;
+    border: 50px;
+    position: relative;
+}
+
+iframe#video2 {
+    height: 450px;
+    width: 750px;
+    margin: 25px 25px;
+}
+
+section#final {
+    margin: auto;
+    height: 500px;
+    width: 800px;
+    background-color: white;
+    padding-top: 25px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+
+}
+
+aside#informativos {
+    margin-top: 0px;
+    margin-right: 25px;
+    margin-left: 25px;
+    
+    height: 400px;
+    width: 750px;
+    background-color: #84E1AD;
+    border-radius: 7px;
+
+    
+}
+h4#aprender {
+    background-color: #2B985B;
+    color: white;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 10px;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    
+
+}
+
+li {
+    list-style-image: url(imagens/check-pp.png);
+}
+
+div#lista1 {
+    display: inline;
+    float: left;
+    width: 300px;
+}
+
+div#lista2 {
+    width: 400px;
+    display: inline;
+    float: right;
+    padding-left: 0px;
+}
+p#sitehistory {
+    margin-top: -15px;
+
+
+}
+footer {
+    background-color: #1A5C38;
+    margin-bottom: -15px;
+}
+footer > p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.5em;
+    color: white;
+}
+a.verdeescuro {
+    color: #0a2e19;
+    font-size: 1em;
+    font-weight: bold;
+
+}
+span {
+    color: #0a2e19;
+    font-weight: bold;
+}
