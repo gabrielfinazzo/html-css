@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionando conteúdos</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div.posicao {
+            background-color: rgb(121, 121, 184);
+            height: 500px;
+            
+        }
+        div#video {
+            background-color: blue;
+            position: relative;
+            height: 400px;
+            width: 70vw;
+            top: 10%;
+            left: 15%;
+        }
+        iframe.futebol {
+            position: absolute;
+            top: 10%; left: 5%; 
+            width: 90%;
+        }
+
+        div#mapa {
+            background-color: blue;
+            position: relative;
+            height: 400px;
+            width: 70vw;
+            top: 10%;
+            left: 15%;
+        }
+
+        iframe.mapa {
+            position: absolute;
+            width: 100%;
+
+        }
+
+        h2 {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conteúdos dentro de iframes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia temporibus accusamus ipsa incidunt aspernatur accusantium, eum culpa ad consequatur necessitatibus eveniet fugiat numquam exercitationem laborum nisi, corporis atque quisquam veritatis!</p>
+    <h2>Vídeos</h2>
+    <div class="posicao">
+        <div id="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ih78zIynidw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="futebol"></iframe>
+        </div>
+    </div>
+    <h2>Mapas do Google</h2>
+    <div class="posicao">
+        <div id="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.2793739125327!2d-43.176335637079475!3d-22.903064136933292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f58a6a00a9d%3A0x3f251d85272f76f7!2sHostnet%20Internet!5e0!3m2!1spt-BR!2sbr!4v1655947108378!5m2!1spt-BR!2sbr" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+        </div>
+    </div>
+</body>
+</html>
