@@ -6,7 +6,7 @@
 
 body {
     background-color: black;
-    
+    width: 100vw;
 }
 
 section.container {
@@ -26,15 +26,15 @@ div.celular {
     position: absolute;
     left: 50%;
     top: 50%;
-    height: 700px;
-    width: 350px;
+    height: 80vh;
+    width: 20vw;
     transform: translate(-50%, -50%);
 }
 
 div.tela {
     margin: auto;
     margin-top: 87px;
-    background-color: red;
+    background-color: black;
     width: 87%;
     height: 76%;
     top: 10%;
@@ -46,3 +46,50 @@ div.tela > iframe {
     height: 100%;
 }
 
+div.botoes {
+    margin: auto;
+    padding-left: 95vw;
+    width: 100px;
+    height: 600px;
+    background-color: white;
+}
+
+section > div > button.icones {
+    height: 60px;
+    width: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    border: 0;
+    box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.596);
+}
+
+button#home {
+    background-image: url(imagens/logo-home.jpg);
+    background-size: contain;
+    
+}
+
+button#youtube {
+    background-image: url(imagens/logo-youtube.jpg);
+    background-size: contain;
+}
+
+button#github {
+    background-image: url(imagens/logo-github.jpg);
+    background-size: contain;
+}
+
+button#instagram {
+    background-image: url(imagens/logo-instagram.jpg);
+    background-size: contain;
+}
+
+button#twitter {
+    background-image: url(imagens/logo-twitter.jpg);
+    background-size: contain;
+}
+
+button#facebook {
+    background-image: url(imagens/logo-facebook.jpg);
+    background-size: contain;
+}
