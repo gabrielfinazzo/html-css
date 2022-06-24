@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de iframes</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div#video {
+            background-color: rgb(81, 139, 139);
+            position: relative;
+            padding-bottom: 40.0%;
+            width: 70vw;
+            margin: auto;
+        }
+
+        div#video > iframe {
+            position: absolute;
+            width: 90%;
+            height: 90%;
+            top: 5%;
+            left: 5%;
+        }
+
+        div#mapa {
+            background-color: rgb(81, 139, 139);
+            position: relative;
+            height: 500px;
+            width: 70vw;
+            margin: auto;
+
+        }
+
+        div#mapa > iframe {
+            position: absolute;
+            width: 90%;
+            height: 90%;
+            top: 5%;
+            left: 5%;
+        }
+
+        p {
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Vídeo no Iframe</h1>
+    <div id="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/N4kcLyYhThE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <h1>Mapa no Iframe</h1>
+    <div id="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14636.656148825721!2d-46.66088745!3d-23.49060035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1656033023194!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum soluta molestias modi necessitatibus odio nemo nisi adipisci tempora aut ipsum voluptatibus eveniet quos maxime animi dolore rem, corrupti, quia at? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non delectus in sint natus optio quidem, rem labore corporis suscipit excepturi eveniet molestias sapiente, molestiae commodi itaque eum assumenda ipsum quo!</p>
+
+</body>
+</html>
