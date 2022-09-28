@@ -9,6 +9,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 
+body * {
+    box-sizing: border-box;
+}
+
 main {
     background-color: #201B2C;
     width: 100vw;
@@ -114,4 +118,40 @@ input#login {
     letter-spacing: 3px;
     box-shadow: 0px 10px 40px -12px #00ff8052;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 950px) {
+    div#card-form {
+        width: 85%;
+    }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+
+    section#lado-esquerdo {
+        width: 100%;
+        height: auto;
+    }
+
+    section#lado-esquerdo > h1 {
+        display: none;
+    }
+
+    section#lado-direito {
+        width: 100%;
+        height: auto;
+    }
+
+    div#card-form {
+        width: 90%;
+    }
+
+    img#astronauta {
+        width: 50vw;
+    }
 }
