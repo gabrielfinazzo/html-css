@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Palmeiras</title>
+    <link rel="stylesheet" href="estilo/palmeiras.css">
+</head>
+<body>
+    <main>
+        <section class="login-esquerdo">
+            <h1>Faça login <br>E apoie o nosso time</h1>
+            <img src="imagens/logo-palmeiras.png" alt="Escudo Palmeiras" id="escudo-palmeiras">
+            <img src="soccer-animate.svg" alt="futebol" id="futebol">
+        </section>
+        <section class="login-direito">
+            <img src="imagens/logo-palmeiras.png" alt="Escudo Palmeiras" id="palmeiras">
+            <div class="card-login">
+                <h1>Login</h1>
+                <form action="palmeiras.php">
+                    <div class="control-input">
+                        <label for="iusuario">Usuário</label>
+                        <input type="text" name="usuario" id="iusuario" placeholder="Usuário">
+                    </div>
+                    <div class="control-input">
+                        <label for="isenha">Senha</label>
+                        <input type="password" name="senha" id="isenha" placeholder="Senha">
+                    </div>
+                    <input type="submit" value="login" id="login">
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

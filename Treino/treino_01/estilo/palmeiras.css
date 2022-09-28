@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100%;
+    background-color: #006337;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #006337;
+}
+
+section.login-esquerdo {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section.login-esquerdo > h1 {
+    color: white;
+    font-size: 3vw;
+}
+
+section.login-direito {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+img#palmeiras {
+    margin-bottom: 15px;
+    width: 15vw;
+}
+
+img#escudo-palmeiras {
+    display: none;
+}
+
+img#futebol {
+    width: 35vw;
+}
+
+form {
+    width: 100%;
+}
+
+div.card-login {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: #20b974;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+div.card-login > h1 {
+    font-weight: 800;
+    color: #00381f;
+    margin: 0;
+}
+
+div.control-input {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px 0;
+}
+
+div.control-input > input {
+    width: 100%;
+    outline: none;
+    box-shadow: 0px 10px 40px #00000056;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+div.control-input > label {
+    color: #00381f;
+    margin: 10px;
+    font-weight: 700;
+}
+
+div.control-input > input::placeholder {
+    color: #00381f;
+}
+
+input#login {
+    width: 100%;
+    padding: 16px 0;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background-color: #006337;
+    color: white;
+    box-shadow: 0px 10px 40px -12px #41e79c
+}
+
+@media only screen and (max-width: 950px) {
+    div.card-login {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    div.card-login {
+        width: 90%;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    section.login-esquerdo {
+        width: 100%;
+        height: auto;
+    }
+
+    section.login-esquerdo > h1 {
+        display: none;
+    }
+
+    section.login-direito {
+        width: 100%;
+        height: auto;
+    }
+
+    img#palmeiras {
+        display: none;
+    }
+    
+    img#futebol {
+        width: 40vw;
+    }
+
+    img#escudo-palmeiras {
+        display: block;
+        width: 30vw;
+    }
+}
