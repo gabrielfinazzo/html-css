@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        div.bloco1 {
+            width: 100px;
+            
+            background-color: rgb(175, 68, 175);
+            border-radius: 8px;
+            text-align: center;
+            margin: 10px 0px;
+        }
+        div.bloco2 {
+            width: 100px;
+            
+            background-color: rgb(127, 127, 214);
+            border-radius: 8px;
+            text-align: center;
+            margin: 10px 0px;
+        }
+        div.bloco3 {
+            width: 100px;
+            
+            background-color: rgb(238, 71, 71);
+            border-radius: 8px;
+            text-align: center;
+            margin: 10px 0px;
+        }
+
+        main.container {
+            display: flex;
+            height: 100vh;
+
+            /*Flex direction serve para escolher a posição dos elementos presente na caixa do flexbox*/
+            /*Column: As divs ficam alinhadas na vertical
+              Row: As divs ficam alinhadas na horizontal
+              Column-reverse: As divs ficam alinhadas na coluna, porém de baixo para cima.
+              row-reverse : As divs ficam alinhadas da direita para a esquerda.
+            */
+            flex-direction: row;
+            /*justify-content: Escolhe se as divs ficaram centralizadas na esquerda, centro ou direita da página. */
+            justify-content: center;
+
+            /*align-items: Alinhas as divs no eixo vertical*/
+            align-items: stretch;
+        }
+    </style>
+</head>
+<body>
+   <main class="container">
+        <div class="bloco1">1</div>
+        <div class="bloco2">2</div>
+        <div class="bloco3">3</div>
+   </main>
+</body>
+</html>
