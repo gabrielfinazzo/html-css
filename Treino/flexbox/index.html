@@ -8,7 +8,7 @@
     <style>
         div.bloco1 {
             width: 100px;
-            
+            height: 100px;
             background-color: rgb(175, 68, 175);
             border-radius: 8px;
             text-align: center;
@@ -16,7 +16,7 @@
         }
         div.bloco2 {
             width: 100px;
-            
+            height: 100px;
             background-color: rgb(127, 127, 214);
             border-radius: 8px;
             text-align: center;
@@ -24,7 +24,7 @@
         }
         div.bloco3 {
             width: 100px;
-            
+            height: 100px;
             background-color: rgb(238, 71, 71);
             border-radius: 8px;
             text-align: center;
@@ -46,7 +46,22 @@
             justify-content: center;
 
             /*align-items: Alinhas as divs no eixo vertical*/
-            align-items: stretch;
+            align-items: center;
+
+
+
+            /*flex-wrap: configura a quebra de linha quando existem muitos elementos(divs)
+            wrap: ocorre a quebra de linha
+            no-wrap: não ocorre a quebra de linha*/
+
+            /*align-content: separar os itens que tiveram quebra de linha*/
+
+            /*gap: coloca um espaçamento entre os elementos para não ficarem grudados
+            row-gap: distância entre as linhas
+            column-gap: distância entre as colunas
+            */
+            gap: 20px;
+            
         }
     </style>
 </head>

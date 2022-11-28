@@ -3,11 +3,12 @@
     padding: 0px;
 }
 
+/*Cabeçalho*/
+
 header {
     width: 900px;
     height: 150px;
     margin: auto;
-    
 }
 
 header > div#area1 {
@@ -20,6 +21,7 @@ header > div#area2 {
     border-radius: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    border: 2px solid #3c3f40;
     
 }
 
@@ -49,39 +51,44 @@ div#area2 > ul > li > a:hover {
     transition: 0.5s;
 }
 
+/*Conteúdo principal*/
+
 main {
     width: 900px;
     margin: auto;
     border-radius: 10px;
-    height: 1000px;
 }
 
-main > section {
+/*Início da primeira section*/
+
+main > section#primeira_parte {
     border-radius: 10px;
     position: relative;
+    height: 500px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.37);
 }
 
 section > div#imagem {
     float: left;
     width: 50%;
-    height: 700px;
+    height: 500px;
     background-image: url(imagens/engenheiros.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.301);
+    
 }
 
 section > div#conteudo {
     float: left;
     width: 50%;
-    height: 700px;
+    height: 500px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     text-align: center;
-    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.301);
+    
 }
 
 section > div#conteudo > h1 {
@@ -118,12 +125,160 @@ div#botoes > a#serv {
     background-color: #3c3f40;
     color: white;
 }
+div#botoes > a#serv:hover {
+    border: solid 1px #3c3f40;
+    background-color: white;
+    color: #3c3f40;
+    transition: 0.5s;
+    font-weight: bold;
+    font-size: 20px;
+}
 
 div#botoes > a#orc {
     background-color: #f96318;
     color: white;
 }
 
+div#botoes > a#orc:hover {
+    border: solid 1px #f96318;
+    background-color: white;
+    color: #f96318;
+    transition: 0.5s;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*Início segunda section*/
+
+section#segunda_parte {
+    margin-top: 30px;
+}
+
+div.caixa {
+    width: 900px;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 60px;
+}
+
+div.caixa > div.itens {
+    width: 210px;
+    height: 250px;
+    text-align: center;
+    border: 2px solid #f96318;
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+}
+
+div.itens > p {
+    padding: 10px 0px;
+    text-transform: uppercase;
+    font-size: 10pt;
+    background-color: #f96318;
+    color: white;
+}
+
+div.itens > div.imagens {
+    height: 50%;
+    background-color: red;
+    margin: 5px;
+    
+}
+
+div#img1 {
+    background-image: url(imagens/air-conditioner-g44c8a27c8_1280.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+div#img2 {
+    background-image: url(imagens/maquina.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+div#img3 {
+    background-image: url(imagens/peças.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+div#img4 {
+    background-image: url(imagens/bombeiro.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+div.itens > div.conteudo {
+    height: 30%;
+    margin: 5px;
+    font-size: 12pt;
+}
+
+div.conteudo > p {
+    margin-bottom: 10px;
+}
+
+div.conteudo > a.acesso {
+    text-decoration: none;
+    background-color: #f96318;
+    padding: 5px;
+    border-radius: 8px;
+    color: white;
+    border: 2px solid #3c3f4067;
+}
+
+div.conteudo > a.acesso:hover {
+    background-color: white;
+    color: #f96318;
+    border: 2px solid #3c3f40;
+}
+
+
+
+
+
 footer {
+    background-color: #3c3f40;
     clear: both;
+    margin: auto;
+    width: 900px;
+    color: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+footer > h3 {
+    padding: 10px;
+    text-transform: uppercase;
+    margin-left: 10px;
+    font-size: 20pt;
+}
+
+footer > h3 > span {
+    color: #f96318;
+}
+
+footer > a > img {
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+footer > a > img:hover {
+    background-color: #f96318;
+}
+
+footer > a > img#insta {
+    margin-left: 20px;
 }
