@@ -1,7 +1,10 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: 'Glory', sans-serif;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Glory:wght@100;700&display=swap');
 
 /*Cabeçalho*/
 
@@ -19,7 +22,6 @@ header > div#area2 {
     background-color: #f96318;
     padding: 10px 10px;
     border-radius: 10px;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     border: 2px solid #3c3f40;
     box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.37);
@@ -29,20 +31,17 @@ div#area2 > ul > li {
     display: inline;
     list-style: none;
     padding: 11px 15px;
-    
 }
 
 div#area2 > ul > li:hover {
     background-color: white;
     border-radius: 7px;
-    border: 1px solid #f96318;
     transition: 0.5s;
 }
 
 div#area2 > ul > li#liativo {
     background-color: white;
     border-radius: 7px;
-    border: 1px solid #f96318;
 }
 
 div#area2 > ul > li > a {
@@ -69,6 +68,11 @@ main {
 }
 
 /*Início da primeira section*/
+
+h1#tit1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 
 main > section#primeira_parte {
     border-radius: 10px;
@@ -238,6 +242,7 @@ div.itens > div.conteudo {
 
 div.conteudo > p {
     margin-bottom: 10px;
+    font-size: 11pt;
 }
 
 div.conteudo > a.acesso {
@@ -247,6 +252,7 @@ div.conteudo > a.acesso {
     border-radius: 8px;
     color: white;
     border: 2px solid #3c3f4067;
+    font-size: 10pt;
 }
 
 div.conteudo > a.acesso:hover {
@@ -274,9 +280,9 @@ section > div#enginfo {
 }
 
 section > div#enginfo > p {
-    margin: 15px 10px;
+    margin: 25px 10px;
     padding: 30px 30px;
-    font-size: 17pt;
+    font-size: 15pt;
     background-color: white;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -358,6 +364,7 @@ section.menu {
     font-size: 12pt;
     background-color: #f96318;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.356);
+    position: fixed;
 }
 
 section.menu > ul {
@@ -376,13 +383,12 @@ section.menu > ul > li {
 
 section.menu > ul > li > a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
-section.servicos {
-    float: right;
-    width: 680px;
-    background-color: red;
+section.menu > ul > li > a:hover {
+    color: black;
+    transition: 0.5s;
 }
 
 section.menu > ul > li:hover {
@@ -391,6 +397,68 @@ section.menu > ul > li:hover {
     background-color: white;
     transition: 0.5s;
 }
+
+section.servicos {
+    float: right;
+    width: 680px;
+    box-sizing: border-box;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.384);
+    border-radius: 10px;
+}
+
+
+section.servicos > div > h1 {
+    font-size: 18pt;
+    text-align: left;
+    padding: 20px;
+}
+
+section.servicos > div > img {
+    margin: 15px 0px;
+}
+
+
+
+section.servicos > div > h2 {
+    text-align: left;
+    font-size: 15pt;
+    margin: 15px 0px;
+    color: white;
+}
+
+section.servicos > div > p {
+    text-align: left;
+    font-size: 12pt;
+    margin: 10px 0px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.384);
+}
+
+div.serv1 {
+    background-color: #f96318;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 20px 0px;
+}
+
+
+div.serv2 {
+    background-color: #3b3e40;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 20px 0px;
+}
+
+
+
+
 
 /*Rodapé*/
 
