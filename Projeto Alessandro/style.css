@@ -22,7 +22,7 @@ header > div#area2 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     border: 2px solid #3c3f40;
-    
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.37);
 }
 
 div#area2 > ul > li {
@@ -39,6 +39,11 @@ div#area2 > ul > li:hover {
     transition: 0.5s;
 }
 
+div#area2 > ul > li#liativo {
+    background-color: white;
+    border-radius: 7px;
+    border: 1px solid #f96318;
+}
 
 div#area2 > ul > li > a {
     text-decoration: none;
@@ -49,6 +54,10 @@ div#area2 > ul > li > a {
 div#area2 > ul > li > a:hover {
     color: #f96318;
     transition: 0.5s;
+}
+
+div#area2 > ul > li > a#aativo {
+    color: #f96318;
 }
 
 /*Conteúdo principal*/
@@ -124,6 +133,7 @@ div#botoes > a {
 div#botoes > a#serv {
     background-color: #3c3f40;
     color: white;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.37);
 }
 div#botoes > a#serv:hover {
     border: solid 1px #3c3f40;
@@ -137,6 +147,7 @@ div#botoes > a#serv:hover {
 div#botoes > a#orc {
     background-color: #f96318;
     color: white;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.37);
 }
 
 div#botoes > a#orc:hover {
@@ -164,14 +175,16 @@ div.caixa {
     margin-bottom: 60px;
 }
 
-div.caixa > div.itens {
+section#segunda_parte > div.caixa > div.itens {
     width: 210px;
     height: 250px;
     text-align: center;
     border: 2px solid #f96318;
     border-radius: 10px;
     background-color: white;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.37);
     overflow: hidden;
+    
 }
 
 div.itens > p {
@@ -293,8 +306,91 @@ section > div#engfoto > img {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.37)
 }
 
+/*Página Sobre*/
+    section#sobrenos {
+        border: 2px solid #f96318;
+        margin-bottom: 40px;
+        border-radius: 8px;
+    }
 
+    div#caixa {
+        width: 800px;
+        margin: auto;
+    }
 
+    div.blocos {
+        margin: 50px 0px;
+    }
+
+    div.blocos > img.imagens {
+        width: 800px;
+        height: 400px;
+    }
+
+    div.blocos > h2 {
+        font-size: 20pt;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    div.blocos > p {
+        font-size: 15pt;
+        margin-bottom: 10px;
+    }
+
+    div#carimbo {
+        text-align: center;
+    }
+
+/*Página serviços*/
+
+main#conttotal {
+    width: 900px;
+}
+
+section.menu {
+    float: left;
+    width: 200px;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 2px solid #3b3e40;
+    border-radius: 8px;
+    font-size: 12pt;
+    background-color: #f96318;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.356);
+}
+
+section.menu > ul {
+    list-style: none;
+}
+
+section.menu > ul > li {
+    margin-bottom: 15px;
+    padding: 5px;
+    background-color: #f96318;
+    border-radius: 8px;
+    text-align: center;
+    border: 2px solid #3b3e40;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.356);
+}
+
+section.menu > ul > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+section.servicos {
+    float: right;
+    width: 680px;
+    background-color: red;
+}
+
+section.menu > ul > li:hover {
+    border-radius: 8px;
+    border: 2px solid #3b3e40;
+    background-color: white;
+    transition: 0.5s;
+}
 
 /*Rodapé*/
 
