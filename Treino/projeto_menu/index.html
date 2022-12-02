@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header>
+        <h1>Menu</h1>
+        <nav> 
+                <span class="material-symbols-outlined" id="icon_menu" onclick="openMenu()">
+                    menu
+                </span>
+                <div>
+                    <ul id="lista_menu">
+                        <li><a href="#">Filmes</a></li>
+                        <li><a href="#">Séries</a></li>
+                        <li><a href="#">Animes</a></li>
+                        <li><a href="#">Mangás</a></li>
+                        <li><a href="#">Livros</a></li>
+                    </ul>
+                </div>
+        </nav>
+    </header>
+    <script>
+        function openMenu() {
+            if (lista_menu.style.display == "none") {
+                lista_menu.style.display = "block"
+            } else {
+                lista_menu.style.display = "none"
+            }
+        }
+    </script>
+</body>
+</html>

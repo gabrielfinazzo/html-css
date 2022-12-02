@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    width: 100vw;
+    background-color: rgb(119, 115, 115);
+}
+
+nav {
+    background-color: rgb(194, 191, 191);
+    text-align: center;
+    padding: 20px;
+}
+
+nav > div {
+    display: inline-block;
+}
+
+nav > div > ul {
+    display: block;
+}
+
+nav > div > ul > li {
+    display: inline;
+}
+
+nav > div > ul > li > a {
+    padding: 10px 20px;
+    background-color: rgb(119, 115, 115);
+    border-radius: 8px;
+    color: white;
+}
+
+nav > div > ul > li > a:hover {
+    border: 2px solid white;
+}
+
+#icon_menu {
+position: relative;
+top: 5px;
+}
+
+
+/*Jquery*/
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    nav > div > ul {
+        display: none;
+    }
+ }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    #icon_menu {
+        display: none;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }
