@@ -18,7 +18,7 @@ header {
 header > h1 {
     line-height: 120px;
     letter-spacing: 3px;
-    margin-left: 20%;
+    margin-left: 5%;
     color: white;
     font-size: 40px;
     display: inline-block;
@@ -30,6 +30,7 @@ nav {
 
 nav > ul {
     margin-right: 20px;
+    display: inline-block;
 }
 
 nav > ul > li {
@@ -40,8 +41,65 @@ nav > ul > li {
 
 nav > ul > li > a {
     color: white;
-    font-size: 17px;
+    font-size: 18px;
     text-transform: uppercase;
     padding: 7px 13px;
     border-radius: 3px;
 }
+
+nav a.active, nav a:hover {
+    border-radius: 3px;
+    background-color: rgb(22, 54, 22);
+}
+
+.menubar {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    margin-right: 40px;
+    padding: 0 13px;
+    color: red;
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 858px) { 
+    .menubar {
+        display: block;
+    }
+
+
+    nav > ul {
+        margin-right: 0px;
+        display: block;
+    }
+
+    nav > ul > li {
+        display: block;
+    }
+
+    ul {
+        top: 120px;
+        position: fixed;
+        width: 50vw;
+        height: 100vh;
+        background-color: rgb(22, 54, 22);
+        text-align: center;
+
+    }
+
+    
+}
+
+
+@media (min-width: 859px) and (max-width: 952px) { 
+    header > h1 {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav > ul > li > a {
+        font-size: 16px;
+    }
+
+ }
+

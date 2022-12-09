@@ -78,6 +78,7 @@ a.active, a:hover {
 @media (max-width: 858px) {
     .checkbtn {
         display: block;
+        
     }
 
     nav > ul {
