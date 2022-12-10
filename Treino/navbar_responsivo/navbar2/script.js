@@ -4,4 +4,5 @@ function abrirMenu() {
     } else {
         newbox.style.display = "block"
     }
+        
 }

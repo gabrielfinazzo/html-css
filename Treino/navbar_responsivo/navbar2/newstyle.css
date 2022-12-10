@@ -90,8 +90,9 @@ nav > .boxmenu a.active, nav > .boxmenu a:hover {
     }
 
     .boxmenu {
-        display: block;
+        display: none;
     }
+
     
 
     nav > .boxmenu a.active, nav > .boxmenu a:hover {
