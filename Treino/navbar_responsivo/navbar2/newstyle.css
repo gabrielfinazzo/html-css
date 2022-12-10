@@ -28,18 +28,19 @@ nav {
     float: right;
 }
 
-nav > ul {
+
+nav > .boxmenu > ul {
     margin-right: 20px;
     display: inline-block;
 }
 
-nav > ul > li {
+nav > .boxmenu > ul > li {
     display: inline-block;
     line-height: 120px;
     margin: 0 5px;
 }
 
-nav > ul > li > a {
+nav > .boxmenu > ul > li > a {
     color: white;
     font-size: 18px;
     text-transform: uppercase;
@@ -47,33 +48,34 @@ nav > ul > li > a {
     border-radius: 3px;
 }
 
-nav a.active, nav a:hover {
+nav > .boxmenu a.active, nav > .boxmenu a:hover {
     border-radius: 3px;
     background-color: rgb(22, 54, 22);
 }
 
-.menubar {
+#menubar {
     font-size: 30px;
     color: white;
     cursor: pointer;
     margin-right: 40px;
     padding: 0 13px;
-    color: red;
+    display: none;
 }
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 858px) { 
-    .menubar {
+    #menubar {
         display: block;
+        line-height: 120px;
     }
 
 
-    nav > ul {
+    nav > .boxmenu > ul {
         margin-right: 0px;
         display: block;
     }
 
-    nav > ul > li {
+    nav > .boxmenu > ul > li {
         display: block;
     }
 
@@ -84,20 +86,30 @@ nav a.active, nav a:hover {
         height: 100vh;
         background-color: rgb(22, 54, 22);
         text-align: center;
-
+        right: 0;
     }
 
+    .boxmenu {
+        display: block;
+    }
     
+
+    nav > .boxmenu a.active, nav > .boxmenu a:hover {
+        background-color: none;
+        color: rgb(83, 117, 83)
+    }
+
+
 }
 
 
-@media (min-width: 859px) and (max-width: 952px) { 
+@media (max-width: 952px) { 
     header > h1 {
         font-size: 30px;
         padding-left: 50px;
     }
 
-    nav > ul > li > a {
+    nav > .boxmenu > ul > li > a {
         font-size: 16px;
     }
 
