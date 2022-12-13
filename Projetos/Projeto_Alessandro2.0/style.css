@@ -54,6 +54,8 @@ header {
     height: 100px;
     background-color: blue;
     margin: auto;
+    box-sizing: border-box;
+    padding: 0 50px;
 }
 
 
@@ -70,6 +72,7 @@ header {
 
 .nav-menu {
     display: inline-block;
+    margin: 0 5px;
 }
 
 .menu-lista > li {
@@ -86,7 +89,7 @@ header {
 
 .button-orc {
     background-color: yellow;
-    display: inline-block;
+    display: block;
 }
 
 .back-nav {
