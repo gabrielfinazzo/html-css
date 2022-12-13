@@ -1,0 +1,101 @@
+*,
+:before, 
+:after {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*Cabeçalho*/
+header {
+    width: 100vw;
+    height: 140px;
+}
+
+/*Cabeçalho barra do topo*/
+.top-bar {
+    width: 100%;
+    background-color: #DBB621;
+    height: 40px;
+    display: block;
+    
+}
+
+.top-info {
+    float: right;
+    margin-right: 100px;
+}
+
+.top-info > p {
+    display: inline-block;
+    line-height: 40px;
+    padding: 0 20px;
+    color: white;
+}
+
+.icon {
+    color: white;
+    line-height: 40px;
+    padding: 0 10px;
+}
+
+.redeicon {
+    color: white;
+    line-height: 40px;
+    padding: 0 5px;
+    font-size: 1.4rem;
+}
+
+
+/*Cabeçalho início nav-bar*/
+.nav-bar {
+    width: 70vw;
+    height: 100px;
+    background-color: blue;
+    margin: auto;
+}
+
+
+.nav-logo {
+    display: inline-block;
+    
+}
+
+
+.nav-logo > a > img {
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+.nav-menu {
+    display: inline-block;
+}
+
+.menu-lista > li {
+    display: inline;
+    
+}
+
+.menu-lista > li > a {
+    line-height: 100px;
+    letter-spacing: 3px;
+    color: white;
+    padding: 0 20px;
+}
+
+.button-orc {
+    background-color: yellow;
+    display: inline-block;
+}
+
+.back-nav {
+    width: 100vw;
+    background-color: #F76315;
+}
+
+
+
+
+
+
