@@ -10,7 +10,7 @@
 /*Cabeçalho*/
 header {
     width: 100vw;
-    height: 140px;
+    height: 180px;
 }
 
 /*Cabeçalho barra do topo*/
@@ -49,56 +49,61 @@ header {
 
 
 /*Cabeçalho início nav-bar*/
+
 .nav-bar {
-    width: 70vw;
+    width: 70%;
     height: 100px;
-    background-color: blue;
     margin: auto;
-    box-sizing: border-box;
-    padding: 0 50px;
 }
 
+.bar-menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.color-menu {
+    width: 100vw;
+    height: 100px;
+    background-color: white;
+    position: relative;
+}
+
+.color-menu:before {
+    content: '';
+    position: absolute;
+    width: 67%;
+    height: 100%;
+    top: 0;
+    right: -65px;
+    background-color: #F76315;
+    transform: skewX(50deg);
+}
 
 .nav-logo {
-    display: inline-block;
-    
+    border-radius: 8px;
 }
 
-
-.nav-logo > a > img {
-    margin-top: 20px;
-    border-radius: 4px;
+.nav-menu > ul {
+    margin-left: 100px;
 }
 
-.nav-menu {
-    display: inline-block;
-    margin: 0 5px;
-}
-
-.menu-lista > li {
+.nav-menu > ul > li {
     display: inline;
-    
 }
 
-.menu-lista > li > a {
-    line-height: 100px;
-    letter-spacing: 3px;
+.nav-menu > ul > li > a {
+    font-size: 20px;
+    letter-spacing: 2px;
     color: white;
-    padding: 0 20px;
+    padding: 0 15px;
+    text-transform: uppercase;
 }
-
-.button-orc {
-    background-color: yellow;
-    display: block;
-}
-
-.back-nav {
-    width: 100vw;
-    background-color: #F76315;
-}
-
-
-
-
 
 
