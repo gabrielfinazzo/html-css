@@ -5,10 +5,13 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-    font-family: 'Inter', sans-serif;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700&display=swap');
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
 
 /*Cabeçalho*/
 header {
@@ -37,20 +40,16 @@ header {
     color: white;
 }
 
-.icon {
+i {
     color: white;
-    line-height: 40px;
     padding: 0 10px;
-    line-height: 40px;
 }
 
-.redeicon {
-    color: white;
+.icon {
+    padding: 0;
+    font-size: 25px;
     line-height: 40px;
-    padding: 0 5px;
-    font-size: 1.4rem;
 }
-
 
 /*Cabeçalho início nav-bar*/
 
@@ -90,7 +89,7 @@ header {
     transform: skewX(50deg);
 }
 
-.nav-logo {
+.nav-logo > a > img {
     border-radius: 8px;
 }
 
@@ -134,4 +133,15 @@ header {
 .nav-orc > a:hover {
     background-color: #393940;
     color: white;
+}
+
+/*Conteúdo Main*/
+
+.rotacao-imagens {
+    background-image: url(imagens/pmoc1000px.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 800px;
+    opacity: 0.8;
 }
