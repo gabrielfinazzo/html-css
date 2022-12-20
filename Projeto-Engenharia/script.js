@@ -8,3 +8,5 @@ function checkDesactive() {
     document.getElementById = ("check")
         check.style.opacity = "0"
 }
+
+var a
