@@ -160,6 +160,7 @@ main {
     width: 100vw;
     height: 250px;
     background-color: #e0e0e6;
+    border: none;
 }
 .descritivo-sobre {
     width: 100%;
