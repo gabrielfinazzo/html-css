@@ -33,15 +33,21 @@ header {
 .up-bar > p {
     padding: 0 15px;
 }
-
-#ajuste-margin {
-    margin-right: 20px;
+.up-bar > p > a {
+    color: white;
 }
 
-.up-bar > p > i {
+
+
+#ajuste-margin {
+    margin-right: 30px;
+}
+
+.up-bar > p > a > i {
     padding: 0 5px;
     font-size: 1.3rem;
 }
+/*Fim barra superior*/
 
 /*Barra logo e menu*/
 
@@ -121,6 +127,16 @@ header {
 
 .menu-bar .active {
     color: #393940;
+}
+
+/*Icon Menu*/
+.icon-menu {
+    margin-left: 100px;
+}
+.icon-menu > i {
+    color: #393940;
+    font-size: 30px;
+    cursor: pointer;
 }
 
 /*Fim barra logo e menu*/
@@ -362,10 +378,20 @@ footer {
     background-color: white;
     border-radius: 50%;
     padding: 5px 10px;
+    transition: 0.7s ease-in-out;
+}
+
+.icon-rede:hover {
+    background-color: #393940;
 }
 
 .icon-rede > a > i {
     color: #393940;
+    transition: 0.7s ease-in-out;
+}
+
+.icon-rede > a > i:hover {
+    color: white;
 }
 
 .desenvolvido {
