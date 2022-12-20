@@ -9,4 +9,3 @@ function checkDesactive() {
         check.style.opacity = "0"
 }
 
-var a
