@@ -23,7 +23,7 @@ header {
 .up-bar {
     width: 100%;
     height: 40px;
-    background-color: #283434;
+    background-color: #393940;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -243,7 +243,6 @@ main {
     border-radius: 10px;
     background-color: white;
     overflow: hidden;
-    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.404);
 }
 
 #box1 {
@@ -371,15 +370,16 @@ footer {
 .icon-rede {
     display: inline;
     font-size: 40px;
-    color: #393940;
-    background-color: white;
+    color: white;
+    background-color: #393940;
     border-radius: 50%;
     padding: 5px 10px;
     transition: 0.7s ease-in-out;
 }
 
 .icon-rede:hover {
-    background-color: #393940;
+    background-color: white;
+    color: #283434;
 }
 
 .icon-rede > a > i {
