@@ -127,7 +127,7 @@ header {
 
 
 /*Início conteúdo*/
-/*Carrossel*/
+
 main {
     width: 100vw;
 }
@@ -202,9 +202,6 @@ main {
     padding-left: 4px;
 }
 
-.saiba-mais > a > i:hover {
-    opacity: 1;
-}
 .saiba-mais > a > span {
     border-left: 1px solid black;
     padding: 0 5px;
@@ -222,8 +219,9 @@ main {
     justify-content: center;
     align-items: center;
     align-content: center;
-    gap: 10px;
-    
+    gap: 20px;
+    row-gap: 40px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.404);
 }
 
 .box-servicos {
@@ -252,4 +250,128 @@ main {
     width: 100%;
     height: 100px;
     background-color: #e0e0e6;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 15px;
 }
+
+.inform > h4 {
+    color: #393940;
+    font-size: 16px;
+}
+
+.inform > p {
+    font-size: 15px;
+    color: #393940;
+    font-weight: 400;
+}
+/*Final serviços*/
+
+/*Início especializações*/
+.especializacoes {
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e0e6;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.404);
+}
+
+.conf-espec {
+    width: 50%;
+}
+
+.conf-espec > h2 {
+    font-size: 30px;
+    padding: 20px 0;
+    color: #393940;
+    display: block;
+    text-align: center;
+}
+
+.espec {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.espec > i {
+    font-size: 40px;
+    color: #393940;
+    padding: 0 40px;
+}
+
+
+
+.espec-all > h3 {
+    font-size: 24px;
+    padding: 20px 0;
+    color: #393940;
+}
+
+.espec-all > p {
+    font-size: 20px;
+}
+
+/*Fim especializações*/
+
+/*Início Footer*/
+
+footer {
+    width: 100vw;
+    height: 250px;
+    background-color: #393940;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fot-logo {
+    padding: 0 30px;
+}
+
+.fot-logo > p {
+    color: white;
+}
+
+.redes-sociais {
+    margin-bottom: 70px;
+}
+
+.redes-sociais > h3 {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.icon-gap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.icon-rede {
+    display: inline;
+    font-size: 40px;
+    color: #393940;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+}
+
+.icon-rede > a > i {
+    color: #393940;
+}
+
+.desenvolvido {
+    margin-top: 150px;
+    padding: 0 40px;
+    color: white;
+}
+
+/*Final footer*/
