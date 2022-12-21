@@ -9,3 +9,13 @@ function checkDesactive() {
         check.style.opacity = "0"
 }
 
+
+function textApear() {
+    let texto = document.querySelector(".texto-img")
+    texto.style.display = ("block")
+}
+
+function textDesapear() {
+    let texto = document.querySelector(".texto-img")
+    texto.style.display = ("none")
+}
