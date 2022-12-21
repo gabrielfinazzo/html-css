@@ -17,7 +17,7 @@ body {
 
 header {
     width: 100vw;
-    height: 160px;
+    height: 120px;
 }
 
 
@@ -55,7 +55,7 @@ header {
 
 /*Configuração fundo com efeito diagonal*/
 .down-bar {
-    height: 120px;
+    height: 80px;
     width: 100%;
     background-color: #F76315;
     position: relative;
@@ -116,7 +116,7 @@ header {
     letter-spacing: 2px;
     color: white;
     transition: 0.5s ease-out;
-    font-weight: 400;
+    font-weight: bold;
     text-transform: uppercase;
 }
 
