@@ -313,7 +313,7 @@ main {
     align-items: center;
     background-color: #e0e0e6;
     box-sizing: border-box;
-    padding: 40px 0;
+    padding-bottom: 40px;
 }
 
 .conf-espec {
@@ -321,8 +321,9 @@ main {
 }
 
 .conf-espec > h2 {
-    font-size: 30px;
-    padding: 20px 0;
+    height: 120px;
+    line-height: 120px;
+    font-size: 40px;
     color: #393940;
     display: block;
     text-align: center;
