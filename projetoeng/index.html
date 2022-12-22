@@ -19,7 +19,10 @@
             <nav class="nav-bar">
                 <div class="conteudo-bar">
                     <div class="logo">
-                        <img src="imagens/logomenu.png" alt="Logo da empresa">
+                        <picture>
+                            <source media="(max-width: 767.98px)" srcset="imagens/logomenucel.png" type="image/png">
+                            <img src="imagens/logomenu.png" alt="Logo da empresa">
+                        </picture>
                     </div>
                     <div class="menu-bar">
                         <ul>
@@ -29,8 +32,8 @@
                             <li><a href="#">Contato</a></li>
                         </ul>
                     </div>
-                    <div class="icon-menu">
-                        <i class="fa-solid fa-bars"></i>
+                    <div class="icon-menu" >
+                        <i class="fa-solid fa-bars" onclick="menuShow()"></i>
                     </div>
                 </div>
             </nav>
@@ -64,7 +67,7 @@
                 <div class="conteudo-servicos">
                     <div class="box-servicos" id="box1">
                         <a href="">
-                            <div class="img" onmouseover="textApear()" onmouseout="textDesapear()">
+                            <div class="img">
                                 <img src="imagens/pmocmini.jpg" alt="">
                                 <div class="texto-img">
                                     <p>Saiba mais</p>

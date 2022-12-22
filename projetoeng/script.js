@@ -10,12 +10,13 @@ function checkDesactive() {
 }
 
 
-function textApear() {
-    let texto = document.querySelector(".texto-img")
-    texto.style.display = ("block")
-}
-
-function textDesapear() {
-    let texto = document.querySelector(".texto-img")
-    texto.style.display = ("none")
+function menuShow() {
+    let menuMobile = document.querySelector('.menu-bar');
+    if (menuMobile.classList.contains('open')) {
+        menuMobile.classList.remove('open')
+    } else {
+        menuMobile.classList.add('open')
+    }
+        
+    
 }

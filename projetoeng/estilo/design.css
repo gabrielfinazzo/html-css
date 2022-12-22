@@ -136,6 +136,7 @@ header {
 /*Icon Menu*/
 .icon-menu {
     margin-left: 100px;
+    display: none;
 }
 .icon-menu > i {
     color: rgb(65, 66, 61);
@@ -291,13 +292,22 @@ main {
     left: 115px;
     bottom: 10px;
     z-index: 10;
-    padding-top: 20px;
     padding-bottom: 5px;
-    font-size: 20px;
+    font-size: 16px;
     color: white;
     text-align: center;
     font-weight: bold;
+    padding: 5px;
+    border-radius: 10px;
     display: none;
+    
+}
+
+.img:hover > .texto-img {
+    color: white;
+    display: block;
+    background-color: rgb(206, 107, 0);
+
 }
 
 .img > img {
@@ -495,25 +505,51 @@ footer {
 
 
 
+
 /*Media Query*/
 
 
-/* Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) {  }
+
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) { 
-    
+@media (max-width: 767.98px) { 
+    /*Configuração ajustes em branco menu*/
+    .down-bar:before {
+        width: 300px;
+        height: 100%;
+        top: 0;
+        left: 90px;
+        background-color: white;
+        transform: skewX(-45deg);
+    }
+    .down-bar:after {
+        width: 10%;
+        height: 100%;
+        top: 0;
+        right: -40px;
+        background-color: white;
+        transform: skewX(-45deg);
+    }
+
+    /*Fim da configuração dos ajustes em branco*/
+
+    /*Icone menu hamburguer*/
+    .icon-menu {
+        margin: 0 auto;
+        display: block;
+    }
+
     .logo > img{
         width: 200px;
     }
     
     .menu-bar {
-        position: fixed;
+        position: absolute;
         width: 50vw;
         height: 100vh;
-        top: 160px;
-        background-color: red;
+        top: 110px;
+        background-color: white;
+        display: none;
     }
 
     .menu-bar > ul {
@@ -531,9 +567,15 @@ footer {
         padding: 10px 0;
         font-size: 24px;
         letter-spacing: 2px;
+        color: rgb(206, 107, 0);
         
     }
  }
+
+ /*Classe open para funcionalidade do menu hamburguer*/
+.open {
+    display: block;
+}
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {  }
