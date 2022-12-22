@@ -58,28 +58,31 @@ header {
     height: 110px;
     width: 100%;
     background-color: rgb(206, 107, 0);
+    z-index: 10;
     position: relative;
 }
 
 .down-bar:before {
     content: '';
-    position: absolute;
     width: 27%;
     height: 100%;
     top: 0;
     left: 60px;
     background-color: white;
     transform: skewX(-45deg);
+    z-index: 1;
+    position: absolute;
 }
 .down-bar:after {
     content: '';
     position: absolute;
-    width: 10%;
+    width: 75px;
     height: 100%;
     top: 0;
-    right: -100px;
+    right: 100px;
     background-color: white;
     transform: skewX(-45deg);
+    z-index: 1;
 }
 
 /*Final do fundo com efeito diagonal*/
@@ -523,24 +526,29 @@ footer {
 
 
 /* Small devices (landscape phones, 576px and up) */
-@media (max-width: 767.98px) { 
+@media (max-width: 667px) { /*767.98*/
     /*Configuração geral menu*/
     /*Configuração ajustes em branco menu*/
     .down-bar:before {
-        width: 300px;
+        width: 250px;
         height: 100%;
         top: 0;
-        left: 90px;
+        left: 30px;
         background-color: white;
         transform: skewX(-45deg);
     }
     .down-bar:after {
-        width: 10%;
+        width: 0;
         height: 100%;
         top: 0;
-        right: -40px;
+        right: 0px;
         background-color: white;
         transform: skewX(-45deg);
+        display: none;
+    }
+
+    .logo {
+        margin: 0 50px;
     }
 
     /*Fim da configuração dos ajustes em branco*/
@@ -558,7 +566,7 @@ footer {
     
     .menu-bar {
         position: absolute;
-        width: 50vw;
+        width: 100vw;
         height: 100vh;
         top: 110px;
         background-color: rgb(206, 107, 0);
@@ -583,7 +591,7 @@ footer {
         color: white;
         
     }
-
+    
 
  
 
@@ -635,6 +643,10 @@ footer {
     /*Fim especializações*/
 
     /*Início Footer*/
+
+    .desenvolvido {
+        display: none;
+    }
 }
 
 
