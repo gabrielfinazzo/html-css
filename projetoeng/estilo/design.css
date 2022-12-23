@@ -527,6 +527,19 @@ footer {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 667px) { /*767.98*/
+
+    /*Top bar*/
+    .up-bar > p {
+        padding: 0 5px;
+        font-size: 15px;
+    }
+
+    .up-bar > p > a > i {
+        font-size: 15px;
+    }
+
+    /*Fim da top bar*/
+
     /*Configuração geral menu*/
     /*Configuração ajustes em branco menu*/
     .down-bar:before {
@@ -558,6 +571,9 @@ footer {
         margin: 0 auto;
         padding-right: 30px;
         display: block;
+        position: absolute;
+        z-index: 1;
+        right: 20px;
     }
 
     .logo > img{
@@ -568,7 +584,7 @@ footer {
         position: absolute;
         width: 100vw;
         height: 100vh;
-        top: 110px;
+        top: 0px;
         background-color: rgb(206, 107, 0);
         display: none;
     }
@@ -644,8 +660,46 @@ footer {
 
     /*Início Footer*/
 
+    .footer {
+        display: inline-block;
+    }
+
+    .fot-logo {
+        padding: 0;
+        height: 100%;
+        margin-top: 190px;
+        margin-left: 10px;
+    }
+
+    .fot-logo img {
+        
+    }
+
+    .fot-logo > p {
+        bottom: 0px;
+    }
+
+    .redes-sociais {
+        position: none;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+
+    .redes-sociais > h3 {
+        font-size: 25px;
+    }
+
+    .icon-rede {
+        font-size: 20px;
+    }
     .desenvolvido {
-        display: none;
+        display: block;
+        margin-top: 0px;
+        padding: 0;
+        color: white;
+        font-size: 17px;
+        height: 100%;
     }
 }
 
@@ -658,3 +712,76 @@ footer {
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {  }
+
+
+/*
+footer {
+    width: 100vw;
+    height: 250px;
+    background-color: rgb(65, 66, 61);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fot-logo {
+    padding: 0 30px;
+    position: relative;
+    
+}
+
+.fot-logo > p {
+    color: white;
+    position: relative;
+    font-size: 17px;
+    bottom: -30px;
+}
+
+.redes-sociais {
+    position: relative;
+    top: -30px;
+    left: -70px;
+}
+
+.redes-sociais > h3 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.icon-gap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.icon-rede {
+    display: inline;
+    font-size: 40px;
+    background-color: rgb(65, 66, 61);
+    border-radius: 50%;
+    padding: 5px 10px;
+    transition: 0.7s ease-in-out;
+}
+
+.icon-rede:hover {
+    background-color: white;
+    color: rgb(65, 66, 61);
+}
+
+.icon-rede > a > i {
+    color: white;
+    transition: 0.7s ease-in-out;
+}
+
+.icon-rede > a > i:hover {
+    color: rgb(65, 66, 61);
+}
+
+.desenvolvido {
+    margin-top: 150px;
+    padding: 0 40px;
+    color: white;
+    font-size: 17px;
+}
+*/
