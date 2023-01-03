@@ -544,14 +544,6 @@ footer {
 
     /*Configuração geral menu*/
     /*Configuração ajustes em branco menu*/
-    .down-bar:before {
-        width: 250px;
-        height: 100%;
-        top: 0;
-        left: 30px;
-        background-color: white;
-        transform: skewX(-45deg);
-    }
     .down-bar:after {
         width: 0;
         height: 100%;
@@ -562,63 +554,7 @@ footer {
         display: none;
     }
 
-    .logo {
-        margin: 0 50px;
-    }
-
-    /*Fim da configuração dos ajustes em branco*/
-
-    /*Icone menu hamburguer*/
-    .icon-menu {
-        margin: 0 auto;
-        padding-right: 30px;
-        display: block;
-        position: absolute;
-        z-index: 1;
-        right: 20px;
-    }
-
-    .logo > img{
-        width: 200px;
-    }
     
-    .menu-bar {
-        position: absolute;
-        width: 100vw;
-        height: 100vh;
-        top: -40px;
-        background-color: rgb(206, 107, 0);
-        display: none;
-    }
-
-    .menu-bar > ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        row-gap: 100px;
-        margin-top: 100px;
-    }
-    .menu-bar > ul > li {
-        display: block;
-    }
-    
-    .menu-bar > ul > li > a {
-        padding: 10px 0;
-        font-size: 24px;
-        letter-spacing: 2px;
-        color: white;
-        
-    }
-    
-
- 
-
-    /*Classe open para funcionalidade do menu hamburguer*/
-    .open {
-        display: block;
-    }
-
-    /*Fim configuração geral menu*/
     /*Configuração sobre engenharia*/
     .sobre-cont > h2{
         padding-bottom: 15px;
@@ -634,20 +570,7 @@ footer {
 
     /*Fim configuração sobre*/
 
-    /*INÍCIO CONFIGURAÇÕES SERVIÇOS*/
-    .conteudo-servicos {
-        flex-direction: column;
-        
-    }
-
-    #box1 {
-        margin-left: 0;
-    }
     
-    #box2 {
-        margin-right: 0;
-    }
-    /*FIM CONFIGURAÇÕES SERVIÇO*/
     /*Início especializações*/
 
     .conf-espec {
@@ -727,6 +650,173 @@ footer {
 
 }
 
+
+
+
+
+/* Medium devices (tablets, 768px and up)*/
+@media (max-width: 800px) {  
+    /*Configuração ajustes em branco menu*/
+    .down-bar:before {
+        width: 250px;
+        height: 100%;
+        top: 0;
+        left: 30px;
+        background-color: white;
+        transform: skewX(-45deg);
+    }
+    .down-bar:after {
+        width: 60px;
+        height: 100%;
+        top: 0;
+        right: 33px;
+        background-color: white;
+        transform: skewX(-45deg);
+        position: absolute;
+        z-index: 0;
+    }
+
+    .logo {
+        margin: 0 50px;
+    }
+
+    /*Fim da configuração dos ajustes em branco*/
+    .icon-menu {
+        margin: 0 auto;
+        padding-right: 30px;
+        display: block;
+        position: absolute;
+        z-index: 1;
+        right: 20px;
+    }
+
+    .logo > img{
+        width: 200px;
+    }
+    
+    .menu-bar {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        top: -40px;
+        background-color: rgb(206, 107, 0);
+        display: none;
+    }
+
+    .menu-bar > ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 100px;
+        margin-top: 100px;
+    }
+    .menu-bar > ul > li {
+        display: block;
+    }
+    
+    .menu-bar > ul > li > a {
+        padding: 10px 0;
+        font-size: 24px;
+        letter-spacing: 2px;
+        color: white;
+        
+    }
+    
+
+ 
+
+    /*Classe open para funcionalidade do menu hamburguer*/
+    .open {
+        display: block;
+    }
+
+    /*Fim configuração geral menu*/
+    /*Configuração sobre engenharia*/
+    .sobre-cont > h2{
+        padding-bottom: 15px;
+        font-size: 30px;
+        
+    }
+    .sobre-cont > p {
+        font-size: 20px;
+        color: #393940;
+        font-weight: 400;
+    }
+
+
+    /* Serviços */
+    /*INÍCIO CONFIGURAÇÕES SERVIÇOS*/
+    .conteudo-servicos {
+        flex-direction: column;
+        
+    }
+
+    #box1 {
+        margin-left: 0;
+    }
+    
+    #box2 {
+        margin-right: 0;
+    }
+    /*FIM CONFIGURAÇÕES SERVIÇO*/
+
+    /*Footer*/
+    footer {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 100%;
+
+    }
+
+    .fot-logo {
+        top: 10px;
+        display: inline-block;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    .fot-logo > p {
+        font-size: 15px;
+        bottom: -10px;
+    }
+
+    .redes-sociais {
+        top: 10px;
+        display: inline-block;
+        margin-left: 40px;
+        
+    }
+
+    .redes-sociais > h3 {
+        font-size: 30px;
+        text-align: center;
+        margin-left: 50px;
+        margin-bottom: 10px;
+    }
+
+    .icon-gap {
+        gap: 20px;
+        margin-left: 50px;
+    }
+
+    .icon-rede {
+        font-size: 30px;
+    }
+
+    .desenvolvido {
+        margin-top: 100px;
+        margin-bottom: 10px;
+        margin-right: 40px;
+        padding: 0px;
+        color: white;
+        font-size: 15px;
+        
+    }
+    /*Fim footer*/
+}
+
+
 @media (max-width: 499px) {
 
     /*Up Bar*/
@@ -777,12 +867,6 @@ footer {
 
     }
 }
-
-
-
-/* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) and (max-width: 991.98px) {  }
-
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) { }
 
