@@ -526,6 +526,7 @@ footer {
 
 
 
+
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 667px) { /*767.98*/
 
@@ -694,7 +695,7 @@ footer {
     .redes-sociais {
         top: 10px;
         display: inline-block;
-        margin-left: 80px;
+        margin-left: 40px;
         
     }
 
@@ -725,6 +726,58 @@ footer {
     }
 
 }
+
+@media (max-width: 499px) {
+
+    /*Up Bar*/
+    .up-bar > p {
+        padding: 0 5px;
+        font-size: 10px;
+    }
+
+    .up-bar > p > a > i {
+        font-size: 12px;
+    }
+    /* Footer */
+    .fot-logo > p {
+        font-size: 10px;
+        bottom: -10px;
+    }
+
+    .redes-sociais {
+        top: 10px;
+        display: inline-block;
+        margin-left: 50px;
+        
+    }
+
+    .redes-sociais > h3 {
+        font-size: 15px;
+        text-align: center;
+        margin-left: 50px;
+        margin-bottom: 10px;
+    }
+
+    .icon-gap {
+        gap: 10px;
+        margin-left: 50px;
+    }
+
+    .icon-rede {
+        font-size: 18px;
+    }
+
+    .desenvolvido {
+        margin-top: 0px;
+        padding: 0px;
+        color: white;
+        font-size: 10px;
+        margin-left: 15px;
+        margin-bottom: 10px;
+
+    }
+}
+
 
 
 /* Medium devices (tablets, 768px and up)*/
