@@ -411,16 +411,17 @@ main {
 
 .espec > img {
     width: 40px;
+    height: 40px;
     padding: 0 40px;
     position: relative;
-    top: -15px;
 }
-.espec > i {
-    position: relative;
-    top: -42px;
-    font-size: 40px;
-    color: rgb(65, 66, 61);
-    padding: 0 40px;
+
+.espec > img#engre1 {
+    top: -40px;
+}
+
+.espec > img#engre2 {
+    top: -15px;
 }
 
 
@@ -531,7 +532,7 @@ footer {
     /*Top bar*/
     .up-bar > p {
         padding: 0 5px;
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .up-bar > p > a > i {
@@ -584,7 +585,7 @@ footer {
         position: absolute;
         width: 100vw;
         height: 100vh;
-        top: 0px;
+        top: -40px;
         background-color: rgb(206, 107, 0);
         display: none;
     }
@@ -656,51 +657,73 @@ footer {
         font-size: 30px;
     }
 
+    .espec > img#engre1 {
+        top: -120px;
+    }
+    
+    .espec > img#engre2 {
+        top: -70px;
+    }
+
     /*Fim especializações*/
 
     /*Início Footer*/
 
-    .footer {
-        display: inline-block;
+    footer {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 100%;
+        gap: 30px;
+        row-gap: 50px;
     }
 
     .fot-logo {
-        padding: 0;
-        height: 100%;
-        margin-top: 190px;
-        margin-left: 10px;
-    }
-
-    .fot-logo img {
-        
+        padding: 0px;
+        top: 10px;
+        display: inline-block;
+        padding: 0 15px;
+        box-sizing: border-box;
     }
 
     .fot-logo > p {
-        bottom: 0px;
+        font-size: 15px;
+        bottom: -15px;
     }
 
     .redes-sociais {
-        position: none;
-        top: 0;
-        left: 0;
-        height: 100%;
+        top: 10px;
+        display: inline-block;
+        margin-left: 80px;
+        
     }
 
     .redes-sociais > h3 {
-        font-size: 25px;
+        font-size: 20px;
+        text-align: center;
+        margin-left: 50px;
+        margin-bottom: 10px;
+    }
+
+    .icon-gap {
+        gap: 10px;
+        margin-left: 50px;
     }
 
     .icon-rede {
-        font-size: 20px;
+        font-size: 25px;
     }
+
     .desenvolvido {
-        display: block;
         margin-top: 0px;
-        padding: 0;
+        padding: 0px;
         color: white;
-        font-size: 17px;
-        height: 100%;
+        font-size: 10px;
+        margin-left: 15px;
+        margin-bottom: 10px;
+
     }
+
 }
 
 
