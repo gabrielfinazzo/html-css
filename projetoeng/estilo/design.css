@@ -15,6 +15,7 @@ body {
     
 }
 
+
 header {
     width: 100vw;
     height: 150px;
@@ -57,14 +58,14 @@ header {
 .down-bar {
     height: 110px;
     width: 100%;
-    background-color: rgb(206, 107, 0);
+    background-image: linear-gradient(to left, rgb(206, 107, 0), rgb(235, 153, 67));
     z-index: 10;
     position: relative;
 }
 
 .down-bar:before {
     content: '';
-    width: 27%;
+    width: 500px;
     height: 100%;
     top: 0;
     left: 60px;
@@ -105,7 +106,7 @@ header {
 }
 
 .logo {
-    margin: 0 130px;
+    margin-left: 100px;
     
 }
 
@@ -113,6 +114,9 @@ header {
     height: 95px;
 }
 
+.menu-bar {
+    margin-left: 30px;
+}
 
 .menu-bar > ul > li {
     display: inline;
@@ -197,7 +201,7 @@ main {
 }
 
 .sobre-cont > h2 > span {
-    color: #F76315;
+    color: rgb(206, 107, 0);
 }
 
 .sobre-cont > p {
@@ -525,10 +529,202 @@ footer {
 
 
 
+@media (min-width: 300px) and (max-width: 499px) {
 
+    body {
+        overflow-x: hidden;
+    }
+
+    /*Up Bar*/
+    .up-bar > p {
+        padding: 0 5px;
+        font-size: 10px;
+    }
+
+    .up-bar > p > a > i {
+        font-size: 10px;
+    }
+
+    /*Fim upbar*/
+
+    /*Início Menu*/
+    .down-bar:before {
+        width: 250px;
+        height: 100%;
+        top: 0;
+        left: 30px;
+        background-color: white;
+        transform: skewX(-45deg);
+    }
+    .down-bar:after {
+        width: 0px;
+        height: 100%;
+        top: 0;
+        right: 0px;
+        background-color: white;
+        transform: skewX(-45deg);
+        position: absolute;
+        z-index: 0;
+        display: none;
+    }
+
+    .logo {
+        margin: 0 50px;
+    }
+
+    .icon-menu {
+        margin: 0 auto;
+        padding-right: 20px;
+        display: block;
+        position: absolute;
+        z-index: 1;
+        right: 20px;
+    }
+
+    .logo > img{
+        width: 200px;
+    }
+    
+    .menu-bar {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        top: -40px;
+        left: -30px;
+        background-image: linear-gradient(to left, rgb(206, 107, 0), rgb(235, 153, 67));
+        display: none;
+    }
+
+    .menu-bar > ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 100px;
+        margin-top: 100px;
+    }
+    .menu-bar > ul > li {
+        display: block;
+    }
+    
+    .menu-bar > ul > li > a {
+        padding: 10px 0;
+        font-size: 24px;
+        letter-spacing: 2px;
+        color: white;
+        
+    }
+    
+    /*Classe open para funcionalidade do menu hamburguer*/
+    .open {
+        display: block;
+    }
+    /*Fim menu*/
+
+    /*Início Sobre*/
+    .sobre-cont > h2{
+        padding-bottom: 15px;
+        font-size: 30px;
+        
+    }
+    .sobre-cont > p {
+        font-size: 20px;
+        color: #393940;
+        font-weight: 400;
+    }
+    /*Fim Sobre*/
+
+    /*Serviços*/
+    .conteudo-servicos {
+        flex-direction: column;
+        
+    } 
+    #box1 {
+        margin-left: 0%;
+    }
+    
+    #box2 {
+        margin-right: 0%;
+    }
+    /*Fim Serviços*/
+
+    /*Início Especializações*/
+    .conf-espec {
+        width: 80vw;
+    }
+
+    .conf-espec > h2 {
+        font-size: 30px;
+    }
+
+    .espec > img#engre1 {
+        top: -180px;
+    }
+    
+    .espec > img#engre2 {
+        top: -120px;
+    }
+    /*Fim Especializações*/
+
+    /* Footer */
+    footer {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 200px;
+        gap: 30px;
+        row-gap: 50px;
+    }
+
+    .fot-logo {
+        padding: 0px;
+        top: 10px;
+        display: inline-block;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    .fot-logo > p {
+        font-size: 10px;
+        bottom: -15px;
+    }
+
+    .redes-sociais {
+        top: 10px;
+        display: inline-block;
+        margin-left: 40px;
+        
+    }
+
+    .redes-sociais > h3 {
+        font-size: 15px;
+        text-align: center;
+        margin-left: 50px;
+        margin-bottom: 10px;
+    }
+
+    .icon-gap {
+        gap: 10px;
+        margin-left: 50px;
+    }
+
+    .icon-rede {
+        font-size: 20px;
+    }
+
+    .desenvolvido {
+        width: 50%;
+        margin-top: 0px;
+        padding: 0px;
+        color: white;
+        font-size: 10px;
+        margin-left: 15px;
+        margin-bottom: 40px;
+
+    }
+}
 
 /* Small devices (landscape phones, 576px and up) */
-@media (max-width: 667px) { /*767.98*/
+@media (min-width: 500px) and (max-width: 667px) { /*767.98*/
 
     /*Top bar*/
     .up-bar > p {
@@ -543,17 +739,85 @@ footer {
     /*Fim da top bar*/
 
     /*Configuração geral menu*/
-    /*Configuração ajustes em branco menu*/
+
+    .down-bar:before {
+        width: 250px;
+        height: 100%;
+        top: 0;
+        left: 30px;
+        background-color: white;
+        transform: skewX(-45deg);
+    }
     .down-bar:after {
-        width: 0;
+        width: 0px;
         height: 100%;
         top: 0;
         right: 0px;
         background-color: white;
         transform: skewX(-45deg);
+        position: absolute;
+        z-index: 0;
         display: none;
     }
 
+    .logo {
+        margin: 0 50px;
+    }
+
+    .icon-menu {
+        margin: 0 auto;
+        padding-right: 30px;
+        display: block;
+        position: absolute;
+        z-index: 1;
+        right: 20px;
+    }
+
+    .logo > img{
+        width: 200px;
+    }
+    
+    .menu-bar {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        top: -40px;
+        left: -30px;
+        background-color: rgb(206, 107, 0);
+        display: none;
+    }
+
+    .menu-bar > ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 100px;
+        margin-top: 100px;
+    }
+    .menu-bar > ul > li {
+        display: block;
+    }
+    
+    .menu-bar > ul > li > a {
+        padding: 10px 0;
+        font-size: 24px;
+        letter-spacing: 2px;
+        color: white;
+        
+    }
+    
+
+ 
+
+    /*Classe open para funcionalidade do menu hamburguer*/
+    .open {
+        display: block;
+    }
+
+    /*Fim configuração geral menu*/
+
+    /*Configuração ajustes em branco menu*/
+    
     
     /*Configuração sobre engenharia*/
     .sobre-cont > h2{
@@ -591,13 +855,27 @@ footer {
 
     /*Fim especializações*/
 
+    /*Serviços*/
+    .conteudo-servicos {
+        flex-direction: column;
+        
+    } 
+    #box1 {
+        margin-left: 0%;
+    }
+    
+    #box2 {
+        margin-right: 0%;
+    }
+    /*Fim serviços*/
+
     /*Início Footer*/
 
     footer {
         flex-wrap: wrap;
         justify-content: flex-start;
         align-items: flex-start;
-        height: 100%;
+        height: 200px;
         gap: 30px;
         row-gap: 50px;
     }
@@ -639,12 +917,13 @@ footer {
     }
 
     .desenvolvido {
+        width: 50%;
         margin-top: 0px;
         padding: 0px;
         color: white;
         font-size: 10px;
         margin-left: 15px;
-        margin-bottom: 10px;
+        margin-bottom: 40px;
 
     }
 
@@ -655,7 +934,7 @@ footer {
 
 
 /* Medium devices (tablets, 768px and up)*/
-@media (max-width: 800px) {  
+@media (min-width: 668px) and (max-width: 800px) {  
     /*Configuração ajustes em branco menu*/
     .down-bar:before {
         width: 250px;
@@ -666,14 +945,15 @@ footer {
         transform: skewX(-45deg);
     }
     .down-bar:after {
-        width: 60px;
+        width: 0px;
         height: 100%;
         top: 0;
-        right: 33px;
+        right: 0px;
         background-color: white;
         transform: skewX(-45deg);
         position: absolute;
         z-index: 0;
+        display: none;
     }
 
     .logo {
@@ -699,6 +979,7 @@ footer {
         width: 100vw;
         height: 100vh;
         top: -40px;
+        left: -30px;
         background-color: rgb(206, 107, 0);
         display: none;
     }
@@ -743,8 +1024,19 @@ footer {
         font-weight: 400;
     }
 
+    /*Serviços*/
 
+    .conteudo-servicos {
+        flex-direction: column;
+        
+    } 
+    #box1 {
+        margin-left: 0%;
+    }
     
+    #box2 {
+        margin-right: 0%;
+    }
 
     /*Footer*/
     footer {
@@ -756,7 +1048,8 @@ footer {
     }
 
     .fot-logo {
-        top: 10px;
+        top: 60px;
+        left: 10px;
         display: inline-block;
         padding: 0 15px;
         box-sizing: border-box;
@@ -791,8 +1084,8 @@ footer {
     }
 
     .desenvolvido {
-        margin-top: 100px;
-        margin-bottom: 10px;
+        margin-top: 150px;
+        margin-bottom: 40px;
         margin-right: 40px;
         padding: 0px;
         color: white;
@@ -802,18 +1095,9 @@ footer {
     /*Fim footer*/
 }
 
-@media (max-width: 900px) {
-    .down-bar:after {
-        width: 40px;
-        height: 100%;
-        top: 0;
-        right: 10px;
-        background-color: white;
-        transform: skewX(-45deg);
-    }
-}
 
-@media (max-width: 1000px) {
+
+@media (min-width: 801px) and (max-width: 1000px) {
     /*Configuração ajustes em branco menu*/
     .down-bar:before {
         width: 250px;
@@ -841,12 +1125,13 @@ footer {
 
     .menu-bar > ul > li > a {
         padding: 0 20px;
-        font-size: 22px; 
+        font-size: 20px; 
     }
 
     /* Serviços */
     /*INÍCIO CONFIGURAÇÕES SERVIÇOS*/
     
+
     #box1 {
         margin-left: 10%;
     }
@@ -875,60 +1160,134 @@ footer {
 }
 
 
-@media (max-width: 499px) {
 
-    /*Up Bar*/
-    .up-bar > p {
-        padding: 0 5px;
-        font-size: 10px;
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 1001px) and (max-width: 1199.99px) { 
+    /*Início Menu*/
+    .down-bar:before {
+        width: 250px;
+        height: 100%;
+        top: 0;
+        left: 30px;
+        background-color: white;
+        transform: skewX(-45deg);
+    }
+    
+    .down-bar:after {
+        width: 80px;
+        height: 100%;
+        top: 0;
+        right: 80px;
+        background-color: white;
+        transform: skewX(-45deg);
+
     }
 
-    .up-bar > p > a > i {
-        font-size: 12px;
+    .logo {
+        margin: 0 50px;
     }
-    /* Footer */
-    .fot-logo > p {
-        font-size: 10px;
-        bottom: -10px;
+    .menu-bar > ul > li > a {
+        padding: 0 20px;
+        font-size: 18px; 
     }
+    /*Fim Menu*/
+    /*Início Serviços*/
+    #box1 {
+        margin-left: 15%;
+    }
+    
+    #box2 {
+        margin-right: 15%;
+    }
+    /*Fim serviços*/
 
-    .redes-sociais {
-        top: 10px;
-        display: inline-block;
-        margin-left: 50px;
-        
-    }
-
-    .redes-sociais > h3 {
-        font-size: 15px;
-        text-align: center;
-        margin-left: 50px;
-        margin-bottom: 10px;
-    }
-
-    .icon-gap {
-        gap: 10px;
-        margin-left: 50px;
-    }
-
-    .icon-rede {
-        font-size: 18px;
-    }
-
+    /*Início Footer*/
     .desenvolvido {
-        margin-top: 0px;
+        margin-top: 150px;
+        margin-bottom: 40px;
+        margin-right: 40px;
         padding: 0px;
         color: white;
-        font-size: 10px;
-        margin-left: 15px;
-        margin-bottom: 10px;
-
+        font-size: 15px;
+        
     }
+    /*Final Footer*/
+
+
 }
-/* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) and (max-width: 1199.98px) { }
 
 /* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {  }
+@media (min-width: 1200px) and (max-width: 1300px) { 
 
+    /*Início Menu*/
 
+    .down-bar:after {
+        width: 0px;
+        height: 100%;
+        top: 0;
+        right: 0px;
+        background-color: white;
+        transform: skewX(-45deg);
+        display: none;
+    }
+    .menu-bar {
+        margin-left: 70px;
+    }
+    .menu-bar > ul > li > a {
+        padding: 0 40px;
+        font-size: 22px;
+        letter-spacing: 2px;
+        color: white;
+        transition: 0.5s ease-out;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    /*Fim Menu*/
+
+    /*Início Serviços*/
+    #box1 {
+        margin-left: 20%;
+    }
+    
+    #box2 {
+        margin-right: 20%;
+    }
+    /*Fim Serviços*/
+ }
+
+ @media (min-width: 1301px) and (max-width: 1550px) {
+    /*Início Menu*/
+    .down-bar:after {
+        width: 70px;
+        height: 100%;
+        top: 0;
+        right: 70px;
+        background-color: white;
+        transform: skewX(-45deg);
+
+    }
+    .menu-bar {
+        margin-left: 60px;
+    }
+    .menu-bar > ul > li > a {
+        padding: 0 30px;
+        font-size: 22px;
+        letter-spacing: 2px;
+        color: white;
+        transition: 0.5s ease-out;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    /*Fim Menu*/
+    /*Início Serviços*/
+    #box1 {
+        margin-left: 20%;
+    }
+    
+    #box2 {
+        margin-right: 20%;
+    }
+    /*Fim Serviços*/
+
+ }
