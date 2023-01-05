@@ -197,25 +197,28 @@ main {
 
 .container .slide-container .slide .content .descritivo {
     position: absolute;
-    left: 100px;
-    bottom: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     flex: 1 1 500px;
-    background-color: white;
     padding: 10px;
     border-radius: 10px;
+    animation:contentDescritivo 0.9s linear .6s backwards;
+}
+
+@keyframes contentDescritivo {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%);
+    }
 }
 
 .container .slide-container .slide .content .descritivo h3 {
-    font-size: 40px;
+    font-size: 70px;
     font-weight: bold;
-    color: rgb(206, 107, 0);
+    color: white;
 }
 
-.container .slide-container .slide .content .descritivo p {
-    font-size: 25px;
-    font-weight: bold;
-    color: rgb(65, 66, 61);
-}
 
 .container .slide-container .slide .content .image {
     flex: 1 1 500px;
