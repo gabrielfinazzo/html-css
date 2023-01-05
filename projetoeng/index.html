@@ -10,39 +10,120 @@
 </head>
 <body>
     <header>
-        <div class="up-bar">
-            <p><a href=""><i class="fa-regular fa-envelope"></i> engenharia@artlaudosp.com.br</a></p>
-            <p><a href=""><i class="fa-brands fa-whatsapp"></i>Orçamento</a></p>
-            <p id="ajuste-margin"><a href=""><i class="fa-regular fa-clock"></i>Seg á Sex - 8h ás 18h</a></p>
-        </div>
-        <div class="down-bar">
-            <nav class="nav-bar">
-                <div class="conteudo-bar">
-                    <div class="logo">
-                        <picture>
-                            <source media="(max-width: 1200px)" srcset="imagens/logomenucel.png" type="image/png">
-                            <img src="imagens/logomenu.png" alt="Logo da empresa">
-                        </picture>
+        <div class="menu-fixo">
+            <div class="up-bar">
+                <p><a href=""><i class="fa-regular fa-envelope"></i> engenharia@artlaudosp.com.br</a></p>
+                <p><a href=""><i class="fa-brands fa-whatsapp"></i>Orçamento</a></p>
+                <p id="ajuste-margin"><a href=""><i class="fa-regular fa-clock"></i>Seg á Sex - 8h ás 18h</a></p>
+            </div>
+            <div class="down-bar">
+                <nav class="nav-bar">
+                    <div class="conteudo-bar">
+                        <div class="logo">
+                            <picture>
+                                <source media="(max-width: 1200px)" srcset="imagens/logomenucel.png" type="image/png">
+                                <img src="imagens/logomenu.png" alt="Logo da empresa">
+                            </picture>
+                        </div>
+                        <div class="menu-bar">
+                            <ul>
+                                <li><a href="#" class="active">Home</a></li>
+                                <li><a href="#">Sobre</a></li>
+                                <li><a href="#">Serviços</a></li>
+                                <li><a href="#">Contato</a></li>
+                            </ul>
+                        </div>
+                        <div class="icon-menu" >
+                            <i class="fa-solid fa-bars" onclick="menuShow()"></i>
+                        </div>
                     </div>
-                    <div class="menu-bar">
-                        <ul>
-                            <li><a href="#" class="active">Home</a></li>
-                            <li><a href="#">Sobre</a></li>
-                            <li><a href="#">Serviços</a></li>
-                            <li><a href="#">Contato</a></li>
-                        </ul>
-                    </div>
-                    <div class="icon-menu" >
-                        <i class="fa-solid fa-bars" onclick="menuShow()"></i>
-                    </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
+        <!--Início Carrossel-->
         <section class="carrossel">
+            <div class="container">
+                <div class="slide-container active">
+                    <div class="slide">
+                        <div class="content">
+                            <div class="descritivo">
+                                <h3>P.M.O.C</h3>
+                                <p>Plano de manutenção, operação e controle.</p>
+                            </div>
+                            <div class="image">
+                                <img src="imagens/Air-Conditioning-Repair.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="slide-container">
+                    <div class="slide">
+                        <div class="content">
+                            <div class="descritivo">
+                                <h3>AVCB e CLCB</h3>
+                                <p>Auto de vistoria do corpo de bombeiro. Certificado de licença do corpo de bombeiro.</p>
+                            </div>
+                            <div class="image">
+                                <img src="imagens/extinguishers.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide-container">
+                    <div class="slide">
+                        <div class="content">
+                            <div class="descritivo">
+                                <h3>Classificação de monta</h3>
+                                <p>Recuperação de sinistro de veículos envolvidos em acidente.</p>
+                            </div>
+                            <div class="image">
+                                <img src="imagens/NY-insurance-car-scaled.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide-container">
+                    <div class="slide">
+                        <div class="content">
+                            <div class="descritivo">
+                                <h3>NR 12</h3>
+                                <p>Segurança para maquinas.</p>
+                            </div>
+                            <div class="image">
+                                <img src="imagens/FoF-Factory-Floor-1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide-container">
+                    <div class="slide">
+                        <div class="content">
+                            <div class="descritivo">
+                                <h3>Responsável Técnico</h3>
+                                <p>Desmanches e desmontes.</p>
+                            </div>
+                            <div class="image">
+                                <img src="imagens/Car-Inspection-After-Accident-Repair-Why-Do-I-Need-to-Get-a-Post-–-Repair-Inspection--1200x900.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="prev" onclick="prev()"> < </div>
+                <div id="next" onclick="next()"> > </div>
+            </div>
+
+            
+            
+        </div>
         </section>
+        <!--Fim Carrossel-->
         <section class="sobre">
             <div class="descritivo-sobre">
                 <div class="sobre-cont">

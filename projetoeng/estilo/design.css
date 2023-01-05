@@ -19,6 +19,10 @@ body {
 header {
     width: 100vw;
     height: 150px;
+   
+}
+
+header > .menu-fixo {
     position: fixed;
     z-index: 1;
 }
@@ -164,10 +168,106 @@ main {
 
 /*Carrossel*/
 .carrossel {
+    width: 100vw;
+    height: 700px;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    box-sizing: border-box;
+}
+
+.container .slide-container .slide {
+    height: 700px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    box-sizing: border-box;
+}
+
+.container .slide-container .slide .content {
+    width: 100%;
+    flex: 1 1 350px;
+    position: relative;
+}
+
+
+
+.container .slide-container .slide .content .descritivo {
+    position: absolute;
+    left: 100px;
+    bottom: 100px;
+    flex: 1 1 500px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.container .slide-container .slide .content .descritivo h3 {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(206, 107, 0);
+}
+
+.container .slide-container .slide .content .descritivo p {
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(65, 66, 61);
+}
+
+.container .slide-container .slide .content .image {
+    flex: 1 1 500px;
+}
+
+.container .slide-container .slide .content .image img {
     width: 100%;
     height: 700px;
-    background-color: rgb(65, 66, 61);
 }
+
+
+
+.container .slide-container {
+    display: none;
+}
+
+.container .slide-container.active {
+    display: block;
+}
+
+.container #prev,
+.container #next {
+    position: absolute;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(65, 66, 61);
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: 0.5s;
+}
+
+.container #prev:hover,
+.container #next:hover {
+    background-color: rgb(101, 102, 98);
+    color: rgb(65, 66, 61);
+}
+
+.container #prev {
+    left: 20px;
+}
+
+.container #next {
+    right: 40px;
+}
+
+
 /*Fim carrossel*/
 
 /*Descritivo Engenharia*/
