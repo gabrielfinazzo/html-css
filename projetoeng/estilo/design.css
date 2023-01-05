@@ -1,5 +1,17 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'myriad'; src: url(../fontes/MyriadPro-Regular.otf)
+}
+
+@font-face {
+    font-family: 'bellgothic'; src: url(../fontes/BellGothicStd-Bold.otf)
+}
+
+@font-face {
+    font-family: 'geometr'; src: url(../fontes/Geometr212\ BkCn\ BT\ Book.ttf)
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;700&display=swap');
 
 * {
@@ -300,14 +312,22 @@ main {
     padding-bottom: 15px;
     font-size: 40px;
     color: rgb(65, 66, 61);
+    font-family: 'bellgothic';
 }
 
-.sobre-cont > h2 > span {
+.sobre-cont > h2 > span#laranja {
     color: rgb(206, 107, 0);
+    font-family: 'myriad';
+    font-weight: bold;
+}
+
+.sobre-cont > h2 > span#fonte {
+    font-family: geometr;
+    font-weight: 100;
 }
 
 .sobre-cont > p {
-    font-size: 22px;
+    font-size: 20px;
     color: #393940;
     font-weight: 400;
 } 
@@ -389,7 +409,7 @@ main {
 
 .box-servicos {
     width: 300px;
-    height: 300px;
+    height: 400px;
     border-radius: 10px;
     overflow: hidden;
     
@@ -461,7 +481,7 @@ main {
 
 .inform {
     width: 100%;
-    height: 100px;
+    height: 200px;
     background-color: #e0e0e6;
     display: flex;
     justify-content: left;
@@ -473,15 +493,19 @@ main {
 
 .inform > h4 {
     color: #393940;
-    font-size: 16px;
+    font-size: 24px;
+    text-align: start;
+    margin-bottom: 5px;
 }
 
 .inform > h4 > i > img {
-    width: 15px;
+    width: 20px;
+    display: inline-block;
 }
 
 .inform > p {
-    font-size: 15px;
+    font-size: 20px;
+    margin-bottom: 5px;
     color: rgb(65, 66, 61);
     font-weight: 400;
 }
@@ -639,10 +663,8 @@ footer {
 
     /*Título carrossel*/
     .container .slide-container .slide .content .descritivo h3 {
-        font-size: 45px;
-        font-weight: bold;
-        color: white;
-        text-align: justify;
+        font-size: 40px;
+        text-align: end;
     }
 
     body {
@@ -839,6 +861,11 @@ footer {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 500px) and (max-width: 667px) { /*767.98*/
+
+    .container .slide-container .slide .content .descritivo h3 {
+        font-size: 50px;
+        text-align: end;
+    }
 
     /*Top bar*/
     .up-bar > p {
@@ -1049,6 +1076,12 @@ footer {
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 668px) and (max-width: 800px) {  
+
+    .container .slide-container .slide .content .descritivo h3 {
+        font-size: 50px;
+        
+    }
+
     /*Configuração ajustes em branco menu*/
     .down-bar:before {
         width: 250px;
@@ -1212,6 +1245,10 @@ footer {
 
 
 @media (min-width: 801px) and (max-width: 1000px) {
+    .container .slide-container .slide .content .descritivo h3 {
+        font-size: 70px;
+    }
+
     /*Configuração ajustes em branco menu*/
     .down-bar:before {
         width: 250px;
@@ -1238,8 +1275,8 @@ footer {
     }
 
     .menu-bar > ul > li > a {
-        padding: 0 20px;
-        font-size: 20px; 
+        padding: 0 10px;
+        font-size: 17px; 
     }
 
     /* Serviços */
@@ -1277,6 +1314,11 @@ footer {
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 1001px) and (max-width: 1199.99px) { 
+
+    .container .slide-container .slide .content .descritivo h3 {
+        font-size: 70px;
+    }
+
     /*Início Menu*/
     .down-bar:before {
         width: 250px;
@@ -1345,11 +1387,11 @@ footer {
         display: none;
     }
     .menu-bar {
-        margin-left: 70px;
+        margin-left: 10%;
     }
     .menu-bar > ul > li > a {
-        padding: 0 40px;
-        font-size: 22px;
+        padding: 0 20px;
+        font-size: 20px;
         letter-spacing: 2px;
         color: white;
         transition: 0.5s ease-out;
@@ -1381,9 +1423,7 @@ footer {
         transform: skewX(-45deg);
 
     }
-    .menu-bar {
-        margin-left: 60px;
-    }
+   
     .menu-bar > ul > li > a {
         padding: 0 30px;
         font-size: 22px;
