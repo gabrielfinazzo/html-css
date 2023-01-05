@@ -243,9 +243,9 @@ main {
 .container #next {
     position: absolute;
     color: white;
+    opacity: 0.1;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(65, 66, 61, 0.123);
     height: 50px;
     width: 50px;
     line-height: 50px;
@@ -636,6 +636,14 @@ footer {
 
 
 @media (min-width: 300px) and (max-width: 499px) {
+
+    /*Título carrossel*/
+    .container .slide-container .slide .content .descritivo h3 {
+        font-size: 45px;
+        font-weight: bold;
+        color: white;
+        text-align: justify;
+    }
 
     body {
         overflow-x: hidden;
