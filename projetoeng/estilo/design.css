@@ -76,7 +76,7 @@ header {
     z-index: 1;
     position: absolute;
 }
-.down-bar:after {
+/*.down-bar:after {
     content: '';
     position: absolute;
     width: 75px;
@@ -86,7 +86,7 @@ header {
     background-color: white;
     transform: skewX(-45deg);
     z-index: 1;
-}
+}*/
 
 /*Final do fundo com efeito diagonal*/
 
@@ -233,6 +233,10 @@ main {
     color: rgb(65, 66, 61);
     font-weight: bold;
     cursor: pointer;
+}
+
+.saiba-mais > a {
+    color: rgb(65, 66, 61);
 }
 
 .saiba-mais > a > i {
@@ -559,15 +563,15 @@ footer {
         transform: skewX(-45deg);
     }
     .down-bar:after {
-        width: 0px;
+        width: 50px;
         height: 100%;
         top: 0;
-        right: 0px;
+        right: -30px;
         background-color: white;
         transform: skewX(-45deg);
         position: absolute;
         z-index: 0;
-        display: none;
+        
     }
 
     .logo {
