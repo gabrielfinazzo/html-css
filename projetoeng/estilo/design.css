@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: 'myriad'; src: url(../fontes/MyriadPro-Regular.otf)
+    font-family: 'cocogoose'; src: url(../fontes/COCOGOOSE_TRIAL.OTF)
 }
 
 @font-face {
@@ -319,7 +319,7 @@ main {
 .sobre-cont > h2 > span#laranja {
     color: rgb(206, 107, 0);
     font-weight: bold;
-    font-family: 'myriad';
+    font-family: 'cocogoose';
     
 }
 
@@ -364,10 +364,11 @@ main {
 .saiba-mais > a > i {
     opacity: 0;
     padding-left: 4px;
+    
 }
 
 .saiba-mais > a > i > img {
-    width: 25px;
+    width: 23px;
 }
 
 
