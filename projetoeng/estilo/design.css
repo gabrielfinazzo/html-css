@@ -318,12 +318,13 @@ main {
 
 .sobre-cont > h2 > span#laranja {
     color: rgb(206, 107, 0);
-    font-family: 'myriad';
     font-weight: bold;
+    font-family: 'myriad';
+    
 }
 
 .sobre-cont > h2 > span#fonte {
-    font-family: geometr;
+    font-family: 'geometr';
     font-weight: 100;
 }
 
@@ -409,19 +410,19 @@ main {
 }
 
 .box-servicos {
-    width: 300px;
-    height: 400px;
+    width: 350px;
+    height: 320px;
     border-radius: 10px;
     overflow: hidden;
     
 }
 
 #box1 {
-    margin-left: 30%;
+    margin-left: 25%;
 }
 
 #box2 {
-    margin-right: 30%;
+    margin-right: 25%;
 }
 
 .img {
@@ -464,6 +465,7 @@ main {
 }
 
 
+
 .img > #img2 {
     height: 200px;
 }
@@ -482,7 +484,7 @@ main {
 
 .inform {
     width: 100%;
-    height: 200px;
+    height: 120px;
     background-color: #e0e0e6;
     display: flex;
     justify-content: left;
@@ -494,18 +496,18 @@ main {
 
 .inform > h4 {
     color: #393940;
-    font-size: 24px;
+    font-size: 18px;
     text-align: start;
     margin-bottom: 5px;
 }
 
 .inform > h4 > i > img {
-    width: 20px;
+    width: 16px;
     display: inline-block;
 }
 
 .inform > p {
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 5px;
     color: rgb(65, 66, 61);
     font-weight: 400;
@@ -1367,11 +1369,11 @@ footer {
     
 
     #box1 {
-        margin-left: 10%;
+        margin-left: 5%;
     }
     
     #box2 {
-        margin-right: 10%;
+        margin-right: 5%;
     }
 
 
@@ -1432,11 +1434,11 @@ footer {
     /*Fim Menu*/
     /*Início Serviços*/
     #box1 {
-        margin-left: 15%;
+        margin-left: 10%;
     }
     
     #box2 {
-        margin-right: 15%;
+        margin-right: 10%;
     }
     /*Fim serviços*/
 
