@@ -229,6 +229,7 @@ main {
     font-size: 100px;
     font-weight: bold;
     color: white;
+    text-align: center;
 }
 
 
@@ -651,8 +652,90 @@ footer {
 /*Final footer*/
 
 
+/*Início página Sobre*/
+/*Identidade*/
+.box-identidade {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.identidade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Dosis', sans-serif;
+    padding: 0 14%;
+    row-gap: 40px;
+}
+
+.identidade > h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(206, 107, 0);
+}
+
+.identidade > p {
+    font-size: 20px;
+    color: rgb(65, 66, 61);
+}
+
+.identidade .box-list {
+    margin-left: 40px;
+}
+
+.identidade .box-list > ul > li {
+    list-style: disc;
+    padding: 10px 0;
+    font-size: 18px;
+    color: rgb(65, 66, 61);
+}
+
+/*Fim identidade*/
+/*Início objetivo*/
+    .objetivos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 400px;
+        background-color: #e0e0e6;
+    }
+
+    .objetivos .missao {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 50%;
+    }
+
+    .objetivos .visao {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 50%;
+    }
+
+    .objetivos h3 {
+        
+    }
+
+    .objetivos img {
+        width: 40px;
+        height: 40px;
+    }
+
+/*Fim objetivo*/
 
 
+
+
+
+/*Fim identidade*/
+/*Fim página sobre*/
 
 
 /*Media Query*/
