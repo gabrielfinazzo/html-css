@@ -766,13 +766,155 @@ footer {
     }
 
 /*Fim objetivo*/
-
-
-
-
-
 /*Fim identidade*/
 /*Fim página sobre*/
+
+
+
+/*Início página serviços*/
+/*Início título*/
+    .titulo-pagina {
+        height: 130px;
+        width: 100vw;
+        box-sizing: border-box;
+        background-color: rgb(236, 234, 234);
+    }
+
+    .titulo-pagina h1 {
+        text-align: center;
+        padding: 20px 0;
+        font-size: 40px;
+        color: rgb(206, 107, 0);
+    }
+/*Fim título*/
+
+/*Início Expositor*/
+    .box-imagem {
+        position: relative;
+        width: 100vw;
+        height: 700px;
+        background-image: url(../imagens/Air-Conditioning-Repair.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .box-selo {
+        position: absolute;
+        bottom: -67px;
+        right: 40px;
+    }
+
+/*Fim expositor*/
+/*Início descrição do serviço*/
+    .serv-descritivo {
+        width: 100vw;
+        height: 100%;
+        background-color: rgb(236, 234, 234);
+        display: flex;
+        justify-content: center;
+    }
+
+    .opcoes-menu {
+        width: 20%;
+        height: 100%;
+    }
+
+    .menu-lateral {
+        margin-top: 40px;
+        margin-left: 40px;
+        
+    }
+
+    .menu-lateral > ul > li {
+        padding: 10px 0px;
+    }
+
+    .menu-lateral > ul > li > a {
+        font-size: 20px;
+        color: rgb(65, 66, 61);
+        padding: 5px 0;
+        border: 1px solid black;
+        border-right: 0px;
+    }
+
+    .menu-lateral > ul > li > a > span {
+        height: 100%;
+        width: 100%;
+        border: 1px solid black;
+        padding: 5px;
+    }
+
+    .menu-lateral > ul > li > a > img {
+        width: 20px;
+        padding-left: 5px;
+        opacity: 0;
+    }
+
+    .menu-lateral > ul > li > a:hover > img {
+        opacity: 1;
+    }
+
+    #check-active{
+        opacity: 1;
+    }
+
+    .serv-cont {
+        width: 80%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+
+    .box-cont {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-left: 40px;
+        padding-right: 20%;
+        box-sizing: border-box;
+    }
+
+    .box-cont h3 {
+        font-size: 24px;
+        color: rgb(65, 66, 61);
+    }
+
+    .box-cont p {
+        font-size: 20px;
+        color: rgb(65, 66, 61);
+    }
+
+    .par-padding {
+        padding-bottom: 10px;
+    }
+/*Fim descrição do serviço*/
+
+/*Início Lei*/
+    .lei {
+        width: 100vw;
+        height: 100%;
+        margin: 40px 0;
+        text-align: start;
+    }
+
+    .box-lei {
+        margin-left: 10%;
+        
+    }
+
+    .box-lei > p {
+        font-size: 20px;
+        color: rgb(65, 66, 61);
+        width: 100%;
+    }
+
+    #p-padding {
+        padding-bottom: 20px;
+    }
+/*Fim Lei*/
+
+/*Fim página serviços*/
+
+
 
 
 /*Media Query*/
@@ -999,6 +1141,65 @@ footer {
 
     /*Fim identidade*/
     /*Fim página sobre*/
+
+    /*Página Serviços*/
+    /*Início Título*/
+    .titulo-pagina h1 {
+        font-size: 26px;
+    }
+    /*Fim título*/
+    /*Início descrição do serviço*/
+    .opcoes-menu {
+        width: 100%;
+        
+    }
+
+    .serv-cont {
+        width: 100%;
+    }
+
+
+    .menu-lateral > ul > li > a {
+        font-size: 16px;
+    }
+
+    .menu-lateral > ul > li > a > img {
+        width: 16px;
+        padding-left: 5px;
+        opacity: 0;
+    }
+
+    .box-cont {
+        padding-right: 10%;
+        
+    }
+
+    .box-cont h3 {
+        font-size: 20px;
+        color: rgb(65, 66, 61);
+    }
+
+    .box-cont p {
+        font-size: 16px;
+        color: rgb(65, 66, 61);
+    }
+
+    .box-lei {
+        margin-left: 0px;
+        box-sizing: border-box;
+        
+    }
+    .box-lei > p {
+        font-size: 16px;
+        box-sizing: border-box;
+        padding: 0 12px;
+    }
+
+    .serv-descritivo {
+        flex-direction: column;
+    }
+    /*Fim descrição do serviço*/
+    /*Fim página serviços*/
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -1226,6 +1427,61 @@ footer {
     /*Fim identidade*/
     /*Fim página sobre*/
 
+    /*Página Serviços*/
+    /*Início Título*/
+    .titulo-pagina h1 {
+        font-size: 28px;
+    }
+    /*Fim título*/
+    /*Início descrição do serviço*/
+    .opcoes-menu {
+        width: 100%;
+        
+    }
+
+    .serv-cont {
+        width: 100%;
+    }
+
+
+    .menu-lateral > ul > li > a {
+        font-size: 16px;
+    }
+
+    .menu-lateral > ul > li > a > img {
+        width: 16px;
+        padding-left: 5px;
+        opacity: 0;
+    }
+
+    .box-cont {
+        padding-right: 10%;
+    }
+
+    .box-cont h3 {
+        font-size: 20px;
+        color: rgb(65, 66, 61);
+    }
+
+    .box-cont p {
+        font-size: 16px;
+        color: rgb(65, 66, 61);
+    }
+
+    .box-lei {
+        margin-left: 0;   
+    }
+    .box-lei > p {
+        font-size: 16px;
+        box-sizing: border-box;
+        padding: 0 20px;
+    }
+
+    .serv-descritivo {
+        flex-direction: column;
+    }
+    /*Fim descrição do serviço*/
+    /*Fim página serviços*/
 }
 
 
@@ -1414,6 +1670,62 @@ footer {
 
     /*Fim identidade*/
     /*Fim página sobre*/
+
+    /*Página Serviços*/
+    /*Início Título*/
+    .titulo-pagina h1 {
+        font-size: 30px;
+    }
+    /*Fim título*/
+    /*Início descrição do serviço*/
+    .opcoes-menu {
+        width: 100%;
+        
+    }
+
+    .serv-cont {
+        width: 100%;
+    }
+
+
+    .menu-lateral > ul > li > a {
+        font-size: 16px;
+    }
+
+    .menu-lateral > ul > li > a > img {
+        width: 16px;
+        padding-left: 5px;
+        opacity: 0;
+    }
+
+    .box-cont {
+        padding-right: 10%;
+    }
+
+    .box-cont h3 {
+        font-size: 20px;
+        color: rgb(65, 66, 61);
+    }
+
+    .box-cont p {
+        font-size: 16px;
+        color: rgb(65, 66, 61);
+    }
+
+    .box-lei {
+        margin-left: 0;   
+    }
+    .box-lei > p {
+        font-size: 16px;
+        box-sizing: border-box;
+        padding: 0 20px;
+    }
+
+    .serv-descritivo {
+        flex-direction: column;
+    }
+    /*Fim descrição do serviço*/
+    /*Fim página serviços*/
 }
 
 
@@ -1499,6 +1811,52 @@ footer {
     /*Fim identidade*/
     /*Fim página sobre*/
 
+    /*Página Serviços*/
+    /*Início Título*/
+    .titulo-pagina h1 {
+        font-size: 30px;
+    }
+    /*Fim título*/
+    /*Início descrição do serviço*/
+    .opcoes-menu {
+        width: 33%;
+        
+    }
+
+    .serv-cont {
+        width: 67%;
+    }
+
+    .menu-lateral > ul > li > a {
+        font-size: 16px;
+    }
+
+    .menu-lateral > ul > li > a > img {
+        width: 16px;
+        padding-left: 5px;
+        opacity: 0;
+    }
+
+    .box-cont h3 {
+        font-size: 20px;
+        color: rgb(65, 66, 61);
+    }
+
+    .box-cont p {
+        font-size: 16px;
+        color: rgb(65, 66, 61);
+    }
+
+    .box-lei {
+        margin-left: 7%;   
+    }
+    .box-lei > p {
+        font-size: 16px;
+        box-sizing: border-box;
+        padding: 0 20px;
+    }
+    /*Fim descrição do serviço*/
+    /*Fim página serviços*/
     
 }
 
@@ -1561,6 +1919,23 @@ footer {
     }
     /*Final Footer*/
 
+    /*Página Serviços*/
+    /*Início Título*/
+    .titulo-pagina h1 {
+        font-size: 35px;
+    }
+    /*Fim título*/
+    /*Início descrição do serviço*/
+    .opcoes-menu {
+        width: 35%;
+        
+    }
+
+    .serv-cont {
+        width: 60%;
+    }
+    /*Fim descrição do serviço*/
+    /*Fim página serviços*/
 
 }
 
@@ -1602,6 +1977,25 @@ footer {
         margin-right: 20%;
     }
     /*Fim Serviços*/
+
+    /*Página Serviços*/
+
+    /*Início Título*/
+    .titulo-pagina h1 {
+        font-size: 35px;
+    }
+    /*Fim título*/
+    /*Início descrição do serviço*/
+    .opcoes-menu {
+        width: 30%;
+        
+    }
+
+    .serv-cont {
+        width: 70%;
+    }
+    /*Fim descrição do serviço*/
+    /*Fim página serviços*/
  }
 
  @media (min-width: 1301px) and (max-width: 1550px) {
@@ -1637,10 +2031,23 @@ footer {
     /*Fim Serviços*/
 
 
-    /*Página Sobre*/
-    /*Identidade*/
-
-    .box-identidade {
+    /*Página Serviços*/
+    /*Início descrição do serviço*/
+    .opcoes-menu {
+        width: 30%;
         
     }
+
+    .serv-cont {
+        width: 70%;
+    }
+
+    /*Fim descrição do serviço*/
+    /*Fim página serviços*/
+
+
+
+    
+
+
  }
