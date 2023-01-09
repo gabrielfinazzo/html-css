@@ -673,6 +673,7 @@ footer {
     padding: 40px 0;
     display: flex;
     justify-content: center;
+    background-color: rgb(236, 234, 234);
 }
 
 .descritivo {
@@ -704,7 +705,7 @@ footer {
 .descritivo .box-list > ul > li {
     list-style: disc;
     padding: 10px 0;
-    font-size: 18px;
+    font-size: 20px;
     color: rgb(65, 66, 61);
 }
 
@@ -736,7 +737,14 @@ footer {
     }
 
     .cont-missoes > p {
-        margin-left: 50px;
+        margin-left: 80px;
+        font-size: 20px;
+        color: rgb(65, 66, 61);
+    }
+
+    .cont-missoes h3 {
+        font-size: 24px;
+        color: rgb(65, 66, 61);
     }
 
     .titulo-icone {
@@ -745,10 +753,16 @@ footer {
         align-items: center;
     }
 
-    .objetivos img {
+    .objetivos #alvo {
+        width: 45px;
+        padding-right: 35px;
+    }
+
+    .objetivos #binoculos {
         width: 40px;
-        height: 40px;
-        padding-right: 10px;
+        height: 30px;
+        padding-right: 40px;
+        
     }
 
 /*Fim objetivo*/
