@@ -875,6 +875,7 @@ footer {
 
     .box-cont h3 {
         font-size: 24px;
+        padding-bottom: 10px;
         color: rgb(65, 66, 61);
     }
 
@@ -884,7 +885,7 @@ footer {
     }
 
     .par-padding {
-        padding-bottom: 10px;
+        padding-bottom: 20px;
     }
 /*Fim descrição do serviço*/
 
