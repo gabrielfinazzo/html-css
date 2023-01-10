@@ -778,22 +778,55 @@ footer {
 /*Início página serviços*/
 /*Início título*/
     .titulo-pagina {
-        height: 130px;
+        height: 160px;
         width: 100vw;
         box-sizing: border-box;
         background-color: #e0e0e6;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .titulo-pagina h1 {
         text-align: center;
-        padding: 20px 0;
         font-size: 40px;
+        padding: 10px 0;
         color: rgb(65, 66, 61);
     }
+
+
+
+
+    .titulo1 {
+        float: left;
+        text-align: center;
+        width: 50%;
+        height: 100%;
+        background-color: rgb(65, 66, 61);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .titulo1 > h1 {
+        color: white;
+    }
+
+    .titulo2 {
+        float: right;
+        text-align: center;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
 /*Fim título*/
 
 /*Início Expositor*/
-    .box-imagem {
+    #box-imagem1 {
         position: relative;
         width: 100vw;
         height: 700px;
@@ -803,10 +836,59 @@ footer {
         background-position: center;
     }
 
+    #box-imagem2 {
+        position: relative;
+        width: 100vw;
+        height: 700px;
+        background-image: url(../imagens/extinguishers.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #box-imagem3 {
+        position: relative;
+        width: 100vw;
+        height: 700px;
+        background-image: url(../imagens/monta.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #box-imagem4 {
+        position: relative;
+        width: 100vw;
+        height: 700px;
+        background-image: url(../imagens/nr12.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #box-imagem5 {
+        position: relative;
+        width: 100vw;
+        height: 700px;
+        background-image: url(../imagens/desmanche.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+
     .box-selo {
         position: absolute;
-        bottom: -95px;
+        bottom: -90px;
         right: 70px;
+        z-index: 1;
+    }
+
+    .box-selo2 {
+        position: absolute;
+        bottom: -67px;
+        right: 70px;
+        z-index: 1;
     }
 
 /*Fim expositor*/
@@ -1953,14 +2035,16 @@ footer {
     }
 
     .box-lei {
-        margin-left: 30.5%;
+        box-sizing: border-box;
+        padding-left: 30.5%;
+
         width: 100%;
  
     }
     .box-lei > p {
         font-size: 16px;
-        box-sizing: border-box;
-        width: 62%;
+        width: 90%;
+        
     }
 
     .box-selo {
@@ -2060,13 +2144,14 @@ footer {
     }
 
     .box-lei {
-        margin-left: 28.9%;
+        box-sizing: border-box;
+        padding-left: 28.9%;
         margin-right: 0px;
         width: 100%;
     }
 
     .box-lei > p {
-        width: 68%;
+        width: 90%;
     }
     /*Fim descrição do serviço*/
     /*Fim página serviços*/
@@ -2146,13 +2231,14 @@ footer {
     }
 
     .box-lei {
-        margin-left: 26.8%;
+        box-sizing: border-box;
+        padding-left: 26.8%;
         margin-right: 0px;
         width: 100%;
     }
 
     .box-lei > p {
-        width: 70%;
+        width: 90%;
     }
     /*Fim descrição do serviço*/
     /*Fim página serviços*/
@@ -2215,13 +2301,14 @@ footer {
     }
 
     .box-lei {
-        margin-left: 26.5%;
+        box-sizing: border-box;
+        padding-left: 6%;
         margin-right: 0px;
-        width: 100%;
+        width: 80%;
     }
 
     .box-lei > p {
-        width: 65%;
+        width: 100%;
     }
     /*Fim descrição do serviço*/
     /*Fim página serviços*/
