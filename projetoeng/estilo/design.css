@@ -305,7 +305,7 @@ main {
 }
 
 .sobre-cont {
-    width: 50vw;
+    width: 60vw;
     margin: 0 auto;
 }
 
@@ -332,12 +332,14 @@ main {
     font-size: 20px;
     color: #393940;
     font-weight: 400;
+    width: 82%;
+    text-align: justify;
 } 
 
 
 .caixa-sm {
     display: block;
-    width: 50vw;
+    width: 40vw;
     margin: 0 auto;
     margin-top: 15px;
 }
@@ -528,7 +530,7 @@ main {
 }
 
 .conf-espec {
-    width: 50%;
+    width: 65%;
 }
 
 .conf-espec > h2 {
@@ -576,6 +578,8 @@ main {
 
 .espec-all > p {
     font-size: 20px;
+    text-align: justify;
+    width: 80%;
 }
 
 /*Fim especializações*/
@@ -777,14 +781,14 @@ footer {
         height: 130px;
         width: 100vw;
         box-sizing: border-box;
-        background-color: rgb(236, 234, 234);
+        background-color: #e0e0e6;
     }
 
     .titulo-pagina h1 {
         text-align: center;
         padding: 20px 0;
         font-size: 40px;
-        color: rgb(206, 107, 0);
+        color: rgb(65, 66, 61);
     }
 /*Fim título*/
 
@@ -801,8 +805,8 @@ footer {
 
     .box-selo {
         position: absolute;
-        bottom: -67px;
-        right: 40px;
+        bottom: -95px;
+        right: 70px;
     }
 
 /*Fim expositor*/
@@ -816,7 +820,7 @@ footer {
     }
 
     .opcoes-menu {
-        width: 20%;
+        width: 15%;
         height: 100%;
     }
 
@@ -828,6 +832,7 @@ footer {
 
     .menu-lateral > ul > li {
         padding: 10px 0px;
+        
     }
 
     .menu-lateral > ul > li > a {
@@ -835,20 +840,21 @@ footer {
         color: rgb(65, 66, 61);
         padding: 5px 0;
         border: 1px solid black;
-        border-right: 0px;
+        display: block;
+        width: 250px;
     }
 
     .menu-lateral > ul > li > a > span {
         height: 100%;
-        width: 100%;
-        border: 1px solid black;
-        padding: 5px;
+        border-left: 1px solid black;
+        padding: 5.5px;
     }
 
     .menu-lateral > ul > li > a > img {
         width: 20px;
         padding-left: 5px;
         opacity: 0;
+        
     }
 
     .menu-lateral > ul > li > a:hover > img {
@@ -860,9 +866,10 @@ footer {
     }
 
     .serv-cont {
-        width: 80%;
+        width: 85%;
         height: 100%;
         box-sizing: border-box;
+        margin-left: 40px;
     }
 
     .box-cont {
@@ -880,6 +887,7 @@ footer {
     }
 
     .box-cont p {
+        width: 84%;
         font-size: 20px;
         color: rgb(65, 66, 61);
     }
@@ -892,20 +900,20 @@ footer {
 /*Início Lei*/
     .lei {
         width: 100vw;
-        height: 100%;
-        margin: 40px 0;
-        text-align: start;
+        background-color: #e0e0e6;
     }
 
     .box-lei {
-        margin-left: 10%;
+        width: 61.5%;
+        margin: auto;
+        padding: 40px 0;
         
     }
 
     .box-lei > p {
         font-size: 20px;
         color: rgb(65, 66, 61);
-        width: 100%;
+        width: 90%;
     }
 
     #p-padding {
@@ -1020,6 +1028,11 @@ footer {
     /*Fim menu*/
 
     /*Início Sobre*/
+
+    .sobre-cont {
+        width: 100vw;
+        padding: 0 20px;
+    }
     .sobre-cont > h2{
         padding-bottom: 15px;
         font-size: 30px;
@@ -1029,6 +1042,16 @@ footer {
         font-size: 20px;
         color: #393940;
         font-weight: 400;
+        width: 90%;
+    }
+
+    .caixa-sm {
+        width: 100vw;
+        
+    }
+
+    .saiba-mais {
+        margin-right: 20px;
     }
     /*Fim Sobre*/
 
@@ -1049,6 +1072,11 @@ footer {
     /*Início Especializações*/
     .conf-espec {
         width: 80vw;
+    }
+
+    .espec-all > p {
+        width: 95%;
+        text-align: start;
     }
 
     .conf-espec > h2 {
@@ -1126,6 +1154,10 @@ footer {
     .sobre-cont2 {
         width: 80%;
     }
+
+    .cont-missoes {
+        width: 80%;
+    }
     /*Fim sobre*/
 
     /*Identidade*/
@@ -1157,6 +1189,7 @@ footer {
 
     .serv-cont {
         width: 100%;
+        margin-left: 0px;
     }
 
 
@@ -1183,21 +1216,31 @@ footer {
     .box-cont p {
         font-size: 16px;
         color: rgb(65, 66, 61);
+        width: 95%;
     }
 
+
     .box-lei {
-        margin-left: 0px;
+        margin-right: 0px;
+        width: 90%;
         box-sizing: border-box;
+        margin-left: 0;
         
     }
     .box-lei > p {
         font-size: 16px;
         box-sizing: border-box;
-        padding: 0 12px;
+        margin-left: 40px;
+        
     }
 
     .serv-descritivo {
         flex-direction: column;
+    }
+
+    .box-selo {
+        right: 20px;
+        bottom: 20px;
     }
     /*Fim descrição do serviço*/
     /*Fim página serviços*/
@@ -1305,6 +1348,15 @@ footer {
     
     
     /*Configuração sobre engenharia*/
+    .sobre-cont {
+        width: 90vw;
+        padding: 0 20px;
+    }
+
+    .caixa-sm {
+        width: 60vw;
+    }
+    
     .sobre-cont > h2{
         padding-bottom: 15px;
         font-size: 30px;
@@ -1314,6 +1366,16 @@ footer {
         font-size: 20px;
         color: #393940;
         font-weight: 400;
+        width: 90%;
+    }
+
+    .caixa-sm {
+        width: 82vw;
+        
+    }
+
+    .saiba-mais {
+        margin-right: 20px;
     }
 
 
@@ -1336,6 +1398,11 @@ footer {
     
     .espec > img#engre2 {
         top: -70px;
+    }
+
+    .espec-all > p {
+        width: 95%;
+        text-align: start;
     }
 
     /*Fim especializações*/
@@ -1442,6 +1509,7 @@ footer {
 
     .serv-cont {
         width: 100%;
+        margin-left: 0;
     }
 
 
@@ -1467,19 +1535,26 @@ footer {
     .box-cont p {
         font-size: 16px;
         color: rgb(65, 66, 61);
+        width: 95%;
     }
 
     .box-lei {
         margin-left: 0;   
+        width: 90%;
     }
     .box-lei > p {
         font-size: 16px;
         box-sizing: border-box;
-        padding: 0 20px;
+        margin-left: 40px;
     }
 
     .serv-descritivo {
         flex-direction: column;
+    }
+
+    .box-selo {
+        right: 20px;
+        bottom: -50px;
     }
     /*Fim descrição do serviço*/
     /*Fim página serviços*/
@@ -1575,6 +1650,7 @@ footer {
 
     /*Fim configuração geral menu*/
     /*Configuração sobre engenharia*/
+    
     .sobre-cont > h2{
         padding-bottom: 15px;
         font-size: 30px;
@@ -1584,7 +1660,14 @@ footer {
         font-size: 20px;
         color: #393940;
         font-weight: 400;
+        width: 100%;
     }
+    .caixa-sm {
+        width: 65%;
+        
+    }
+
+    
 
     /*Serviços*/
 
@@ -1599,6 +1682,14 @@ footer {
     #box2 {
         margin-right: 0%;
     }
+
+    /*Especializações*/
+    .espec-all > p {
+        width: 100%;
+        text-align: start;
+    }
+
+    /*Fim especializações*/
 
     /*Footer*/
     footer {
@@ -1686,6 +1777,7 @@ footer {
 
     .serv-cont {
         width: 100%;
+        margin-left: 0;
     }
 
 
@@ -1711,19 +1803,25 @@ footer {
     .box-cont p {
         font-size: 16px;
         color: rgb(65, 66, 61);
+        width: 95%;
     }
 
     .box-lei {
-        margin-left: 0;   
+        margin-left: 40px;
+        width: 90%;   
     }
     .box-lei > p {
         font-size: 16px;
         box-sizing: border-box;
-        padding: 0 20px;
     }
 
     .serv-descritivo {
         flex-direction: column;
+    }
+
+    .box-selo {
+        right: 20px;
+        bottom: -50px;
     }
     /*Fim descrição do serviço*/
     /*Fim página serviços*/
@@ -1820,22 +1918,27 @@ footer {
     /*Fim título*/
     /*Início descrição do serviço*/
     .opcoes-menu {
-        width: 33%;
+        width: 22%;
         
     }
 
     .serv-cont {
-        width: 67%;
+        width: 78%;
     }
 
     .menu-lateral > ul > li > a {
         font-size: 16px;
+        width: 210px;
     }
 
     .menu-lateral > ul > li > a > img {
         width: 16px;
         padding-left: 5px;
         opacity: 0;
+    }
+
+    .box-cont {
+        padding-right: 60px;
     }
 
     .box-cont h3 {
@@ -1846,15 +1949,23 @@ footer {
     .box-cont p {
         font-size: 16px;
         color: rgb(65, 66, 61);
+        width: 100%;
     }
 
     .box-lei {
-        margin-left: 7%;   
+        margin-left: 30.5%;
+        width: 100%;
+ 
     }
     .box-lei > p {
         font-size: 16px;
         box-sizing: border-box;
-        padding: 0 20px;
+        width: 62%;
+    }
+
+    .box-selo {
+        right: 20px;
+        bottom: -50px;
     }
     /*Fim descrição do serviço*/
     /*Fim página serviços*/
@@ -1928,12 +2039,34 @@ footer {
     /*Fim título*/
     /*Início descrição do serviço*/
     .opcoes-menu {
-        width: 35%;
+        width: 22%;
         
     }
 
     .serv-cont {
-        width: 60%;
+        width: 78%;
+    }
+
+    .box-cont {
+        padding-right: 40px;
+    }
+    .box-cont > p {
+        width: 100%;
+    }
+
+    .box-selo {
+        right: 20px;
+        bottom: -70px;
+    }
+
+    .box-lei {
+        margin-left: 28.9%;
+        margin-right: 0px;
+        width: 100%;
+    }
+
+    .box-lei > p {
+        width: 68%;
     }
     /*Fim descrição do serviço*/
     /*Fim página serviços*/
@@ -1988,11 +2121,37 @@ footer {
     /*Fim título*/
     /*Início descrição do serviço*/
     .opcoes-menu {
-        width: 30%;
+        width: 20%;
         
     }
 
     .serv-cont {
+        width: 80%;
+    }
+
+    .box-selo {
+        right: 40px;
+    }
+
+    .box-cont {
+        padding-right: 40px;
+    }
+    .box-cont > p {
+        width: 100%;
+    }
+
+    .box-selo {
+        right: 20px;
+        bottom: -70px;
+    }
+
+    .box-lei {
+        margin-left: 26.8%;
+        margin-right: 0px;
+        width: 100%;
+    }
+
+    .box-lei > p {
         width: 70%;
     }
     /*Fim descrição do serviço*/
@@ -2035,14 +2194,35 @@ footer {
     /*Página Serviços*/
     /*Início descrição do serviço*/
     .opcoes-menu {
-        width: 30%;
+        width: 20%;
         
     }
 
     .serv-cont {
-        width: 70%;
+        width: 80%;
     }
 
+    .box-cont {
+        padding-right: 40px;
+    }
+    .box-cont > p {
+        width: 95%;
+    }
+
+    .box-selo {
+        right: 20px;
+        bottom: -70px;
+    }
+
+    .box-lei {
+        margin-left: 26.5%;
+        margin-right: 0px;
+        width: 100%;
+    }
+
+    .box-lei > p {
+        width: 65%;
+    }
     /*Fim descrição do serviço*/
     /*Fim página serviços*/
 
