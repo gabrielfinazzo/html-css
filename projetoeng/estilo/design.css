@@ -42,7 +42,7 @@ header > .menu-fixo {
 
 /*Barra superior*/
 .up-bar {
-    width: 100%;
+    width: 100vw;
     height: 40px;
     background-color: rgb(65, 66, 61);
     display: flex;
@@ -75,7 +75,7 @@ header > .menu-fixo {
 /*Configuração fundo com efeito diagonal*/
 .down-bar {
     height: 110px;
-    width: 100%;
+    width: 100vw;
     background-image: linear-gradient(to left, rgb(206, 107, 0), rgb(235, 153, 67));
     position: relative;
 }
@@ -1064,8 +1064,8 @@ footer {
 
     /*Up Bar*/
     .up-bar > p {
-        padding: 0 5px;
-        font-size: 10px;
+        padding: 0 2px;
+        font-size: 9px;
     }
 
     .up-bar > p > a > i {
@@ -1150,6 +1150,7 @@ footer {
     /*Início Sobre*/
 
     .sobre-cont {
+        box-sizing: border-box;
         width: 100vw;
         padding: 0 20px;
     }
