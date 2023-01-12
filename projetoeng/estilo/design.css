@@ -238,7 +238,7 @@ main {
 }
 
 .container .slide-container .slide .content .image img {
-    width: 100%;
+    min-width: 100%;
     height: 700px;
 }
 
@@ -824,6 +824,7 @@ footer {
         align-items: center;
         justify-content: center;
     }
+
 
 /*Fim título*/
 
