@@ -58,12 +58,12 @@
                 <h2>Fale conosco:</h2>
                 <form action="https://formsubmit.co/gabrielfinazzo@gmail.com" method="post">
                     <div class="form-items">
-                        <label for="nome">Nome:</label>
+                        <label for="nome">Nome:</label> 
                         <input type="text" name="name" id="nome" required>
                     </div>
                     <div class="form-items">
-                        <label for="itel">Fone:</label>
-                        <input type="tel" name="tel" id="itel" required placeholder="(xx) x xxxx-xxxx">
+                        <label for="itel">Fone:</label> 
+                        <input type="tel" name="tel" id="itel" onkeyup="handlePhone(event)" required>
                     </div>
                     <div class="form-items">
                         <label for="iemail">E-mail:</label>

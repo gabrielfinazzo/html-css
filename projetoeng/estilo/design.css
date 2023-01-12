@@ -1065,11 +1065,11 @@ footer {
 
     .form-items {
         display: inline-block;
-        padding: 0 10px;
-        padding-bottom: 20px; 
+        padding-bottom: 20px;
     }
 
     .form-items > input {
+        box-sizing: border-box;
         width: 100%;
         height: 25px;
         border-radius: 7px;
@@ -1084,7 +1084,6 @@ footer {
 
     .form-mensage {
         box-sizing: border-box;
-        padding: 0 10px;
     }
 
     .form-mensage > textarea {
