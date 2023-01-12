@@ -863,6 +863,7 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
+        clip-path: polygon(0 0, 100% 0, 88% 100%, 0% 100%);
     }
 
     .titulo1 > h1 {
