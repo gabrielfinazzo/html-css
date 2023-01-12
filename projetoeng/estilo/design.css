@@ -234,6 +234,7 @@ main {
 
 .container .slide-container .slide .content .image {
     flex: 1 1 500px;
+    
 }
 
 .container .slide-container .slide .content .image img {

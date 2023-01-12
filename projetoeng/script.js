@@ -42,7 +42,7 @@ function prev() {
 }
 
 //autoplay carrossel
-setInterval(next, 7000);
+setInterval(next, 100000);
 
 
 
