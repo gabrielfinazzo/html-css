@@ -47,6 +47,7 @@
         </section>
         <section class="box-contatos">
             <div class="info-empresa">
+                <h2>Informações:</h2>
                 <p>Telefone: <br> (XX) XXXX - XXXX</p>
                 <p>Whatsapp: <br>(XX) X XXXX - XXXX</p>
                 <p>E-mail: <br><a href="#">Engenharia@artlaudosp.com.br</a></p>
@@ -54,7 +55,33 @@
                 <p>Horário de funcionamento: <br> segunda á sexta das 08:00 ás 18:00</p>
             </div>
             <div class="info-cliente">
-                Em criação
+                <h2>Fale conosco:</h2>
+                <form action="https://formsubmit.co/gabrielfinazzo@gmail.com" method="post">
+                    <div class="form-items">
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="name" id="nome" required>
+                    </div>
+                    <div class="form-items">
+                        <label for="itel">Fone:</label>
+                        <input type="tel" name="tel" id="itel" required placeholder="(xx) x xxxx-xxxx">
+                    </div>
+                    <div class="form-items">
+                        <label for="iemail">E-mail:</label>
+                        <input type="email" name="email" id="iemail" required>
+                    </div>
+                    <div class="form-mensage">
+                        <label for="imsg">Mensagem:</label><br>
+                        <textarea name="msg" id="imsg" rows="10"></textarea>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Redefinir">
+                    </div>
+                    <input type="hidden" name="_subject" value="Cliente interessado">
+                    <input type="hidden" name="_honey" style="display: none;">
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                </form>
             </div>
         </section>
         
