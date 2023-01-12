@@ -231,7 +231,61 @@ main {
     text-align: center;
 }
 
+.container .slide-container .slide .content .image1 {
+    width: 100%;
+    height: 700px;
+    background-color: rgb(65, 66, 61);
+    background-image: url(../imagens/Air-Conditioning-Repair-M.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
 
+.container .slide-container .slide .content .image2 {
+    width: 100%;
+    height: 700px;
+    background-color: rgb(65, 66, 61);
+    background-image: url(../imagens/extinguishers\ -\ M.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.container .slide-container .slide .content .image3 {
+    width: 100%;
+    height: 700px;
+    background-color: rgb(65, 66, 61);
+    background-image: url(../imagens/NY-insurance-car-scaled-M.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.container .slide-container .slide .content .image4 {
+    width: 100%;
+    height: 700px;
+    background-color: rgb(65, 66, 61);
+    background-image: url(../imagens/FoF-Factory-Floor-1\ M.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.container .slide-container .slide .content .image5 {
+    width: 100%;
+    height: 700px;
+    background-color: rgb(65, 66, 61);
+    background-image: url(../imagens/Car-Inspection-After-Accident-Repair-Why-Do-I-Need-to-Get-a-Post-–-Repair-Inspection--1200x900-M.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+/*
 .container .slide-container .slide .content .image {
     flex: 1 1 500px;
     
@@ -241,7 +295,7 @@ main {
     min-width: 100%;
     height: 700px;
 }
-
+*/
 
 
 .container .slide-container {
