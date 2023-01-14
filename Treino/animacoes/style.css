@@ -1,0 +1,82 @@
+.item {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    font-size: 24px;
+}
+
+
+.blue {
+    background: blue;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.green {
+    background: green;
+}
+
+.red {
+    background: red;
+}
+
+.transitionSize {
+    transition: transform 0.2s;
+}
+
+.transitionSize:hover {
+    transform: scale(1.5);
+}
+
+.transitionRotate {
+    transition: transform 0.5s;
+}
+
+.transitionRotate:hover {
+    transform: rotateZ(180deg);
+}
+
+
+.transitionBackground {
+    transition: background 3s;
+}
+
+
+.transitionBackground:hover {
+    background: red;
+}
+
+.transitionDelay {
+    transition: width 1s , height 2s 1s;
+}
+
+.transitionDelay:hover {
+    width: 200px;
+    height: 200px;
+}
+
+.transitionCheckbox {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.5s;
+}
+
+.transitionCheckbox:checked{
+    transform: rotateY(360deg);
+}
+
+.transitionRadio {
+    width: 50px;
+    height: 50px;
+    transition: transform 1s;
+}
+
+.transitionRadio:checked {
+    transform: scale(2);
+}
+
