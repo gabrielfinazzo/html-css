@@ -63,7 +63,7 @@ const handlePhone = (event) => {
 
 
 
-  /*Correção do menu fixo sobre o início da ancora*/
+  /*Correção do menu fixo sobre o início da ancora
 
 // Aqui nós estaremos realizando o scroll da página para 45px acima
 // de onde ela está atualmente
@@ -92,4 +92,4 @@ const handlePhone = (event) => {
   // Definimos o offset inicial caso a página aberta já esteja indo para um #elemento
   window.setTimeout(offsetAnchor, 0);
 
-  
+  */
