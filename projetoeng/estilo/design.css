@@ -56,6 +56,11 @@ header > .menu-fixo {
 }
 .up-bar > p > a {
     color: white;
+    transition: .5s;
+}
+
+#zap:hover {
+    color: 	#25D366;
 }
 
 
@@ -80,7 +85,7 @@ header > .menu-fixo {
     position: relative;
 }
 
-.down-bar:before {
+/*.down-bar:before {
     content: '';
     width: 500px;
     height: 100%;
@@ -91,17 +96,7 @@ header > .menu-fixo {
     z-index: 1;
     position: absolute;
 }
-/*.down-bar:after {
-    content: '';
-    position: absolute;
-    width: 75px;
-    height: 100%;
-    top: 0;
-    right: 100px;
-    background-color: white;
-    transform: skewX(-45deg);
-    z-index: 1;
-}*/
+*/
 
 /*Final do fundo com efeito diagonal*/
 
@@ -121,10 +116,13 @@ header > .menu-fixo {
     align-items: center;
     
 }
-
+/*88%*/
 .logo {
-    margin-left: 100px;
-    
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: white;
+    clip-path: polygon(0 0, 100% 0, 88% 100%, 0% 100%);
+    height: 100%;
 }
 
 .logo > img {
@@ -132,7 +130,7 @@ header > .menu-fixo {
 }
 
 .menu-bar {
-    margin-left: 10%;
+    margin-left: 5%;
 }
 
 .menu-bar > ul > li {
@@ -867,7 +865,7 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
-        clip-path: polygon(0 0, 100% 0, 88% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
     }
 
     .titulo1 > h1 {
@@ -922,7 +920,7 @@ footer {
         position: relative;
         width: 100vw;
         height: 700px;
-        background-image: url(../imagens/nr12.png);
+        background-image: url(../imagens/nr12.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -932,7 +930,7 @@ footer {
         position: relative;
         width: 100vw;
         height: 700px;
-        background-image: url(../imagens/responsaveltecnico.jpg);
+        background-image: url(../imagens/resptecnicpserv.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -1129,6 +1127,10 @@ footer {
         padding-bottom: 20px;
     }
 
+    #name {
+        padding-right: 42px;
+    }
+
     .form-items > input {
         box-sizing: border-box;
         width: 100%;
@@ -1187,6 +1189,10 @@ footer {
 
 @media (min-width: 300px) and (max-width: 499px) {
 
+    section.carrossel {
+        display: none;
+    }
+
     /*Título carrossel*/
     .container .slide-container .slide .content .descritivo h3 {
         font-size: 40px;
@@ -1210,28 +1216,13 @@ footer {
     /*Fim upbar*/
 
     /*Início Menu*/
-    .down-bar:before {
-        width: 250px;
-        height: 100%;
-        top: 0;
-        left: 30px;
-        background-color: white;
-        transform: skewX(-45deg);
-    }
-    .down-bar:after {
-        width: 50px;
-        height: 100%;
-        top: 0;
-        right: -30px;
-        background-color: white;
-        transform: skewX(-45deg);
-        position: absolute;
-        z-index: 0;
-        
+    .logo {
+        padding-left: 30px;
+        padding-right: 40px;
     }
 
-    .logo {
-        margin: 0 50px;
+    .logo > picture > img {
+        padding: 25px 0;
     }
 
     .icon-menu {
@@ -1528,6 +1519,11 @@ footer {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 500px) and (max-width: 667px) { /*767.98*/
 
+
+    section.carrossel {
+        display: none;
+    }
+
     .container .slide-container .slide .content .descritivo h3 {
         font-size: 50px;
         text-align: center;
@@ -1547,28 +1543,13 @@ footer {
 
     /*Configuração geral menu*/
 
-    .down-bar:before {
-        width: 250px;
-        height: 100%;
-        top: 0;
-        left: 30px;
-        background-color: white;
-        transform: skewX(-45deg);
-    }
-    .down-bar:after {
-        width: 0px;
-        height: 100%;
-        top: 0;
-        right: 0px;
-        background-color: white;
-        transform: skewX(-45deg);
-        position: absolute;
-        z-index: 0;
-        display: none;
-    }
 
     .logo {
-        margin: 0 50px;
+        padding-left: 30px;
+    }
+
+    .logo > picture > img {
+        padding: 25px 0;
     }
 
     .icon-menu {
@@ -1869,35 +1850,22 @@ footer {
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 668px) and (max-width: 801px) {  
 
+    section.carrossel {
+        display: none;
+    }
+
     .container .slide-container .slide .content .descritivo h3 {
         font-size: 50px;
         text-align: center;
     }
 
     /*Configuração ajustes em branco menu*/
-    .down-bar:before {
-        width: 250px;
-        height: 100%;
-        top: 0;
-        left: 30px;
-        background-color: white;
-        transform: skewX(-45deg);
-    }
-    .down-bar:after {
-        width: 0px;
-        height: 100%;
-        top: 0;
-        right: 0px;
-        background-color: white;
-        transform: skewX(-45deg);
-        position: absolute;
-        z-index: 0;
-        display: none;
+    
+    .logo > picture > img {
+        padding: 25px 0;
     }
 
-    .logo {
-        margin: 0 50px;
-    }
+    
 
     /*Fim da configuração dos ajustes em branco*/
     .icon-menu {
@@ -2160,29 +2128,12 @@ footer {
     }
 
     /*Configuração ajustes em branco menu*/
-    .down-bar:before {
-        width: 250px;
-        height: 100%;
-        top: 0;
-        left: 30px;
-        background-color: white;
-        transform: skewX(-45deg);
-    }
-    
-    .down-bar:after {
-        width: 0;
-        height: 100%;
-        top: 0;
-        right: 0px;
-        background-color: white;
-        transform: skewX(-45deg);
-        display: none;
+    .logo > picture > img {
+        padding: 25px 0;
     }
 
     /*Configurações de menubar*/
-    .logo {
-        margin: 0 50px;
-    }
+    
 
     .menu-bar > ul > li > a {
         padding: 0 10px;
@@ -2313,32 +2264,17 @@ footer {
     }
 
     /*Início Menu*/
-    .down-bar:before {
-        width: 250px;
-        height: 100%;
-        top: 0;
-        left: 30px;
-        background-color: white;
-        transform: skewX(-45deg);
+   
+    .logo > picture > img {
+        padding: 25px 0;
     }
-    
-    .down-bar:after {
-        width: 80px;
-        height: 100%;
-        top: 0;
-        right: 80px;
-        background-color: white;
-        transform: skewX(-45deg);
+   
 
-    }
-
-    .logo {
-        margin: 0 50px;
-    }
     .menu-bar > ul > li > a {
         padding: 0 20px;
         font-size: 18px; 
     }
+    
     /*Fim Menu*/
     /*Início Serviços*/
     #box1 {
@@ -2418,17 +2354,9 @@ footer {
 
     /*Início Menu*/
 
-    .down-bar:after {
-        width: 0px;
-        height: 100%;
-        top: 0;
-        right: 0px;
-        background-color: white;
-        transform: skewX(-45deg);
-        display: none;
-    }
+
     .menu-bar {
-        margin-left: 10%;
+        margin-left: 5%;
     }
     .menu-bar > ul > li > a {
         padding: 0 20px;
@@ -2510,15 +2438,7 @@ footer {
     }
 
     /*Início Menu*/
-    .down-bar:after {
-        width: 70px;
-        height: 100%;
-        top: 0;
-        right: 70px;
-        background-color: white;
-        transform: skewX(-45deg);
-
-    }
+    
    
     .menu-bar > ul > li > a {
         padding: 0 30px;
