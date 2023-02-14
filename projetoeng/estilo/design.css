@@ -59,8 +59,20 @@ header > .menu-fixo {
     transition: .5s;
 }
 
+
+#zap {
+    background-color: #25D366;
+    padding: 0 5px;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    border-radius: 8px;
+    color: 	white;
+    transition: 1s;
+}
 #zap:hover {
-    color: 	#25D366;
+    color: #25D366;
+    background-color: white;
+    border: 1px solid #25D366;
 }
 
 
@@ -118,16 +130,19 @@ header > .menu-fixo {
 }
 /*88%*/
 .logo {
-    padding-left: 80px;
-    padding-right: 80px;
+    padding: 5px 0;
+    padding-left: 50px;
+    padding-right: 130px;
     background-color: white;
     clip-path: polygon(0 0, 100% 0, 88% 100%, 0% 100%);
     height: 100%;
 }
 
-.logo > img {
-    height: 95px;
+.logo > picture > img {
+    padding: 15px 0px;
 }
+
+
 
 .menu-bar {
     margin-left: 5%;
@@ -865,7 +880,6 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
-        clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
     }
 
     .titulo1 > h1 {
@@ -1159,7 +1173,6 @@ footer {
     }
 
     .submit {
-        padding: 0 10px;
         padding-top: 20px;
     }
 
@@ -1172,6 +1185,7 @@ footer {
         border: 1px solid rgb(65, 66, 61);
         border-radius: 7px;
         transition: 0.5s ease-in;
+        margin-right: 10px;
     }
 
     .submit input:hover {
@@ -1190,6 +1204,10 @@ footer {
 @media (min-width: 300px) and (max-width: 499px) {
 
     section.carrossel {
+        display: none;
+    }
+
+    section.expositor {
         display: none;
     }
 
@@ -1524,6 +1542,10 @@ footer {
         display: none;
     }
 
+    section.expositor {
+        display: none;
+    }
+
     .container .slide-container .slide .content .descritivo h3 {
         font-size: 50px;
         text-align: center;
@@ -1851,6 +1873,10 @@ footer {
 @media (min-width: 668px) and (max-width: 801px) {  
 
     section.carrossel {
+        display: none;
+    }
+
+    section.expositor {
         display: none;
     }
 
