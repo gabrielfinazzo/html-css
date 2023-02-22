@@ -61,7 +61,6 @@ header > .menu-fixo {
 
 
 #zap {
-    background-color: #25D366;
     padding: 0 5px;
     padding-top: 8px;
     padding-bottom: 5px;
@@ -69,6 +68,7 @@ header > .menu-fixo {
     color: 	white;
     transition: 1s;
 }
+
 #zap:hover {
     color: #25D366;
     background-color: white;
@@ -130,7 +130,6 @@ header > .menu-fixo {
 }
 /*88%*/
 .logo {
-    padding: 5px 0;
     padding-left: 50px;
     padding-right: 130px;
     background-color: white;
