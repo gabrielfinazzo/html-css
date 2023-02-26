@@ -259,7 +259,21 @@ header .header-2.header-active {
 
 
 
+@media (max-width:600px) {
 
+    html {
+        font-size: 50%;
+    }
+
+    .home .home-slider .item .content h3 {
+        font-size: 3rem;
+    }
+
+    .home .home-slider .item .content p {
+        font-size: 2rem;
+        width: auto;
+    }
+}
 
 
 
