@@ -483,9 +483,85 @@ header .header-2.header-active {
     font-size: 1.5rem;
 }
 
+.deal {
+    min-height: 100vh;
+}
 
+.deal .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
+.deal .box-container .box {
+    flex: 1 1 40rem;
+    height: 25rem;
+    margin: 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+}
 
+.deal .box-container .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.deal .box-container .box .content {
+    position: absolute;
+    top:55%; left: 3rem;
+    transform: translateY(-50%);
+}
+
+.deal .box-container .box .content h3 {
+    font-size: 3.5rem;
+    color: #fff;
+    text-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+}
+
+.deal .box-container .box .content p {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.deal .box-container .box .content .btn {
+    margin: 1.4rem 0;
+}
+
+.deal .icons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.deal .icons-container .icons {
+    flex: 1 1 25rem;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    border: .2rem solid var(--blue);
+}
+
+.deal .icons-container .icons i {
+    color: var(--blue);
+    font-size: 4rem;
+    padding: 1rem 0;
+}
+
+.deal .icons-container .icons h3 {
+    color: #666;
+    font-size: 1.3rem;
+    padding: 1rem 0;
+}
+
+.deal .icons-container .icons p {
+
+}
 
 
 
