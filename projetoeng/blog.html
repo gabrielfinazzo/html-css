@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A.R.T.LAUDO SP - ENGENHARIA</title>
-    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <title>A.R.T.LAUDO SP</title>
     <link rel="stylesheet" href="estilo/design.css">
     <script src="https://kit.fontawesome.com/2dc18bdcf3.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
 </head>
 <body>
     <header>
         <div class="menu-fixo">
             <div class="up-bar">
                 <p><a href=""><i class="fa-regular fa-envelope"></i> engenharia@artlaudosp.com.br</a></p>
-                <p><a href="https://web.whatsapp.com/send?phone=5511961745215" target="_blank" id="zap"><i class="fa-brands fa-whatsapp"></i>Orçamento</a></p>
+                <p><a href="https://api.whatsapp.com/send?phone=5511961745215" target="_blank" id="zap"><i class="fa-brands fa-whatsapp"></i>Orçamento</a></p>
                 <p id="ajuste-margin"><a href=""><i class="fa-regular fa-clock"></i>Seg á Sex - 8h ás 18h</a></p>
             </div>
             <div class="down-bar">
@@ -28,10 +28,10 @@
                         </div>
                         <div class="menu-bar">
                             <ul>
-                                <li><a href="index.html" >Home</a></li>
-                                <li><a href="sobre.html" >Sobre</a></li>
-                                <li><a href="index.html#start-servicos">Serviços</a></li>
-                                <li><a href="#" class="active">Contato</a></li>
+                                <li><a href="#" class="active">Home</a></li>
+                                <li><a href="sobre.html">Sobre</a></li>
+                                <li><a href="#start-servicos">Serviços</a></li>
+                                <li><a href="contato.html">Contato</a></li>
                                 <li><a href="blog.html">Blog</a></li>
                             </ul>
                         </div>
@@ -44,48 +44,8 @@
         </div>
     </header>
     <main>
-        <section class="titulo-pagina">
-            <h1>Contato</h1>
-        </section>
-        <section class="box-contatos">
-            <div class="info-empresa">
-                <h2>Informações:</h2>
-                <p>Telefone: <br> (11) 9 6174 - 5215</p>
-                <p>E-mail: <br><a href="#">engenharia@artlaudosp.com.br</a></p>
-                <p>Endereço: <br> São Paulo-SP</p>
-                <p>Horário de funcionamento: <br> segunda á sexta das 08:00 ás 18:00</p>
-            </div>
-            <div class="info-cliente">
-                <h2>Fale conosco:</h2>
-                <form action="https://formsubmit.co/gabrielfinazzo@gmail.com" method="post">
-                    <div class="form-items" id="name">
-                        <label for="nome">Nome:</label><br> 
-                        <input type="text" name="name" id="nome" required>
-                    </div>
-                    <div class="form-items">
-                        <label for="itel">Fone:</label><br> 
-                        <input type="tel" name="tel" id="itel" onkeyup="handlePhone(event)" required>
-                    </div>
-                    <div class="form-items">
-                        <label for="iemail">E-mail:</label><br>
-                        <input type="email" name="email" id="iemail" required>
-                    </div>
-                    <div class="form-mensage">
-                        <label for="imsg">Mensagem:</label><br>
-                        <textarea name="msg" id="imsg" rows="10"></textarea>
-                    </div>
-                    <div class="submit">
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Redefinir">
-                    </div>
-                    <input type="hidden" name="_subject" value="Cliente interessado">
-                    <input type="hidden" name="_honey" style="display: none;">
-                    <input type="hidden" name="_captcha" value="false">
-                    
-                </form>
-            </div>
-        </section>
-        
+        <iframe src="https://blog.artlaudosp.com.br/blog/" frameborder="0" id="iframe"></iframe>
+    </main>
 
     <!-- Footer -->
 
