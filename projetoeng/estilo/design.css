@@ -668,73 +668,74 @@ main {
 
 footer {
     width: 100vw;
-    height: 250px;
+    height: 200px;
     background-color: rgb(65, 66, 61);
+    overflow: hidden;
+}
+
+.foot {
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.fot-logo {
-    padding: 0 30px;
-    position: relative;
-    
-}
-
-.fot-logo > p {
-    color: white;
-    position: relative;
-    font-size: 17px;
-    bottom: -30px;
-}
-
-.redes-sociais {
-    position: relative;
-    top: -30px;
-    left: -70px;
-}
-
-.redes-sociais > h3 {
-    color: white;
-    font-size: 40px;
-    margin-bottom: 30px;
-}
-.icon-gap {
+.info_social {
+    margin-left: 50px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.foot_icons {
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px;
-}
-.icon-rede {
-    display: inline;
-    font-size: 40px;
-    background-color: rgb(65, 66, 61);
-    border-radius: 50%;
-    padding: 5px 10px;
-    transition: 0.7s ease-in-out;
 }
 
-.icon-rede:hover {
+.icon-rede {
+    margin-top: 15px;
+}
+
+.icon-rede a{
+    font-size: 40px;
+    color: white;
+    padding: 5px 10px;
+    transition: 0.7s ease-in-out;
+    border-radius: 50%;
+}
+
+#icon1 {
+    margin-right: 15px;
+}
+
+.icon-rede a:hover {
     background-color: white;
     color: rgb(65, 66, 61);
 }
 
-.icon-rede > a > i {
+.info_1 {
+    font-size: 20px;
     color: white;
-    transition: 0.7s ease-in-out;
 }
 
-.icon-rede > a > i:hover {
-    color: rgb(65, 66, 61);
+.reserv {
+    margin-right: 50px;
 }
 
-.desenvolvido {
-    margin-top: 150px;
-    padding: 0 40px;
+.reserv .info_2 {
+    font-size: 20px;
     color: white;
-    font-size: 17px;
+    margin-top: 15px;
 }
+
+
+
+
+
+
+
 
 /*Final footer*/
 
@@ -1368,7 +1369,7 @@ footer {
     /*Fim Especializações*/
 
     /* Footer */
-    footer {
+    /* footer {
         flex-wrap: wrap;
         justify-content: flex-start;
         align-items: flex-start;
@@ -1422,6 +1423,29 @@ footer {
         margin-left: 15px;
         margin-bottom: 40px;
 
+    } */
+    .info_1 {
+        font-size: 10px;
+    }
+
+    .icon-rede a {
+        font-size: 20px;
+    }
+
+    #icon1 {
+        margin-right: 5px;
+    }
+
+    .reserv .info_2 {
+        font-size: 10px;
+    }
+
+    .info_social {
+        margin-left: 15px;
+    }
+
+    .reserv {
+        margin-right: 15px ;
     }
 
     /*Página Sobre*/
@@ -1715,7 +1739,7 @@ footer {
 
     /*Início Footer*/
 
-    footer {
+    /* footer {
         flex-wrap: wrap;
         justify-content: flex-start;
         align-items: flex-start;
@@ -1769,6 +1793,25 @@ footer {
         margin-left: 15px;
         margin-bottom: 40px;
 
+    } */
+    .info_1 {
+        font-size: 12px;
+    }
+
+    .icon-rede a {
+        font-size: 25px;
+    }
+
+    .reserv .info_2 {
+        font-size: 12px;
+    }
+
+    .info_social {
+        margin-left: 20px;
+    }
+
+    .reserv {
+        margin-right: 20px ;
     }
 
     /*Página Sobre*/
@@ -1998,7 +2041,7 @@ footer {
     /*Fim especializações*/
 
     /*Footer*/
-    footer {
+    /* footer {
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: flex-start;
@@ -2050,6 +2093,19 @@ footer {
         color: white;
         font-size: 15px;
         
+    } */
+
+    
+    .info_1 {
+        font-size: 15px;
+    }
+
+    .icon-rede a {
+        font-size: 30px;
+    }
+
+    .reserv .info_2 {
+        font-size: 15px;
     }
     /*Fim footer*/
 
@@ -2192,7 +2248,7 @@ footer {
     /*FIM CONFIGURAÇÕES SERVIÇO*/
 
     /*Início Footer*/
-    .redes-sociais {
+    /* .redes-sociais {
         position: relative;
         top: -30px;
         left: 0px;
@@ -2202,6 +2258,18 @@ footer {
         color: white;
         font-size: 40px;
         margin-bottom: 30px;
+    } */
+
+    .info_1 {
+        font-size: 15px;
+    }
+
+    .icon-rede a {
+        font-size: 30px;
+    }
+
+    .reserv .info_2 {
+        font-size: 15px;
     }
     /*Final Footer*/
 
@@ -2323,7 +2391,7 @@ footer {
     /*Fim serviços*/
 
     /*Início Footer*/
-    .desenvolvido {
+    /* .desenvolvido {
         margin-top: 150px;
         margin-bottom: 40px;
         margin-right: 40px;
@@ -2331,7 +2399,21 @@ footer {
         color: white;
         font-size: 15px;
         
+    } */
+    .info_1 {
+        font-size: 15px;
     }
+
+    .icon-rede a {
+        font-size: 30px;
+    }
+
+    .reserv .info_2 {
+        font-size: 15px;
+    }
+
+
+
     /*Final Footer*/
 
     /*Página Serviços*/
