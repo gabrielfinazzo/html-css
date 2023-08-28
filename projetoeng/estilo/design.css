@@ -1452,6 +1452,16 @@ footer {
         margin-right: 15px ;
     }
 
+    /*Footer*/
+    .logo_footer {
+        display: none;
+    }
+
+    footer .foot {
+        justify-content: space-around;
+    }
+    /*Fim Footer*/
+
     /*Página Sobre*/
     /*Sobre*/
     .sobre-cont2 {
@@ -1817,6 +1827,16 @@ footer {
     .reserv {
         margin-right: 20px ;
     }
+
+    /*Footer*/
+    .logo_footer {
+        display: none;
+    }
+
+    footer .foot {
+        justify-content: space-around;
+    }
+    /*Fim Footer*/
 
     /*Página Sobre*/
     /*Identidade*/
