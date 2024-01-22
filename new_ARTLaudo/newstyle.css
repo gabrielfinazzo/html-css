@@ -1,0 +1,172 @@
+@font-face {
+    font-family: 'cocogoose'; src: url(../fontes/COCOGOOSE_TRIAL.OTF)
+}
+
+@font-face {
+    font-family: 'bellgothic'; src: url(../fontes/BellGothicStd-Bold.otf)
+}
+
+@font-face {
+    font-family: 'geometr'; src: url(../fontes/Geometr212\ BkCn\ BT\ Book.ttf)
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;700&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+
+.menutopo {
+    background-color: rgb(65, 66, 61);
+    width: 100vw;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 1rem;
+    color: white;
+}
+
+.menutopo > p,
+.menutopo > p > a {
+    padding: 0rem 1rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.menutopo > p > i,
+.menutopo > p > a > i {
+    padding: .5rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.menuprincipal {
+    width: 100vw;
+    height: 109px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-image: linear-gradient(to left, rgb(206, 107, 0), rgb(235, 153, 67));
+}
+
+.menu_logo {
+    width: 40%;
+    height: 100%;
+    padding: 2rem 5rem;
+    background-color: white;
+    clip-path: polygon(0 0, 100% 0, 88% 100%, 0% 100%);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.menu_logo > img {
+    width: 25rem;
+    height: 100%;
+}
+
+.cent-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-bar {
+    font-size: 3rem;
+    cursor: pointer;
+    color: white;
+    border: .1rem solid white;
+    border-radius: .3rem;
+    padding: .5rem 1.5rem;
+    display: none;
+    margin-right: 2rem;
+    
+}
+
+.menu-cont {
+    width: 60%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.navbar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow-x: hidden;
+    
+}
+
+.navbar > a {
+    color: white;
+    font-size: 2rem;
+    padding: 2rem 3rem;
+}
+
+
+/* Fim Menu */
+
+
+
+
+
+
+
+
+
+/* Media Querys */
+@media(max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+
+    
+}
+
+@media(max-width:834px) { 
+    #menu-bar {
+        display: initial;
+    }
+
+    .navbar {
+        position: absolute;
+        right: 0; 
+        height: 100vh;
+        top: -1000%;
+        background: blue;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .navbar.active {
+        top: 148px;
+    }
+
+
+    .navbar > a {
+        padding: 4rem 0;
+    }
+
+    .menu_logo > img {
+        width: 85%;
+        height: 85%;
+    }
+
+    
+}
