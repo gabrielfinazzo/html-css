@@ -236,13 +236,42 @@ section.sobre {
     flex-direction: column;
 }
 
+
+
+.espec-title {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+.espec-title > h2 {
+    font-size: 4rem;
+    color: #393940;
+    font-weight: bold;
+}
+
+
+
 .geral-espec {
     display: flex;
     column-gap: 1rem;
 }
 
 .engrenagem > img {
-    width: 20px;
+    width: 4rem;
+}
+
+.cont-espec > h3 {
+    font-size: 2.6rem;
+    color: #393940;
+    padding-bottom: 3rem;
+}
+
+.cont-espec {
+    font-size: 2rem;
+    color: #393940;
+    padding-bottom: 3rem;
+    padding-right: 15rem;
+    padding-left: 4rem;
 }
 
 
