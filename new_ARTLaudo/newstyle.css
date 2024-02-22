@@ -41,6 +41,7 @@ html {
     padding: 0rem 1rem;
     color: white;
     font-size: 1.5rem;
+    
 }
 
 .menutopo > p > i,
@@ -107,6 +108,7 @@ html {
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
+    text-transform: uppercase;
     
 }
 
@@ -234,6 +236,7 @@ section.sobre {
 .espec {
     display: flex;
     flex-direction: column;
+    padding-bottom: 5rem;
 }
 
 
@@ -241,7 +244,8 @@ section.sobre {
 .espec-title {
     display: flex;
     justify-content: center;
-    padding-bottom: 3rem;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
 }
 .espec-title > h2 {
     font-size: 4rem;
@@ -277,12 +281,221 @@ section.sobre {
 
 /* Fim Especializações */
 
+/* INÍCIO SERVIÇOS */
+.servicos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5rem;
+    box-sizing: border-box;
+}
+
+.serv-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 2rem;
+    row-gap: 5rem;
+}
+
+.servico {
+    width: 35rem;
+    height: 40rem;
+    background-color: white;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+
+.img-serv {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+
+.title-serv {
+    display: flex;
+    padding: 2rem;
+    color: rgb(65, 66, 61);
+}
+
+.title-serv > h4 {
+    font-size: 2rem;
+    padding-left: .5rem;
+}
+
+.pservic {
+    padding: 0 2rem;
+    font-size: 1.5rem;
+    color: rgb(65, 66, 61);
+}
+
+.pservic > p {
+    font-size: 1.7rem;
+}
+
+.check {
+    width: 2.5rem;
+}
+
+.serv-titulo {
+    padding: 5rem 0 5rem 0;
+    font-size: 3rem;
+    color: rgb(65, 66, 61);
+}
+
+#pmoc {
+    margin-left: 15%;
+}
+
+#avcb {
+    margin-right: 15%;
+}
+
+#nr12 {
+    height: 100%;
+}
+
+#resptec {
+    height: 100%;
+}
+
+
+/* CONTATO */
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(65, 66, 61);
+    padding-bottom: 5rem;
+}
+
+.conteudoContato {
+    display: flex;
+    justify-content: space-around;
+    gap: 20rem;
+    padding-bottom: 5rem;
+}
+
+.tituloContato {
+    padding: 5rem 0;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.infoCont {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    color: rgb(65, 66, 61);
+    font-size: 2rem;
+}
+
+.infoInput form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    color: rgb(65, 66, 61);
+    font-size: 2rem;
+}
+
+.infoInput h2 {
+    font-size: 3rem;
+    padding-bottom: 3rem;
+}
+
+.tituloInfo h2 {
+    font-size: 3rem;
+}
+
+.form-mensage {
+    width: 100%;
+}
+
+#imsg {
+    width: 100%;
+}
+
+.button {
+    padding: .5rem;
+    border-radius: 1rem;
+    background-color: white;
+    border-style: none;
+    border: 1px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(65, 66, 61);
+    padding: 4rem;
+    font-size: 1.8rem;
+    color: white;
+    overflow-x: hidden;
+}
+
+.creaInsta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iconeInsta {
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+.iconeInsta:hover {
+    
+    background-color: white;
+}
+
+.iconeInsta i {
+    font-size: 5rem;
+}
+
+.iconeInsta i:hover {
+    color: rgb(65, 66, 61);
+}
+
+
+/* CORES DE FUNDO */
+.background1 {
+    background-color: #e0e0e6;
+}
+
+.background2 {
+    background-color: rgb(236, 234, 234);
+}
+
+
+
+
+
+
+
+
 
 
 
 
 
 /* Media Querys */
+
+@media(max-width:1700px) {
+    #pmoc {
+        margin-left: 0;
+    }
+    
+    #avcb {
+        margin-right: 0;
+    }
+}
 
 @media(max-width:1500px) {
     .margens {
@@ -309,6 +522,8 @@ section.sobre {
         height: 100%;
         padding: 0 10rem; 
     }
+
+    
 
     
 }
@@ -344,5 +559,20 @@ section.sobre {
         height: 85%;
     }
 
+    .identidade {
+    flex-direction: column;
     
+    }
+    .cont-identidade {
+        width: 100%;
+    }
+    
+    .selo {
+        padding-bottom: 5rem;
+    }
+
+    .conteudoContato {
+        flex-direction: column;
+        gap: 10rem;
+    }
 }
