@@ -49,12 +49,32 @@ header {
     
 }
 
+#zap {
+    transition: 1s;
+    border-radius: 1rem;
+    padding: .5rem;
+}
+
+#zap:hover {
+    color: #25D366;
+    background-color: white;
+    border: 1px solid #25D366;
+}
+
+
+
 .menutopo > p > i,
 .menutopo > p > a > i {
     padding: .5rem;
     color: white;
     font-size: 1.5rem;
 }
+
+#zap:hover #simbolozap {
+    color: #25D366;
+}
+
+
 
 .menuprincipal {
     width: 100vw;
