@@ -561,17 +561,34 @@ footer {
 }
 
 .titulo-principal {
-    padding: 5rem 0;
     width: 100%;
     text-align: center;
-    background-color: rgb(236, 234, 234);
+    background-color: rgb(65, 66, 61);
     color: rgb(65, 66, 61);
     font-weight: bold;
+    overflow-x: hidden;
 }
 
 .titulo-principal > h1 {
-    font-size: 3.5rem;
-    margin: 0;
+    font-size: 4rem;
+}
+
+.titulo-avcb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.novotitulo1 {
+    color: white;
+    width: 50%;
+}
+
+.novotitulo2 {
+    background-color: rgb(236, 234, 234);
+    width: 50%;
 }
 
 .conteudo-servicos {
@@ -589,26 +606,35 @@ footer {
     padding-left: 10rem;
 }
 
-.itens {
+.itens a{
     display: flex;
     align-items: center;
     gap: 2rem;
-    border: 1px solid;
+    border: 1px solid rgb(65, 66, 61);
     border-radius: 1rem;
     width: 300px;
+    color: rgb(65, 66, 61);
 }
 
-.itens:hover, .ativo {
+.itens {
+    border-radius: 1rem;
+}
+
+.itens a:hover, .ativo a{
     cursor: pointer;
     color: rgb(206, 107, 0);
     background-color: white;
+    border-color: rgb(206, 107, 0);
 }
+
 
 .itens span {
     font-size: 2rem;
-    border-left: 1px solid;
+    border-left: 1px solid rgb(65, 66, 61);
     padding: 1rem;
 }
+
+
 
 .itens img {
     margin-left: 2rem;
