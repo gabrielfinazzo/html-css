@@ -22,9 +22,9 @@
             <div class="menu-cont">
                 <nav class="navbar">
                     <a href="#home">home</a>
-                    <a href="#sobre">sobre</a>
-                    <a href="#serviços">serviços</a>
-                    <a href="#contatos">contato</a>
+                    <a href="#start-sobre">sobre</a>
+                    <a href="#start-servicos">serviços</a>
+                    <a href="#start-contato">contato</a>
                     <a href="#blog">blog</a>
                 </nav>
                 <div id="menu-bar" class="fas fa-bars"></div>
@@ -35,7 +35,7 @@
     <main>
         <div class="background1">
             <div class="margens">
-                <section class="sobre">
+                <section class="sobre" id="start-sobre">
                     <div class="cont-sobre">
                         <h2>A.R.T.<span id="laranja">LAUDO</span> SP - <span id="fonte">engenharia</span></h2>
                         <p>
@@ -62,25 +62,27 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="selo">
-                            <img src="imagens/CarimboAlessandro_final300.png" alt="">
+                        <div class="selo" >
+                            <img src="imagens/CarimboAlessandro_final300.png" alt="" >
                         </div>
                     </div>
+                    
                 </section>
             </div>
         </div>
 
         <!-- SERVIÇOS -->
-        <div class="background2">
-            <div class="margens">
-                <section class="servicos">
+        <div class="background2" >
+            <div class="margens" >
+                <section class="servicos" id="start-servicos">
                     <div class="serv-titulo">
                         <h2>Serviços</h2>
                     </div>
                     <div class="serv-body">
-                        <div class="servico" id="pmoc">
+                        <div class="servico" id="pmoc" id="pmoc1">
                             <div class="img-serv">
-                                <img src="imagens/pmocmini2.jpg" alt="">
+                                <a href="pmoc.html"><img src="imagens/pmocmini2.jpg" alt="" class="imgServico"></a>
+                                <span class="saibaMais">Saiba mais</span>
                             </div>
                             <div class="cont-serv">
                                 <div class="title-serv">
@@ -92,9 +94,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="servico" id="avcb">
+                        <div class="servico" id="avcb" itemid="avcb1">
                             <div class="img-serv">
-                                <img src="imagens/extintoresmini.jpg" alt="">
+                                <a href="avcb-clcb.html"><img src="imagens/extintoresmini.jpg" alt="" class="imgServico"></a>
+                                <span class="saibaMais">Saiba mais</span>
                             </div>
                             <div class="title-serv">
                                 <img src="imagens/checkbranco.png" alt="" class="check">
@@ -111,9 +114,10 @@
                                 <p>Certificado de licença do corpo de bombeiro.</p>
                             </div>
                         </div>
-                        <div class="servico">
+                        <div class="servico" id="monta" id="monta1">
                             <div class="img-serv">
-                                <img src="imagens/montamini2.jpg" alt="">
+                                <a href="monta.html"><img src="imagens/montamini2.jpg" alt="" class="imgServico"></a>
+                                <span class="saibaMais">Saiba mais</span>
                             </div>
                             <div class="title-serv">
                                 <img src="imagens/checkbranco.png" alt="" class="check">
@@ -123,9 +127,10 @@
                                 <p>Recuperação de sinistro de veículos envolvidos em acidente.</p>
                             </div>
                         </div>
-                        <div class="servico">
+                        <div class="servico" id="nr121">
                             <div class="img-serv">
-                                <img src="imagens/nr12.jpg" alt="" id="nr12">
+                                <a href="nr12.html"><img src="imagens/nr12.jpg" alt="" id="nr12" class="imgServico"></a>
+                                <span class="saibaMais">Saiba mais</span>
                             </div>
                             <div class="title-serv">
                                 <img src="imagens/checkbranco.png" alt="" class="check">
@@ -135,9 +140,10 @@
                                 <p>Segurança para máquinas.</p>
                             </div>
                         </div>
-                        <div class="servico">
+                        <div class="servico" id="resptec1">
                             <div class="img-serv">
-                                <img src="imagens/resptecnicpserv.png" alt="" id="resptec">
+                                <a href="desmanche.html"><img src="imagens/resptecnicpserv.png" alt="" id="resptec" class="imgServico"></a>
+                                <span class="saibaMais">Saiba mais</span>
                             </div>
                             <div class="title-serv">
                                 <img src="imagens/checkbranco.png" alt="" class="check">
@@ -154,7 +160,7 @@
         <!-- FIM SERVIÇOS -->
 
         <!-- ESPECIALIZAÇÕES -->
-        <div class="background1">
+        <div class="background1" >
             <div class="margens">
                 <section class="espec">
                         <div class="espec-title">
@@ -190,7 +196,7 @@
         <!-- CONTATO -->
         <div class="background2">
             <div class="margens">
-                <section class="contato">
+                <section class="contato" id="start-contato">
                     <div class="tituloContato">
                         <h3>Contato</h2>
                     </div>
@@ -240,7 +246,7 @@
                                 </div>
                                 <div class="submit">
                                     <input type="submit" value="Enviar" class="button">
-                                    <input type="reset" value="Redefinir" class="button">
+                                    <input type="reset"     value="Redefinir" class="button">
                                 </div>
                             </form>
                         </div>

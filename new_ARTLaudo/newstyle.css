@@ -25,6 +25,11 @@ html {
     overflow-x: hidden;
 }
 
+header {
+    position: fixed;
+    z-index: 100;
+}
+
 
 .menutopo {
     background-color: rgb(65, 66, 61);
@@ -32,7 +37,7 @@ html {
     display: flex;
     justify-content: end;
     align-items: center;
-    padding: 1rem;
+    padding: 1rem 5rem;
     color: white;
 }
 
@@ -129,7 +134,7 @@ html {
 
 main {
     width: 100vw;
-    overflow-x: hidden;
+    position: relative;
     background-color: #e0e0e6;
 }
 
@@ -148,6 +153,7 @@ section.sobre {
     align-items: center;
     overflow-x: hidden;
     flex-direction: column;
+    padding-top: 100px;
 }
 
 .cont-sobre {
@@ -155,7 +161,7 @@ section.sobre {
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    
+    padding-top: 5rem;
 }
 
 .cont-sobre > p {
@@ -314,12 +320,15 @@ section.sobre {
     width: 100%;
     height: 50%;
     overflow: hidden;
+    position: relative;
+    transition: all 0.3s;
 }
 
 .title-serv {
     display: flex;
     padding: 2rem;
     color: rgb(65, 66, 61);
+    
 }
 
 .title-serv > h4 {
@@ -338,7 +347,8 @@ section.sobre {
 }
 
 .check {
-    width: 2.5rem;
+    width: 25px;
+    height: 23px;
 }
 
 .serv-titulo {
@@ -362,6 +372,43 @@ section.sobre {
 #resptec {
     height: 100%;
 }
+
+.imgServico {
+    transition: all 0.3s;
+}
+
+.img-serv:hover > .saibaMais {
+    display: block;
+}
+
+.saibaMais {
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    right: 35%;
+    font-size: 2rem;
+    padding: 0.6rem;
+    background-color: rgb(206, 107, 0);
+    border-radius: 1rem;
+    display: none;
+}
+
+.imgServico:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transition: scale(1.1);
+    transform: scale(1.4);
+    filter: grayscale();
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
 
 
 /* CONTATO */
@@ -474,16 +521,110 @@ footer {
 }
 
 
+/* PÁGINA SERVIÇOS */
 
+.servicos-base {
+    padding-top: 150px;
+    width: 100vw;
+}
 
+.titulo-principal {
+    padding: 5rem 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(236, 234, 234);
+    color: rgb(65, 66, 61);
+    font-weight: bold;
+}
 
+.titulo-principal > h1 {
+    font-size: 3.5rem;
+    margin: 0;
+}
 
+.conteudo-servicos {
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem 0;
+    gap: 10rem;
+}
 
+.conteudo-servicos  aside > .menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    color: rgb(65, 66, 61);
+    padding-left: 10rem;
+}
 
+.itens {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border: 1px solid;
+    border-radius: 1rem;
+    width: 300px;
+}
 
+.itens:hover, .ativo {
+    cursor: pointer;
+    color: rgb(206, 107, 0);
+    background-color: white;
+}
 
+.itens span {
+    font-size: 2rem;
+    border-left: 1px solid;
+    padding: 1rem;
+}
 
+.itens img {
+    margin-left: 2rem;
+}
 
+.checklista {
+    width: 20px;
+}
+
+.cont-serv {
+    margin-right: 15rem;
+}
+
+.cont-serv h3 {
+    font-size: 3rem;
+    color: rgb(65, 66, 61);
+    padding: 2rem 0;
+}
+
+.cont-serv p {
+    font-size: 2rem;
+    color: rgb(65, 66, 61);
+}
+
+.cont-serv p span {
+    font-weight: bold;
+}
+
+#economiah1 {
+    padding-top: 0;
+}
+
+.mensagem-padrao {
+    padding-left: 50rem;
+    padding-top: 5rem;
+    font-size: 2rem;
+    color: rgb(65, 66, 61);
+    padding-right: 15rem;
+    background-color: rgb(236, 234, 234);
+}
+
+.mensagem-padrao p {
+    padding-bottom: 2rem;
+}
+
+#engenheiro {
+    padding-bottom: 5rem;
+}
 
 /* Media Querys */
 
@@ -507,6 +648,19 @@ footer {
     
 }
 
+@media(max-width:1200px) {
+    .mensagem-padrao {
+        padding-left: 15rem;
+        padding-top: 5rem;
+        font-size: 2rem;
+        color: rgb(65, 66, 61);
+        padding-right: 15rem;
+        background-color: rgb(236, 234, 234);
+    }
+
+    
+}
+
 @media(max-width:991px) {
     html {
         font-size: 55%;
@@ -523,6 +677,14 @@ footer {
         padding: 0 10rem; 
     }
 
+    .conteudo-servicos {
+        flex-direction: column;
+    }
+
+    .cont-serv {
+        margin-right: 5rem;
+        padding-left: 10rem;
+    }
     
 
     
