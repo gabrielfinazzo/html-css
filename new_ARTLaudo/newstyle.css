@@ -354,7 +354,7 @@ section.sobre {
 .serv-titulo {
     padding: 5rem 0 5rem 0;
     font-size: 3rem;
-    color: rgb(65, 66, 61);
+    color: white;
 }
 
 #pmoc {
@@ -401,7 +401,11 @@ section.sobre {
     cursor: pointer;
 }
 
-
+.background-especial {
+    background-image: url(imagens/backgroundservicos2.jpg);
+    background-repeat: no-repeat;
+    
+}
 
 
 
