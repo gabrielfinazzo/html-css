@@ -424,7 +424,7 @@ section.sobre {
 .background-especial {
     background-image: url(imagens/backgroundservicos2.jpg);
     background-repeat: no-repeat;
-    
+    background-size: cover;
 }
 
 
@@ -514,7 +514,7 @@ footer {
     align-items: center;
 }
 
-.iconeInsta {
+.iconeInsta  {
     margin-top: 2rem;
     padding: 1rem;
     border-radius: 50%;
@@ -528,7 +528,9 @@ footer {
 
 .iconeInsta i {
     font-size: 5rem;
+    color: white;
 }
+
 
 .iconeInsta i:hover {
     color: rgb(65, 66, 61);
