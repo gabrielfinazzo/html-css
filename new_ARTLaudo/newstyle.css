@@ -139,12 +139,16 @@ header {
 
 .navbar > a {
     color: white;
-    font-size: 2rem;
-    padding: 2rem 5rem;
+    font-size: 2.2rem;
+    padding: 2rem 6rem;
     font-weight: bold;
 }
 
 .navbar > a:hover {
+    color: #393940;
+}
+
+#ativoMenu {
     color: #393940;
 }
 
@@ -523,6 +527,7 @@ footer {
 .iconeInsta  {
     margin-top: 2rem;
     padding: 1rem;
+    padding-right: 2rem;
     border-radius: 50%;
     transition: 1s;
 }
@@ -530,6 +535,15 @@ footer {
 .iconeInsta:hover {
     
     background-color: white;
+}
+
+.direitos {
+    padding: 1rem;
+    padding-left: 2rem;
+}
+
+.logofooter {
+    padding: 1rem;
 }
 
 .iconeInsta i {
@@ -558,12 +572,13 @@ footer {
 .servicos-base {
     padding-top: 150px;
     width: 100vw;
+    background-color: rgb(236, 234, 234);
 }
 
 .titulo-principal {
     width: 100%;
     text-align: center;
-    background-color: rgb(65, 66, 61);
+    background-color: #e0e0e6;
     color: rgb(65, 66, 61);
     font-weight: bold;
     overflow-x: hidden;
@@ -584,6 +599,7 @@ footer {
 .novotitulo1 {
     color: white;
     width: 50%;
+    background-color: rgb(65, 66, 61);
 }
 
 .novotitulo2 {
@@ -673,7 +689,7 @@ footer {
     font-size: 2rem;
     color: rgb(65, 66, 61);
     padding-right: 15rem;
-    background-color: rgb(236, 234, 234);
+    background-color: #e0e0e6;
 }
 
 .mensagem-padrao p {
@@ -683,6 +699,19 @@ footer {
 #engenheiro {
     padding-bottom: 5rem;
 }
+
+
+/* BLOG */
+#iframe {
+    width: 100%;
+    height: 2000px;
+}
+
+#frame {
+    background-color: #ECEAEA;
+    padding-top: 100px;
+}
+
 
 /* Media Querys */
 
@@ -703,8 +732,12 @@ footer {
         padding: 0 15rem;
     }
 
+    .navbar > a {
+        padding: 2rem 3rem;
+    }
     
 }
+
 
 @media(max-width:1200px) {
     .mensagem-padrao {
@@ -716,8 +749,13 @@ footer {
         background-color: rgb(236, 234, 234);
     }
 
+    .navbar > a {
+        padding: 2rem;
+    }
+
     
 }
+
 
 @media(max-width:991px) {
     html {
@@ -725,7 +763,7 @@ footer {
     }
 
     .navbar > a {
-        padding: 2rem 3rem;
+        padding: 2rem 2rem;
        
     }
 
@@ -794,5 +832,14 @@ footer {
     .conteudoContato {
         flex-direction: column;
         gap: 10rem;
+    }
+}
+
+@media(max-width:650px) {
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 5rem;
     }
 }
