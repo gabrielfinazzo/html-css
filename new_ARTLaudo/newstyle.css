@@ -34,6 +34,11 @@
     text-decoration: none;
 }
 
+body {
+    width: 100vw;
+    box-sizing: border-box;
+}
+
 html {
     font-size: 62.5%;
     overflow-x: hidden;
@@ -42,6 +47,7 @@ html {
 header {
     position: fixed;
     z-index: 100;
+    
 }
 
 
@@ -139,6 +145,7 @@ header {
     display: flex;
     justify-content: end;
     align-items: center;
+    overflow: hidden;
 }
 
 .navbar {
