@@ -8,3 +8,4 @@ menu.onclick = () => {
 
 menu.addEventListener("click", () => 
 navbar.classList.toggle("active"));
+

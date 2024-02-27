@@ -12,6 +12,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;700&display=swap');
 
+
+/* CORREÇÃO DE CABEÇALHO FIXO AO CLICAR EM LINK ANCORADO NA PÁGINA*/
+#start-servicos, #start-contato, #start-sobre {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    left: 0;
+    margin-top: -154px; /* esse valor varia de acordo com a altura do seu Header, se ele tiver 200px de altura coloque aqui -220px por exemplo */
+    background-color: transparent;
+    z-index: -1;
+}
+
+
+
 * {
     font-family: 'Dosis', sans-serif;
     margin: 0;
@@ -108,6 +122,7 @@ header {
 }
 
 #menu-bar {
+    position: absolute;
     font-size: 3rem;
     cursor: pointer;
     color: white;
@@ -116,7 +131,7 @@ header {
     padding: .5rem 1.5rem;
     display: none;
     margin-right: 2rem;
-    
+    z-index: 1000;
 }
 
 .menu-cont {
@@ -134,8 +149,8 @@ header {
     align-items: center;
     overflow-x: hidden;
     text-transform: uppercase;
-    
 }
+
 
 .navbar > a {
     color: white;
@@ -147,6 +162,8 @@ header {
 .navbar > a:hover {
     color: #393940;
 }
+
+
 
 #ativoMenu {
     color: #393940;
@@ -661,44 +678,6 @@ footer {
     display: block;
 }
 
-/* .itens a{
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    border: 1px solid rgb(65, 66, 61);
-    border-radius: 1rem;
-    width: 300px;
-    color: rgb(65, 66, 61);
-}
-
-.itens {
-    border-radius: 1rem;
-}
-
-.itens a:hover, .ativo a{
-    cursor: pointer;
-    color: rgb(206, 107, 0);
-    background-color: white;
-    border-color: rgb(206, 107, 0);
-}
-
-
-.itens span {
-    font-size: 2rem;
-    border-left: 1px solid rgb(65, 66, 61);
-    padding: 1rem;
-}
-
-
-
-.itens img {
-    margin-left: 2rem;
-}
-
-.checklista {
-    width: 20px;
-} */
-
 .cont-serv {
     margin-right: 15rem;
 }
@@ -789,7 +768,7 @@ footer {
     }
 
     .navbar > a {
-        padding: 2rem;
+        padding: 2rem 1rem;
     }
 
     
@@ -802,8 +781,8 @@ footer {
     }
 
     .navbar > a {
-        padding: 2rem 2rem;
-       
+        padding: 2rem 1rem;
+       font-size: 2rem;
     }
 
     .margens {
@@ -820,6 +799,27 @@ footer {
         margin-right: 5rem;
         padding-left: 10rem;
     }
+
+     .identidade {
+    flex-direction: column;
+    
+    }
+    .cont-identidade {
+        width: 100%;
+    }
+    
+    .selo {
+        padding-bottom: 5rem;
+    }
+
+    .conteudoContato {
+        flex-direction: column;
+        gap: 10rem;
+    }
+    
+    .menu_logo {
+        width: 45rem;
+    }
     
 
     
@@ -828,27 +828,32 @@ footer {
 @media(max-width:834px) { 
     #menu-bar {
         display: initial;
+
     }
+
+    
 
     .navbar {
         position: absolute;
         right: 0; 
         height: 100vh;
         top: -1000%;
-        background: blue;
+        background: rgb(206, 107, 0);
         border-top: .1rem solid rgba(0, 0, 0, .1);
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        padding-top: 10rem;
     }
 
     .navbar.active {
-        top: 148px;
+        top: 0px;
     }
 
 
     .navbar > a {
         padding: 4rem 0;
+        
     }
 
     .menu_logo > img {
