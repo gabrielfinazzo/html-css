@@ -184,11 +184,33 @@ header {
 }
 .background-especial {
     background-image: url(imagens/backgroundservicos2.jpg);
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     height: calc(100vh - 350px);
 }
+
+#backPmoc {
+    background-image: url(imagens/Air-Conditioning-Repair.jpg);
+}
+
+#backAvcb {
+    background-image: url(imagens/extinguishers.jpg);
+}
+
+#backDesm {
+    background-image: url(imagens/resptecnicpserv.png);
+}
+
+#backMonta {
+    background-image: url(imagens/monta.jpg);
+}
+
+#backNr12 {
+    background-image: url(imagens/nr12.jpg)
+}
+
 /* Início Sobre */
 
 main {
@@ -201,6 +223,7 @@ main {
     width: 100vw;
     height: 100%;
     padding: 0 30rem;
+    overflow-x: hidden;
 }
 
 
@@ -506,9 +529,7 @@ section.sobre {
 }
 
 
-.infoInput {
-    padding-right: 34.4rem;
-}
+
 
 .infoInput form{
     display: flex;
@@ -790,6 +811,10 @@ footer {
     .navbar > a {
         padding: 2rem 3rem;
     }
+
+    .conteudoContato {
+        
+    }
     
 }
 
@@ -868,6 +893,9 @@ footer {
         width: 45rem;
     }
     
+    .form-mensage {
+        width: 40rem;
+    }
 
     
 }
@@ -923,6 +951,10 @@ footer {
     .conteudoContato {
         flex-direction: column;
         gap: 10rem;
+    }
+
+    .form-mensage {
+        width: 40rem;
     }
 }
 
