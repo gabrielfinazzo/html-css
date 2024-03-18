@@ -37,6 +37,7 @@
 body {
     width: 100vw;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 html {
@@ -597,6 +598,7 @@ section.sobre {
     transition: 0.5s ease-in;
     font-size: 20px;
     color: rgb(65, 66, 61);
+    margin-bottom: 1rem;
 }
 
 .button:hover {
@@ -1048,6 +1050,10 @@ footer {
     #ajuste-margin {
         display: none;
     }
+
+    .cont-sobre > p {
+        padding: 1rem 0 4rem;
+    }
 }
 
 
@@ -1069,11 +1075,11 @@ footer {
     }
 
     .form-items input {
-        width: 35rem;
+        width: 30rem;
     }
 
     #imsg {
-        width: 35rem;
+        width: 30rem;
     }
 
     .cont-serv {
@@ -1093,7 +1099,17 @@ footer {
         width: 20rem;
     }
 
-    
+    .cont-espec {
+        padding: 2rem 0rem 2rem 3rem;
+    }
+
+    .geral-espec {
+        padding-left: 0;
+    }
+
+    .button {
+        width: 12rem;
+    }
     
 
     
