@@ -61,6 +61,7 @@ header {
     color: white;
 }
 
+
 .menutopo > p,
 .menutopo > p > a {
     padding: 0rem 1rem;
@@ -82,6 +83,9 @@ header {
 }
 
 
+#mail {
+    padding: 0;
+}
 
 .menutopo > p > i,
 .menutopo > p > a > i {
@@ -183,32 +187,41 @@ header {
     height: 150px;
 }
 .background-especial {
-    background-image: url(imagens/backgroundservicos2.jpg);
+    background-image: url(imagens/backgroundservicos3.jpg);
+    background-position: center center;
+    background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
     height: calc(100vh - 350px);
+}
+
+#backPrin {
+    
 }
 
 #backPmoc {
     background-image: url(imagens/Air-Conditioning-Repair.jpg);
+    background-attachment: scroll;
 }
 
 #backAvcb {
     background-image: url(imagens/extinguishers.jpg);
+    background-attachment: scroll;
 }
 
 #backDesm {
     background-image: url(imagens/resptecnicpserv.png);
+    background-attachment: scroll;
 }
 
 #backMonta {
     background-image: url(imagens/monta.jpg);
+    background-attachment: scroll;
 }
 
 #backNr12 {
-    background-image: url(imagens/nr12.jpg)
+    background-image: url(imagens/nr12.jpg);
+    background-attachment: scroll;
 }
 
 .carimbo {
@@ -517,7 +530,7 @@ section.sobre {
     display: flex;
     padding-bottom: 5rem;
     width: 100%;
-    justify-content: space-between;
+    gap: 5rem;
 }
 
 .tituloContato {
@@ -547,9 +560,12 @@ section.sobre {
 
 .form-items input {
     width: 40rem;
+    height: 4rem;
     border-radius: .5rem;
     border-style: none;
     border: 1px solid rgb(65, 66, 61);
+    font-size: 2rem;
+    padding: 1rem;
 }
 
 .infoInput h2 {
@@ -571,12 +587,16 @@ section.sobre {
 }
 
 .button {
+    width: 15rem;
     padding: .5rem;
+    height: 4rem;
     border-radius: .5rem;
     background-color: rgb(236, 234, 234);
     border-style: none;
     border: 1px solid rgb(65, 66, 61);
     transition: 0.5s ease-in;
+    font-size: 20px;
+    color: rgb(65, 66, 61);
 }
 
 .button:hover {
@@ -659,6 +679,7 @@ footer {
     color: rgb(65, 66, 61);
     font-weight: bold;
     overflow-x: hidden;
+    
 }
 
 .titulo-principal > h1 {
@@ -1004,9 +1025,33 @@ footer {
     .carimbo > img {
         width: 20rem;
     }
+
+    .menu_logo {
+        width: 40rem;
+    }
+
+    .logo {
+        width: 30rem;
+    }
+
+    .menutopo {
+        padding: 1rem 2rem;
+    }
+    .menutopo > p > span, .menutopo > p > a > span {
+        display: none;
+    }
+
+    .menutopo > p > i, .menutopo > p > a > i {
+        font-size: 2.5rem;
+    }
+
+    #ajuste-margin {
+        display: none;
+    }
 }
 
-@media(max-width:400px) {
+
+@media(max-width:450px) {
     .margens {
         padding: 0 4rem;
     }
@@ -1040,6 +1085,15 @@ footer {
         padding-right: 4rem;
     }
 
+    .menu_logo {
+        width: 30rem;
+        padding: 2rem 5rem 2rem 1rem;
+    }
+    .logo {
+        width: 20rem;
+    }
+
+    
     
 
     
