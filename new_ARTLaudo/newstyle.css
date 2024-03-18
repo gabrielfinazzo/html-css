@@ -193,8 +193,10 @@ header {
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height: calc(100vh - 350px);
+    height: 63vh;
+    position: relative;
 }
+
 
 #backPrin {
     
@@ -227,8 +229,9 @@ header {
 
 .carimbo {
     position: absolute;
-    top: 51rem;
-    right: 7rem;
+    bottom: -90px;
+    right: 5rem;
+    z-index: 10;
 }
 
 /* Início Sobre */
@@ -829,10 +832,8 @@ footer {
         margin-right: 0;
     }
 
-    .carimbo {
-        top: 43rem;
-    }
 }
+
 
 @media(max-width:1500px) {
     .margens {
@@ -853,11 +854,9 @@ footer {
         
     }
 
-    .carimbo {
-        top: 41.5rem;
-    }
     
 }
+
 
 
 @media(max-width:1200px) {
@@ -874,7 +873,6 @@ footer {
         padding: 2rem 1rem;
     }
 
-    
 }
 
 
@@ -938,19 +936,15 @@ footer {
         width: 40rem;
     }
 
-    .carimbo {
-        top: 45rem;
-    }
-    
+  
 }
+
 
 @media(max-width:834px) { 
     #menu-bar {
         display: initial;
 
     }
-
-    
 
     .navbar {
         position: absolute;
@@ -1002,13 +996,13 @@ footer {
     }
 
     .carimbo {
-        top: 48rem;
-        right: 5rem;
+        display: none;
     }
 
-    .carimbo > img {
-        width: 30rem;
+    .background-especial {
+        display: none;
     }
+
 }
 
 @media(max-width:650px) {
@@ -1019,14 +1013,6 @@ footer {
         row-gap: 5rem;
     }
 
-    .carimbo {
-        top: 57rem;
-        right: 5rem;
-    }
-
-    .carimbo > img {
-        width: 20rem;
-    }
 
     .menu_logo {
         width: 40rem;
@@ -1054,6 +1040,7 @@ footer {
     .cont-sobre > p {
         padding: 1rem 0 4rem;
     }
+
 }
 
 
