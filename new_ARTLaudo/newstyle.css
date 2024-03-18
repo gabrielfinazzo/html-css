@@ -229,10 +229,12 @@ header {
 
 .carimbo {
     position: absolute;
-    bottom: -90px;
+    bottom: -70px;
     right: 5rem;
     z-index: 10;
 }
+
+
 
 /* Início Sobre */
 
@@ -850,10 +852,9 @@ footer {
         padding: 2rem 3rem;
     }
 
-    .conteudoContato {
-        
+    #carimboAvcb {
+        bottom: -30px;
     }
-
     
 }
 
@@ -871,6 +872,10 @@ footer {
 
     .navbar > a {
         padding: 2rem 1rem;
+    }
+
+    .carimbo > img {
+        width: 250px;
     }
 
 }
@@ -934,6 +939,10 @@ footer {
     
     .form-mensage {
         width: 40rem;
+    }
+
+    #carimboAvcb {
+        right: 2rem;
     }
 
   
