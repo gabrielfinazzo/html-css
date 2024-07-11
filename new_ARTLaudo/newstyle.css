@@ -382,7 +382,7 @@ section.sobre {
 
 /* Início Especializações */
 .margen-espec {
-    padding: 0 30rem;
+    padding: 0 31rem;
 }
 
 .espec {
@@ -517,8 +517,8 @@ section.sobre {
 }
 
 #ltcat, #GRO, #lip, #eat, #esocial, #sst, #respTec {
-    height: 100%;
     width: 100%;
+    
 }
 
 
