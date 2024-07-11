@@ -19,7 +19,7 @@
     width: 1px;
     height: 1px;
     left: 0;
-    margin-top: -154px; /* esse valor varia de acordo com a altura do seu Header, se ele tiver 200px de altura coloque aqui -220px por exemplo */
+    margin-top: -130px; /* esse valor varia de acordo com a altura do seu Header, se ele tiver 200px de altura coloque aqui -220px por exemplo */
     background-color: transparent;
     z-index: -1;
 }
@@ -58,7 +58,7 @@ header {
     display: flex;
     justify-content: end;
     align-items: center;
-    padding: 1rem 5rem;
+    padding: 0.5rem 5rem;
     color: white;
 }
 
@@ -103,7 +103,7 @@ header {
 
 .menuprincipal {
     width: 100vw;
-    height: 109px;
+    height: 95px;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -185,7 +185,7 @@ header {
 
 /* BACKGROUND ESPECIAL */
 .espacamento {
-    height: 150px;
+    height: 130px;
 }
 .background-especial {
     background-image: url(imagens/backgroundservicos3.jpg);
@@ -194,7 +194,7 @@ header {
     background-repeat: no-repeat;
     height: 70vh;
     position: relative;
-    background-attachment: scroll;
+    background-attachment: fixed;
 }
 
 
@@ -204,56 +204,62 @@ header {
 
 #backPmoc {
     background-image: url(imagens/Air-Conditioning-Repair.jpg);
-    
+    background-attachment: scroll;
 }
 
 #backAvcb {
     background-image: url(imagens/extinguishers.jpg);
-    
+    background-attachment: scroll;
 }
 
 #backDesm {
     background-image: url(imagens/resptecnicpserv.png);
-    
+    background-attachment: scroll;
 }
 
 #backMonta {
     background-image: url(imagens/monta.jpg);
-   
+    background-attachment: scroll;
 }
 
 #backNr12 {
     background-image: url(imagens/nr12.jpg);
-   
+    background-attachment: scroll;
 }
 
 #backLTCAT {
     background-image: url(imagens/LTCAT_edit1.jpg);
+    background-attachment: scroll;
 }
 
 #backGRO {
     background-image: url(imagens/GRO\ 01_edit1.jpg);
-    
+    background-attachment: scroll;
 }
 
 #backLip {
     background-image: url(imagens/LIP_edit1.jpg);
+    background-attachment: scroll;
 }
 
 #backAep {
     background-image: url(imagens/EAT\ 01.jpg);
+    background-attachment: scroll;
 }
 
 #backEsocial {
     background-image: url(imagens/eSocial_edit1.jpg);
+    background-attachment: scroll;
 }
 
 #backSST {
     background-image: url(imagens/Gestão\ SST_edita1.jpg);
+    background-attachment: scroll;
 }
 
 #backRespTec {
     background-image: url(imagens/Reponsavel\ técnico\ de\ empresa_edit1.jpg);
+    background-attachment: scroll;
 }
 
 .carimbo {
@@ -276,7 +282,7 @@ main {
 .margens {
     width: 100vw;
     height: 100%;
-    padding: 0 30rem;
+    padding: 0 40rem;
     overflow-x: hidden;
 }
 
@@ -303,13 +309,13 @@ section.sobre {
     font-weight: 400;
     font-size: 2rem;
     color: #393940;
-    padding: 1rem 0 5rem;
+    padding: 1rem 0 2.5rem;
     padding-right: 15rem;
     text-transform: initial;
 }
 
 .cont-sobre > h2 {
-    padding-top: 5rem;
+    padding-top: 2.5rem;
     font-size: 4rem;
     font-family: 'bellgothic';
     color: rgb(65, 66, 61);
@@ -331,7 +337,7 @@ section.sobre {
     display: flex;
     justify-content: start;
     align-items: start;
-    padding-top: 5rem;
+    padding-top: 2.5rem;
 }
 
 .cont-identidade {
@@ -376,7 +382,7 @@ section.sobre {
 
 /* Início Especializações */
 .margen-espec {
-    padding: 0 20.5rem;
+    padding: 0 30rem;
 }
 
 .espec {
@@ -390,8 +396,8 @@ section.sobre {
 .espec-title {
     display: flex;
     justify-content: center;
-    padding-bottom: 5rem;
-    padding-top: 5rem;
+    padding-bottom: 2.5rem;
+    padding-top: 2.5rem;
 }
 .espec-title > h2 {
     font-size: 4rem;
@@ -495,7 +501,7 @@ section.sobre {
 }
 
 .serv-titulo {
-    padding: 5rem 0 5rem 0;
+    padding: 2.5rem 0 2.5rem 0;
     font-size: 3rem;
     color: rgb(65, 66, 61);
 }
@@ -573,7 +579,7 @@ section.sobre {
 }
 
 .tituloContato {
-    padding: 5rem 0 8rem 0;
+    padding: 2.5rem 0 2.5rem 0;
     font-size: 4rem;
     font-weight: bold;
 }
@@ -712,7 +718,7 @@ footer {
 /* PÁGINA SERVIÇOS */
 
 .servicos-base {
-    padding-top: 150px;
+    padding-top: 130px;
     width: 100vw;
     background-color: rgb(236, 234, 234);
 }
@@ -776,7 +782,7 @@ footer {
 .itens > a {
     display: flex;
     align-items: center;
-    width: 340px;
+    width: 300px;
     height: 40px;
     font-size: 2rem;
     color: rgb(65, 66, 61);
@@ -795,12 +801,14 @@ footer {
 }
 
 .imgCheck {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
-    width: 30%;
+    width: 15%;
     border: 1px solid rgb(65, 66, 61);
     border-right: none;
-    padding-top: 1rem;
-    padding-left: 2.8rem;
+    
 }
 
 .checklista {
@@ -1002,6 +1010,7 @@ footer {
     
     .menu_logo {
         width: 45rem;
+        border: 0.5px solid white;
     }
     
     .form-mensage {
