@@ -567,6 +567,7 @@ section.sobre {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     color: rgb(65, 66, 61);
     padding-bottom: 5rem;
 }
@@ -575,7 +576,8 @@ section.sobre {
     display: flex;
     padding-bottom: 5rem;
     width: 100%;
-    gap: 18rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .tituloContato {
@@ -660,12 +662,28 @@ section.sobre {
 
 footer {
     display: flex;
-    justify-content: space-between;
     background-color: rgb(65, 66, 61);
-    padding: 4rem;
+    overflow-x: hidden;
+    flex-direction: column;
+}
+
+.conteudo-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 4rem 2.5rem 4rem;
     font-size: 1.8rem;
     color: white;
-    overflow-x: hidden;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 1rem;
+    font-size: 1.5rem;
+    padding-bottom: 2.5rem;
 }
 
 .creaInsta {
@@ -1128,6 +1146,14 @@ footer {
 
 }
 
+@media(max-width:550px) {
+    .conteudo-footer{
+        flex-direction: column;
+        row-gap: 5rem;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 @media(max-width:450px) {
     .margens {
@@ -1182,7 +1208,26 @@ footer {
     .button {
         width: 12rem;
     }
-    
 
+    .margenCont {
+        padding: 0 0 0 4rem;
+    }
+    
+    .form-items input {
+        
+        height: 4rem;
+        border-radius: .5rem;
+        border-style: none;
+        border: 1px solid rgb(65, 66, 61);
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    .conteudo-footer{
+        flex-direction: column;
+        row-gap: 5rem;
+        justify-content: center;
+        align-items: center;
+    }
     
 }
