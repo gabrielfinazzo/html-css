@@ -619,7 +619,7 @@ section.sobre {
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 2.5rem;
+    column-gap: 4rem;
 }
 
 .infoInput h2 {
@@ -642,11 +642,10 @@ section.sobre {
 
 #imsg {
     width: 100%;
-    border-radius: .5rem;
 }
 
 .button {
-    width: 20rem;
+    width: 10rem;
     padding: .5rem;
     height: 4rem;
     background-color: rgb(236, 234, 234);
