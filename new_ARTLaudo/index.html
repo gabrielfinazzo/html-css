@@ -21,13 +21,13 @@
             </div>
             <div class="menu-cont">
                 <nav class="navbar">
-                    <a href="index.html">home</a>
-                    <a href="#start-sobre">sobre</a>
-                    <a href="#start-servicos">serviços</a>
-                    <a href="#start-contato">contato</a>
-                    <a href="blog.html">blog</a>
+                    <a href="index.html" class="menu-item">home</a>
+                    <a href="#start-sobre" class="menu-item">sobre</a>
+                    <a href="#start-servicos" class="menu-item">serviços</a>
+                    <a href="#start-contato" class="menu-item">contato</a>
+                    <a href="blog.html" class="menu-item">blog</a>
                 </nav>
-                <div id="menu-bar" class="fas fa-bars"></div>
+                <div id="menu-bar" class="fas fa-bars" onclick="menuShow()"></div>
             </div>
         </div>
     </header>
@@ -91,90 +91,32 @@
                         <h2>Serviços</h2>
                     </div>
                     <div class="serv-body">
-                        <div class="servico" id="pmoc" id="pmoc1">
-                            <div class="img-serv">
-                                <a href="pmoc.html"><img src="imagens/pmocmini2.jpg" alt="" class="imgServico"></a>
-                                <a href="" class="saibaMais"><span >Saiba mais</span></a>
-                            </div>
-                            <div class="title-serv">
-                                <img src="imagens/checkbranco.png" alt="" class="check">
-                                <h4>Ar Condicionado</h4>
-                            </div>
-                            <div class="pservic">
-                                <p>PMOC (Plano de manutenção, operação e controle).</p>
-                            </div>
-                        </div>
-                        <div class="servico" id="avcb" itemid="avcb1">
-                            <div class="img-serv">
-                                <a href="avcb-clcb.html"><img src="imagens/extintoresmini.jpg" alt="" class="imgServico"></a>
-                                <a href="" class="saibaMais"><span >Saiba mais</span></a>
-                            </div>
-                            <div class="title-serv">
-                                <img src="imagens/checkbranco.png" alt="" class="check">
-                                <h4>AVCB</h4>
-                            </div>
-                            <div class="pservic">
-                                <p>Auto de vistoria do corpo de bombeiro.</p>
-                            </div>
-                            <div class="title-serv">
-                                <img src="imagens/checkbranco.png" alt="" class="check">
-                                <h4>CLCB</h4>
-                            </div>
-                            <div class="pservic">
-                                <p>Certificado de licença do corpo de bombeiro.</p>
-                            </div>
-                        </div>
-                        <div class="servico" id="monta" id="monta1">
-                            <div class="img-serv">
-                                <a href="monta.html"><img src="imagens/montamini2.jpg" alt="" class="imgServico"></a>
-                                <a href="" class="saibaMais"><span >Saiba mais</span></a>
-                            </div>
-                            <div class="title-serv">
-                                <img src="imagens/checkbranco.png" alt="" class="check">
-                                <h4>Reclassificação de Monta</h4>
-                            </div>
-                            <div class="pservic">
-                                <p>Recuperação de sinistro de veículos envolvidos em acidente.</p>
-                            </div>
-                        </div>
-                        <div class="servico" id="nr121">
-                            <div class="img-serv">
-                                <a href="nr12.html"><img src="imagens/nr12.jpg" alt="" id="nr12" class="imgServico"></a>
-                                <a href="" class="saibaMais"><span>Saiba mais</span></a>
-                            </div>
-                            <div class="title-serv">
-                                <img src="imagens/checkbranco.png" alt="" class="check">
-                                <h4>NR12</h4>
-                            </div>
-                            <div class="pservic">
-                                <p>Segurança para máquinas.</p>
-                            </div>
-                        </div>
-                        <div class="servico" id="resptec1">
-                            <div class="img-serv">
-                                <a href="desmanche.html"><img src="imagens/resptecnicpserv.png" alt="" id="resptec" class="imgServico"></a>
-                                <a href="" class="saibaMais"><span>Saiba mais</span></a>
-                            </div>
-                            <div class="title-serv">
-                                <img src="imagens/checkbranco.png" alt="" class="check">
-                                <h4>Responsável técnico</h4>
-                            </div>
-                            <div class="pservic">
-                                <p>Desmanches e desmontes.</p>
-                            </div>
-                        </div>
-                        
+
                         <div class="servico" id="">
                             <div class="img-serv">
-                                <a href="ltcat.html"><img src="imagens/LTCAT_edit1.jpg" alt="" id="ltcat" class="imgServico"></a>
+                                <a href="sst.html"><img src="imagens/Gestão SST_edita1.jpg" alt="" id="sst" class="imgServico"></a>
                                 <a href="" class="saibaMais"><span>Saiba mais</span></a>
                             </div>
                             <div class="title-serv">
                                 <img src="imagens/checkbranco.png" alt="" class="check">
-                                <h4>LTCAT</h4>
+                                <h4>Gestão em SST</h4>
                             </div>
                             <div class="pservic">
-                                <p>Laudo técnico das condições do ambiente de trabalho.</p>
+                                <p>Saúde e segurança do trabalho.</p>
+                            </div>
+                        </div>
+
+                        <div class="servico" id="">
+                            <div class="img-serv">
+                                <a href="esocial.html"><img src="imagens/eSocial_edit1.jpg" alt="" id="esocial" class="imgServico"></a>
+                                <a href="" class="saibaMais"><span>Saiba mais</span></a>
+                            </div>
+                            <div class="title-serv">
+                                <img src="imagens/checkbranco.png" alt="" class="check">
+                                <h4>eSocial</h4>
+                            </div>
+                            <div class="pservic">
+                                <p>Escrituração digital das obrigações fiscais, previdenciárias e trabalhista.</p>
                             </div>
                         </div>
 
@@ -201,6 +143,20 @@
 
                         <div class="servico" id="">
                             <div class="img-serv">
+                                <a href="ltcat.html"><img src="imagens/LTCAT_edit1.jpg" alt="" id="ltcat" class="imgServico"></a>
+                                <a href="" class="saibaMais"><span>Saiba mais</span></a>
+                            </div>
+                            <div class="title-serv">
+                                <img src="imagens/checkbranco.png" alt="" class="check">
+                                <h4>LTCAT</h4>
+                            </div>
+                            <div class="pservic">
+                                <p>Laudo técnico das condições do ambiente de trabalho.</p>
+                            </div>
+                        </div>
+
+                        <div class="servico" id="">
+                            <div class="img-serv">
                                 <a href="lip.html"><img src="imagens/LIP_edit1.jpg" alt="" id="lip" class="imgServico"></a>
                                 <a href="" class="saibaMais"><span>Saiba mais</span></a>
                             </div>
@@ -210,6 +166,20 @@
                             </div>
                             <div class="pservic">
                                 <p>Laudo de insalubridade e periculosidade.</p>
+                            </div>
+                        </div>
+
+                        <div class="servico" id="nr121">
+                            <div class="img-serv">
+                                <a href="nr12.html"><img src="imagens/nr12.jpg" alt="" id="nr12" class="imgServico"></a>
+                                <a href="" class="saibaMais"><span>Saiba mais</span></a>
+                            </div>
+                            <div class="title-serv">
+                                <img src="imagens/checkbranco.png" alt="" class="check">
+                                <h4>NR12</h4>
+                            </div>
+                            <div class="pservic">
+                                <p>Segurança para máquinas.</p>
                             </div>
                         </div>
 
@@ -227,31 +197,66 @@
                             </div>
                         </div>
 
-                        <div class="servico" id="">
+                        <div class="servico" id="avcb" itemid="avcb1">
                             <div class="img-serv">
-                                <a href="esocial.html"><img src="imagens/eSocial_edit1.jpg" alt="" id="esocial" class="imgServico"></a>
-                                <a href="" class="saibaMais"><span>Saiba mais</span></a>
+                                <a href="avcb-clcb.html"><img src="imagens/extintoresmini.jpg" alt="" class="imgServico"></a>
+                                <a href="" class="saibaMais"><span >Saiba mais</span></a>
                             </div>
                             <div class="title-serv">
                                 <img src="imagens/checkbranco.png" alt="" class="check">
-                                <h4>eSocial</h4>
+                                <h4>AVCB</h4>
                             </div>
                             <div class="pservic">
-                                <p>Escrituração digital das obrigações fiscais, previdenciárias e trabalhista.</p>
+                                <p>Auto de vistoria do corpo de bombeiro.</p>
+                            </div>
+                            <div class="title-serv">
+                                <img src="imagens/checkbranco.png" alt="" class="check">
+                                <h4>CLCB</h4>
+                            </div>
+                            <div class="pservic">
+                                <p>Certificado de licença do corpo de bombeiro.</p>
                             </div>
                         </div>
 
-                        <div class="servico" id="">
+                        <div class="servico" id="pmoc" id="pmoc1">
                             <div class="img-serv">
-                                <a href="sst.html"><img src="imagens/Gestão SST_edita1.jpg" alt="" id="sst" class="imgServico"></a>
+                                <a href="pmoc.html"><img src="imagens/pmocmini2.jpg" alt="" class="imgServico"></a>
+                                <a href="" class="saibaMais"><span >Saiba mais</span></a>
+                            </div>
+                            <div class="title-serv">
+                                <img src="imagens/checkbranco.png" alt="" class="check">
+                                <h4>Ar Condicionado</h4>
+                            </div>
+                            <div class="pservic">
+                                <p>PMOC (Plano de manutenção, operação e controle).</p>
+                            </div>
+                        </div>
+
+                        <div class="servico" id="monta" id="monta1">
+                            <div class="img-serv">
+                                <a href="monta.html"><img src="imagens/montamini2.jpg" alt="" class="imgServico"></a>
+                                <a href="" class="saibaMais"><span >Saiba mais</span></a>
+                            </div>
+                            <div class="title-serv">
+                                <img src="imagens/checkbranco.png" alt="" class="check">
+                                <h4>Reclassificação de Monta</h4>
+                            </div>
+                            <div class="pservic">
+                                <p>Recuperação de sinistro de veículos envolvidos em acidente.</p>
+                            </div>
+                        </div>
+
+                        <div class="servico" id="resptec1">
+                            <div class="img-serv">
+                                <a href="desmanche.html"><img src="imagens/resptecnicpserv.png" alt="" id="resptec" class="imgServico"></a>
                                 <a href="" class="saibaMais"><span>Saiba mais</span></a>
                             </div>
                             <div class="title-serv">
                                 <img src="imagens/checkbranco.png" alt="" class="check">
-                                <h4>Gestão em SST</h4>
+                                <h4>Responsável técnico</h4>
                             </div>
                             <div class="pservic">
-                                <p>Saúde e segurança do trabalho.</p>
+                                <p>Desmanches e desmontes.</p>
                             </div>
                         </div>
 
@@ -268,15 +273,46 @@
                                 
                             </div>
                         </div>
-                        
+
                     </div>
                 </section>
             </div>
         </div>
         <!-- FIM SERVIÇOS -->
 
+        <!-- Inicio Missão e Visão-->
+        <div class="margens margen-espec">
+            <div class="valores">
+                <div class="missaoVisao">
+                    <div class="logoMv">
+                        <img src="imagens/Alvo.png" alt="">
+                    </div>
+                    <div class="descritivoMv">
+                        <h3>Missão</h3>
+                        <p>
+                            Proporcionar serviços seguros embasados nas normas técnicas vigentes, utilizar os conhecimentos de engenharia para analisar cada situação sempre priorizando a saúde, bem estar e a segurança. 
+                        </p>
+                    </div>
+                </div>
+                <div class="missaoVisao">
+                    <div class="logoMv">
+                        <img src="imagens/Binoculos.png" alt="">
+                        
+                    </div>
+                    <div class="descritivoMv">
+                        <h3>Visão</h3>
+                        <p>
+                            Trabalhar em conjunto com os clientes na busca da responsabilidade social proporcionando produtos e serviços que atendam todos os parâmetros técnicos exigidos por lei. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <!-- Final Missão e Visão -->
+
+
         <!-- ESPECIALIZAÇÕES -->
-        <div class="background1" >
+        <div class="background2" >
             <div class="margens margen-espec">
                 <section class="espec">
                         <div class="espec-title">
@@ -311,7 +347,7 @@
 
         <!-- CONTATO -->
         <div id="start-contato" class="sessoes"></div>
-        <div class="background2">
+        <div class="background1">
             <div class="margens margenCont">
                 <section class="contato">
                     <div class="tituloContato">
@@ -375,7 +411,10 @@
     </main>
     <footer>
         <div class="conteudo-footer">
-            <div class="creaInsta">
+            <div class="vazio">
+
+            </div>
+            <!-- <div class="creaInsta">
                 <div class="creaEng">
                     <p>Eng.Alessandro Silva</p>
                     <p>CREA-SP: 5070620445</p>
@@ -383,10 +422,12 @@
                 <div class="iconeInsta">
                     <a href=""><i class="fa-brands fa-instagram"></i></a>
                 </div>
-            </div>
+            </div> -->
             <div class="footer-info">
                 <p>Segunda á sexta das 08:00h às 18:00h.</p>
+                <p>Rua Teodoro Sampaio, 744, Pinheiros, São Paulo/SP.</p>
                 <p>engenharia@artlaudosp.com.br</p>
+                <p>CNPJ: 56.142.381/0001-06 </p>
                 <p>11 96174-5215</p>
             </div>
             <!-- <div class="logofooter">

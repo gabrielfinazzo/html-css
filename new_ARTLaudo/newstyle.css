@@ -379,6 +379,35 @@ section.sobre {
 /* Fim Sobre */
 
 
+/* Inicio Visão e Missão */
+.valores {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 0 2.5rem 0;
+}
+
+.missaoVisao {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: #393940;
+    text-align: justify;
+}
+
+.missaoVisao h3 {
+    font-size: 2.6rem;
+    padding-bottom: 1rem;
+}
+
+.logoMv > img {
+    width: 45px;
+}
+
+.descritivoMv {
+    padding: 3rem 4rem 3rem 4rem;
+}
+/* Fim Inicio e Visão */
+
 
 
 /* Início Especializações */
@@ -420,7 +449,7 @@ section.sobre {
 .cont-espec > h3 {
     font-size: 2.6rem;
     color: #393940;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
 }
 
 .cont-espec {
@@ -675,7 +704,7 @@ footer {
 .conteudo-footer {
     display: flex;
     justify-content: space-between;
-    padding: 4rem 4rem 2.5rem 4rem;
+    padding: 2rem 4rem;
     font-size: 1.8rem;
     color: white;
 }
@@ -690,6 +719,10 @@ footer {
     font-size: 1.5rem;
     padding-bottom: 2.5rem;
     font-size: 1.8rem;
+}
+
+.vazio {
+    width: 200px;
 }
 
 .creaInsta {
@@ -712,6 +745,7 @@ footer {
 .direitos {
     padding: 1rem;
     padding-left: 2rem;
+    font-size: 1rem;
 }
 
 .logofooter {
@@ -1059,11 +1093,18 @@ footer {
         padding-right: 5rem;
     }
 
+    aside {
+        display: none;
+    }
   
 }
 
 
 @media(max-width:834px) { 
+    .open {
+        display: block;
+    }
+
     #menu-bar {
         display: initial;
 
@@ -1132,6 +1173,8 @@ footer {
         justify-content: center;
         align-items: center;
     }
+
+    
 
 }
 
