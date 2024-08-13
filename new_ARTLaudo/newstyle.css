@@ -884,17 +884,21 @@ footer {
 
 .cont-serv {
     margin-right: 15rem;
+    line-height: 1.5;
+    text-align: justify;
 }
 
 .cont-serv h3 {
     font-size: 3rem;
     color: rgb(65, 66, 61);
-    padding-top: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
 }
 
 .cont-serv p {
     font-size: 2rem;
     color: rgb(65, 66, 61);
+    
 }
 
 .cont-serv p span {
@@ -911,15 +915,31 @@ footer {
 
 .espacamentoPTop {
     font-weight: bold;
+    padding: 1rem 0;
 }
 
 .segmentos {
     font-size: 2rem;
     color: rgb(65, 66, 61);
-    list-style-position: inside;
-    padding-left: 4rem;
+    list-style-position: outside;
+    padding-left: 6rem;
 }
 
+.segmentos span {
+    font-weight: bold;
+}
+
+.segmentos li {
+    padding: 0.5rem 0;
+}
+
+.segmentos li:first-child {
+    padding-top: 0;
+}
+
+.segmentos li:last-child {
+    padding-bottom: 0;
+}
 
 #fontSizeH4 {
     font-size: 2rem;
@@ -929,7 +949,6 @@ footer {
 
 #economiah1 {
     padding-top: 0;
-    padding-bottom: 0;
 
 }
 
@@ -940,6 +959,7 @@ footer {
     color: rgb(65, 66, 61);
     padding-right: 15rem;
     background-color: #e0e0e6;
+    line-height: 1.5;
 }
 
 .mensagem-padrao p {
