@@ -747,6 +747,7 @@ footer {
     padding: 1rem;
     padding-left: 2rem;
     font-size: 1rem;
+    padding-top: 11.5rem;
 }
 
 .logofooter {
@@ -888,7 +889,7 @@ footer {
 .cont-serv h3 {
     font-size: 3rem;
     color: rgb(65, 66, 61);
-    padding: 2rem 0;
+    padding-top: 3rem;
 }
 
 .cont-serv p {
@@ -909,7 +910,14 @@ footer {
 }
 
 .espacamentoPTop {
-    padding-top: 3rem;
+    font-weight: bold;
+}
+
+.segmentos {
+    font-size: 2rem;
+    color: rgb(65, 66, 61);
+    list-style-position: inside;
+    padding-left: 4rem;
 }
 
 
@@ -921,6 +929,8 @@ footer {
 
 #economiah1 {
     padding-top: 0;
+    padding-bottom: 0;
+
 }
 
 .mensagem-padrao {
@@ -1003,7 +1013,7 @@ footer {
         font-size: 2rem;
         color: rgb(65, 66, 61);
         padding-right: 15rem;
-        background-color: rgb(236, 234, 234);
+
     }
 
     .navbar > a {
@@ -1175,6 +1185,9 @@ footer {
         align-items: center;
     }
 
+    .direitos {
+        padding-top: 0;
+    }
     
 
 }
