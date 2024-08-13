@@ -950,6 +950,15 @@ footer {
     padding-bottom: 5rem;
 }
 
+.laboratorio {
+    text-decoration: underline;
+    color: rgb(78, 119, 117);
+}
+
+.espacoExecucao {
+    padding: 1.5rem 0;
+}
+
 
 /* BLOG */
 #iframe {
