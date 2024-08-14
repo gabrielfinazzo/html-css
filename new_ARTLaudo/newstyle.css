@@ -192,7 +192,7 @@ header {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 70vh;
+    height: 45vh;
     position: relative;
     background-attachment: fixed;
 }
@@ -800,6 +800,7 @@ footer {
     font-size: 4rem;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+    margin: 0;
     
 }
 
@@ -827,7 +828,7 @@ footer {
 .conteudo-servicos {
     display: flex;
     justify-content: space-around;
-    padding: 5rem 0;
+    padding: 1.5rem 0;
     gap: 10rem;
     overflow-x: hidden;
 }
@@ -838,6 +839,7 @@ footer {
     row-gap: 1rem;
     color: rgb(65, 66, 61);
     padding-left: 10rem;
+    padding-top: 1rem;
 
 }
 
@@ -884,15 +886,14 @@ footer {
 
 .cont-serv {
     margin-right: 15rem;
-    line-height: 1.5;
     text-align: justify;
 }
 
 .cont-serv h3 {
     font-size: 3rem;
     color: rgb(65, 66, 61);
-    padding-top: 2rem;
-    padding-bottom: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .cont-serv p {
@@ -915,7 +916,7 @@ footer {
 
 .espacamentoPTop {
     font-weight: bold;
-    padding: 1rem 0;
+    padding: 0.75rem 0;
 }
 
 .segmentos {
@@ -930,7 +931,7 @@ footer {
 }
 
 .segmentos li {
-    padding: 0.5rem 0;
+    padding: 0.25rem 0;
 }
 
 .segmentos li:first-child {
@@ -954,7 +955,7 @@ footer {
 
 .mensagem-padrao {
     padding-left: 50rem;
-    padding-top: 5rem;
+    padding-top: 2rem;
     font-size: 2rem;
     color: rgb(65, 66, 61);
     padding-right: 15rem;
@@ -967,7 +968,7 @@ footer {
 }
 
 #engenheiro {
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
 }
 
 .laboratorio {
