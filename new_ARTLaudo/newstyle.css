@@ -187,8 +187,9 @@ header {
 .espacamento {
     height: 130px;
 }
+
 .background-especial {
-    background-image: url(imagens/backgroundservicos3.jpg);
+    background-image: url(imagens/backgroundservicos6.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -348,7 +349,7 @@ section.sobre {
     font-size: 2rem;
     color: #393940;
     text-transform: initial;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
     text-align: justify;
 }
 
@@ -361,11 +362,11 @@ section.sobre {
 .lista-identidade > ul {
     display: flex;
     flex-direction: column;
-    row-gap: 3rem;
+    row-gap: 1.5rem;
     padding-left: 2rem;
     font-size: 2rem;
     color: #393940;
-    padding-bottom: 5rem;
+    padding-bottom: 2.5rem;
 } 
 
 .lista-identidade span {
