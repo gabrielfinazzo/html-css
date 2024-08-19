@@ -189,8 +189,8 @@ header {
 }
 
 .background-especial {
-    background-image: url(imagens/backgroundservicos6.jpg);
-    background-position: center center;
+    background-image: url(imagens/backserv1.jpg);
+    background-position: bottom center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 45vh;
@@ -270,6 +270,11 @@ header {
     z-index: 10;
 }
 
+.carimbo img {
+    width: 225px;
+    height: 225px;
+}
+
 
 
 /* Início Sobre */
@@ -283,7 +288,7 @@ main {
 .margens {
     width: 100vw;
     height: 100%;
-    padding: 0 30rem;
+    padding: 0 15rem;
     overflow-x: hidden;
 }
 
@@ -375,7 +380,16 @@ section.sobre {
 
 .selo {
     padding-left: 5rem;
+    padding-bottom: 2rem;
+    
 }
+
+.selo img {
+    width: 280px;
+    height: 280px;
+    padding-top: 2.25;
+}
+
 
 /* Fim Sobre */
 
@@ -405,7 +419,11 @@ section.sobre {
 }
 
 .descritivoMv {
-    padding: 3rem 4rem 3rem 4rem;
+    padding: 0rem 4rem 0rem 4rem;
+}
+
+.paddingVisao {
+    padding-top: 2.5rem;
 }
 /* Fim Inicio e Visão */
 
@@ -419,7 +437,6 @@ section.sobre {
 .espec {
     display: flex;
     flex-direction: column;
-    padding-bottom: 5rem;
 }
 
 
@@ -456,7 +473,7 @@ section.sobre {
 .cont-espec {
     font-size: 2rem;
     color: #393940;
-    padding-bottom: 3rem;
+    padding-bottom: 2.5rem;
     padding-left: 4rem;
     text-align: justify;
 }
@@ -600,7 +617,6 @@ section.sobre {
     align-items: center;
     justify-content: center;
     color: rgb(65, 66, 61);
-    padding-bottom: 5rem;
 }
 
 .conteudoContato {
