@@ -189,13 +189,13 @@ header {
 }
 
 .background-especial {
-    background-image: url(imagens/backserv1.jpg);
-    background-position: bottom center;
+    position: relative;
     background-size: cover;
+    background-image: url(imagens/backgroundservicos2.jpg);
+    background-position: bottom 15% center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     height: 45vh;
-    position: relative;
-    background-attachment: fixed;
 }
 
 
@@ -226,36 +226,43 @@ header {
 #backNr12 {
     background-image: url(imagens/nr12.jpg);
     background-attachment: scroll;
+    background-position: center bottom 37%;
 }
 
 #backLTCAT {
-    background-image: url(imagens/LTCAT_edit1.jpg);
+    background-image: url(imagens/LTCAT_edit3.jpg);
     background-attachment: scroll;
+    background-position: right 0 bottom 55%;
 }
 
 #backGRO {
-    background-image: url(imagens/GRO\ 01_edit1.jpg);
+    background-image: url(imagens/GRO\ 01_edit2.jpg);
     background-attachment: scroll;
+    background-position: right 0 bottom 25%;
 }
 
 #backLip {
-    background-image: url(imagens/LIP_edit1.jpg);
+    background-image: url(imagens/LIP_edit2.jpg);
     background-attachment: scroll;
+    background-position: left 0 bottom 16%;
 }
 
 #backAep {
-    background-image: url(imagens/EAT\ 01.jpg);
+    background-image: url(imagens/EAT\ 01_edit2.jpg);
     background-attachment: scroll;
+    background-position: right 0 bottom 65%;
 }
 
 #backEsocial {
     background-image: url(imagens/eSocial_edit1.jpg);
     background-attachment: scroll;
+    background-position: center center;
 }
 
 #backSST {
-    background-image: url(imagens/Gestão\ SST_edita1.jpg);
+    background-image: url(imagens/Gestão\ SST_edita2.jpg);
     background-attachment: scroll;
+    background-position: right 100% bottom 5%;
 }
 
 #backRespTec {
@@ -381,7 +388,9 @@ section.sobre {
 .selo {
     padding-left: 5rem;
     padding-bottom: 2rem;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .selo img {
@@ -1075,7 +1084,11 @@ footer {
     }
 
     .margens {
-        padding: 0 15rem;
+        padding: 0 10rem;
+    }
+
+    #carimboAvcb {
+        padding-bottom: 3rem;
     }
 }
 
@@ -1123,9 +1136,6 @@ footer {
         width: 100%;
     }
     
-    .selo {
-        padding-bottom: 5rem;
-    }
 
     .conteudoContato {
         flex-direction: column;
@@ -1143,6 +1153,7 @@ footer {
 
     #carimboAvcb {
         right: 2rem;
+        padding-bottom: 3rem;
     }
 
     #imsg {
