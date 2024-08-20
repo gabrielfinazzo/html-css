@@ -226,13 +226,13 @@ header {
 }
 
 #backNr12 {
-    background-image: url(imagens/nr12.jpg);
+    background-image: url(imagens/NR\ 12\ II.jpg);
     background-attachment: scroll;
     background-position: center bottom 37%;
 }
 
 #backLTCAT {
-    background-image: url(imagens/LTCAT\ I.jpg);
+    background-image: url(imagens/LTCAT\ II.jpg);
     background-attachment: scroll;
     background-position: right 0 bottom 55%;
 }
@@ -256,16 +256,16 @@ header {
 }
 
 #backEsocial {
-    background-image: url(imagens/eSocial_edit1.jpg);
+    background-image: url(imagens/eSocial.jpg);
     background-attachment: scroll;
-    background-position: center center;
+    background-position: right 50% bottom 50%;
 }
 
 #backSST {
-    background-image: url(imagens/Gestão\ SST_edita2.jpg);
+    background-image: url(imagens/Gestão\ SST\ II.jpg);
     background-attachment: scroll;
-    background-position: right 100% bottom 5%;
-    background-image: none;
+    background-position: right 100% bottom 60%;
+   
     
 }
 
