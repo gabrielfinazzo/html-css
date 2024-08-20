@@ -192,9 +192,8 @@ header {
     position: relative;
     width: 100%;
     background-size: cover;
-    background-image: url(imagens/backgroundservicos2.jpg);
-    background-position: center bottom 15%;
-    background-attachment: fixed;
+    background-image: url(imagens/Site\ IV.jpg);
+    background-position: center bottom 85%;
     background-repeat: no-repeat;
     height: 45vh;
 }
@@ -233,7 +232,7 @@ header {
 }
 
 #backLTCAT {
-    background-image: url(imagens/LTCAT_edit3.jpg);
+    background-image: url(imagens/LTCAT\ I.jpg);
     background-attachment: scroll;
     background-position: right 0 bottom 55%;
 }
@@ -263,9 +262,9 @@ header {
 }
 
 #backSST {
-    /* background-image: url(imagens/Gestão\ SST_edita2.jpg);
+    background-image: url(imagens/Gestão\ SST_edita2.jpg);
     background-attachment: scroll;
-    background-position: right 100% bottom 5%; */
+    background-position: right 100% bottom 5%;
     background-image: none;
     
 }
