@@ -209,8 +209,9 @@ header {
 }
 
 #backAvcb {
-    background-image: url(imagens/extinguishers.jpg);
+    background-image: url(imagens/Blog_Image-01-2.jpg);
     background-attachment: scroll;
+    background-position: center center;
 }
 
 #backDesm {
@@ -220,9 +221,9 @@ header {
 }
 
 #backMonta {
-    background-image: url(imagens/montaEdit.jpg);
+    background-image: url(imagens/Reclassificação\ de\ monta\ IIjpg.jpg);
     background-attachment: scroll;
-    background-position: bottom 50% center;
+    background-position: center center;
 }
 
 #backNr12 {
@@ -270,9 +271,9 @@ header {
 }
 
 #backRespTec {
-    background-image: url(imagens/Reponsavel\ técnico\ de\ empresa_edit1.jpg);
+    background-image: url(imagens/Responsavel\ tecnico\ III.jpg);
     background-attachment: scroll;
-    background-position: bottom 42% center;
+    background-position: center center;
 }
 
 .background-especial img {
