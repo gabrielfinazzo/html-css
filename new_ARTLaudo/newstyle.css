@@ -251,9 +251,9 @@ header {
 }
 
 #backAep {
-    background-image: url(imagens/EAT\ 01.jpg);
+    background-image: url(imagens/AEP\ I.jpg);
     background-attachment: scroll;
-    background-position: right 0 bottom 65%;
+    background-position: right 0 bottom 60%;
 }
 
 #backEsocial {
@@ -283,7 +283,7 @@ header {
 
 .carimbo {
     position: absolute;
-    bottom: -70px;
+    bottom: -50px;
     right: 5rem;
     z-index: 10;
 }
@@ -1079,6 +1079,11 @@ footer {
         padding: 0 5rem;
     } 
 
+    .carimbo > img {
+        width: 200px;
+        height: 200px;
+    }
+
 }
 
 
@@ -1096,9 +1101,7 @@ footer {
         padding: 2rem 1rem;
     }
 
-    .carimbo > img {
-        width: 250px;
-    }
+    
 
     .margens {
         padding: 0 2rem;
@@ -1106,6 +1109,10 @@ footer {
 
     #carimboAvcb {
         padding-bottom: 3rem;
+    }
+
+    .carimboRespTec {
+        bottom: -10px;
     }
 }
 
