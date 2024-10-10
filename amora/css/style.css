@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+* {
+    font-family: "Noto Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+
+header .topMenu {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: #3F0C40;
+    padding: .5rem 3rem;
+}
+
+header .topMenu a {
+    display: flex;
+    gap: .5rem;
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    text-align: center;
+    transition: 0.3s;
+    margin: 0 1rem;
+    color: #EEE9D3;
+}
+
+header .topMenu a:hover {
+    background-color: #EEE9D3;
+    color: #3F0C40;
+    
+}
+
+header .topMenu a i {
+    font-size: 2rem;
+}
+
+header .mainMenu {
+    background-color: #EEE9D3;
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+header .mainMenu h1 {
+    font-family: "Source Serif 4", serif;
+    font-size: 10rem;
+    color: #8C207A;
+}
+
+header .mainMenu div {
+    flex: 1;
+}
+
+header .mainMenu .logoAmora {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 4rem;
+}
+
+
+header .mainMenu .menu {
+    text-align: center;
+}
+
+header .mainMenu .menu ul li {
+    display: inline-block;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 0 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+header .mainMenu .menu ul li:hover {
+    transform: translateY(10px);
+}
+
+header .mainMenu .menu ul li a {
+    color: #8C207A;
+    padding: .5rem;
+    text-transform: uppercase;
+    
+    
+}
+
+header .mainMenu .menu ul li a:hover {
+    color: #3F0C40;
+}
+
+main {
+    height: 1000px;
+}
+
+
+
+
+
+
+
+
+@media(max-width:834px) {
+    .open {
+        display: block;
+    }
+
+    header .mainMenu {
+        position: relative;
+    }
+
+    header .mainMenu .menu {
+        position: absolute;
+        top: 288px;
+        right: 0;
+        background-color: #818C2E;
+        height: 100%;
+    }
+
+    header .mainMenu .logoAmora {
+        justify-content: center;
+        gap: 10rem;
+    }
+
+    header .mainMenu .menu ul li{
+        display: block;
+    
+        
+        
+
+    }
+
+
+
+}
+
+
+
+
+
+
