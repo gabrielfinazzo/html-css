@@ -118,6 +118,35 @@ main {
     height: 1000px;
 }
 
+.instagram {
+    background-color: #8C207A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.instagram .insta {
+    color: white;
+    font-size: 20rem;
+    
+}
+
+.modelos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    column-gap: 10rem;
+    background-color: #EEE9D3;
+}
+
+.modelos .redondo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #3F0C40;
+}
+
 footer {
     background-color: #EEE9D3;
     height: 300px;
