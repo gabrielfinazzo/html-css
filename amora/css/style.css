@@ -114,22 +114,82 @@ header .mainMenu .menu ul li a:hover {
     color: #3F0C40;
 }
 
-main {
-    height: 1000px;
-}
 
-.instagram {
-    background-color: #8C207A;
+.modaInfantil {
+    background-image: url(../imagens/grupoCrianca2.jpg);
+    background-repeat: no-repeat;
+    background-position: top top;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 500px;
+    display: flex;
+    align-items: end;
 }
 
-.instagram .insta {
-    color: white;
-    font-size: 20rem;
-    
+.modaInfantil h2 {
+    font-size: 10rem;
+    font-weight: bold;
+    color: #8C207A;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra leve */
+    border-radius: 10px;
+    border: 4px solid #8C207A;
+    margin-bottom: 12rem;
+    opacity: .9;
+    font-family: "Source Serif 4", serif;
+    background-color: white;
 }
+
+.section {
+    padding: 2rem 0;
+}
+
+.vitrine {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #EEE9D3;
+}
+
+.vitrine .produtos {
+    flex: 0.2;
+    width: 30rem;
+    height: 35rem;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.vitrine .prod1 {
+    background-image: url(../imagens/macacaoVerde.jpg);
+    background-size: cover;
+}
+
+.vitrine .prod2 {
+    background-image: url(../imagens/macacoCinza.jpg);
+    background-size: cover;
+}
+
+.vitrine .prod3 {
+    background-image: url(../imagens/macacaoBege.jpg);
+    background-size: cover;
+}
+
+.vitrine .prod4 {
+    background-image: url(../imagens/macacaoAzul.jpg);
+    background-size: cover;
+}
+
+
+.vitrine .tituloProdutos {
+    width: 25rem;
+    text-align: center;
+    font-size: 4rem;
+    color: #8C207A;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra leve */
+    font-weight: bold;
+}
+
 
 .modelos {
     display: flex;
@@ -137,7 +197,8 @@ main {
     align-items: center;
     padding: 2rem 0;
     column-gap: 10rem;
-    background-color: #EEE9D3;
+    background-color: white;
+    column-gap: 25rem;
 }
 
 .modelos .redondo {
@@ -145,6 +206,30 @@ main {
     height: 300px;
     border-radius: 50%;
     background-color: #3F0C40;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.masculino {
+    background-image: url(../imagens/menino.jpg);
+    background-position: top top;
+    background-size: cover;
+    
+}
+
+.feminino {
+    background-image: url(../imagens/menina.jpg);
+    background-position: top top;
+    background-size: cover;
+}
+
+.bebe {
+    background-image: url(../imagens/bebe.jpg);
+    background-position: top top;
+    background-size: cover;
 }
 
 footer {
