@@ -20,7 +20,6 @@ body {
 }
 
 
-
 header .topMenu {
     display: flex;
     justify-content: end;
@@ -114,6 +113,9 @@ header .mainMenu .menu ul li a:hover {
     color: #3F0C40;
 }
 
+main {
+    position: relative;
+}
 
 .modaInfantil {
     background-image: url(../imagens/grupoCrianca2.jpg);
@@ -126,6 +128,7 @@ header .mainMenu .menu ul li a:hover {
     height: 500px;
     display: flex;
     align-items: end;
+    position: relative;
 }
 
 .modaInfantil h2 {
@@ -139,6 +142,8 @@ header .mainMenu .menu ul li a:hover {
     opacity: .9;
     font-family: "Source Serif 4", serif;
     background-color: white;
+    z-index: 1;
+    position: relative;
 }
 
 .section {
@@ -149,11 +154,13 @@ header .mainMenu .menu ul li a:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #EEE9D3;
+    background-color: white;
+    gap: 4rem;
+    padding: 2rem;
 }
 
 .vitrine .produtos {
-    flex: 0.2;
+    flex: 1;
     width: 30rem;
     height: 35rem;
     border-radius: 20px;
@@ -163,33 +170,27 @@ header .mainMenu .menu ul li a:hover {
 .vitrine .prod1 {
     background-image: url(../imagens/macacaoVerde.jpg);
     background-size: cover;
+    background-position: center center;
+    
 }
 
 .vitrine .prod2 {
     background-image: url(../imagens/macacoCinza.jpg);
     background-size: cover;
+    background-position: center center;
 }
 
 .vitrine .prod3 {
     background-image: url(../imagens/macacaoBege.jpg);
     background-size: cover;
+    background-position: center center;
 }
 
 .vitrine .prod4 {
     background-image: url(../imagens/macacaoAzul.jpg);
     background-size: cover;
+    background-position: center center;
 }
-
-
-.vitrine .tituloProdutos {
-    width: 25rem;
-    text-align: center;
-    font-size: 4rem;
-    color: #8C207A;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra leve */
-    font-weight: bold;
-}
-
 
 .modelos {
     display: flex;
@@ -199,6 +200,7 @@ header .mainMenu .menu ul li a:hover {
     column-gap: 10rem;
     background-color: white;
     column-gap: 25rem;
+    background-color: #EEE9D3;
 }
 
 .modelos .redondo {
@@ -210,27 +212,64 @@ header .mainMenu .menu ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    border: 10px solid white;
+}
+
+.efeitoTexto{
+    opacity: 0;
+}
+
+.modelos a:hover .masculino {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagens/menino.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.modelos a:hover .feminino {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagens/menina.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.modelos a:hover .bebe {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagens/bebe.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.modelos a:hover .redondo .efeitoTexto {
+    opacity: 1;
 }
 
 .masculino {
-    background-image: url(../imagens/menino.jpg);
-    background-position: top top;
+    background: url(../imagens/menino.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
     
 }
 
 .feminino {
     background-image: url(../imagens/menina.jpg);
-    background-position: top top;
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
 .bebe {
     background-image: url(../imagens/bebe.jpg);
-    background-position: top top;
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
 }
+
+
 
 footer {
     background-color: #EEE9D3;
@@ -254,7 +293,7 @@ footer {
         position: absolute;
         right: 5rem;
         font-size: 3.5rem;
-        
+        z-index: 3;
     }
 
     header .mainMenu #menu-bar.active {
@@ -263,7 +302,7 @@ footer {
 
 
     header .mainMenu .menu ul {
-        position: fixed;
+        position: absolute;
         top: 0;
         left: -100%;
         width: 100%;
@@ -274,6 +313,7 @@ footer {
         justify-content: center;
         align-items: center;
         transition: 0.3s;
+        z-index: 2;
     }
 
     header .mainMenu .menu {
