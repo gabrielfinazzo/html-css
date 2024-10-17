@@ -120,7 +120,7 @@ main {
 .modaInfantil {
     background-image: url(../imagens/grupoCrianca2.jpg);
     background-repeat: no-repeat;
-    background-position: top top;
+    background-position: center center;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -129,6 +129,8 @@ main {
     display: flex;
     align-items: end;
     position: relative;
+    border-top: 15px solid #8C207A;
+    border-bottom: 15px solid #8C207A;
 }
 
 .modaInfantil h2 {
@@ -149,57 +151,122 @@ main {
 .section {
     padding: 2rem 0;
 }
+.sobre {
+    height: 250px;
+    display: flex;
+    background-color: #EEE9D3;
+}
+
+.sobre p {
+    width: 70%;
+    padding: 2rem;
+    margin: auto;
+    font-size: 2.5rem;
+    text-align: justify;
+    color: #3F0C40;
+}
 
 .vitrine {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
-    background-color: white;
+    background-color: #EEE9D3;
     gap: 4rem;
     padding: 2rem;
 }
 
 .vitrine .produtos {
-    flex: 1;
+    flex: 1 1 36rem;
+    max-width: 45rem;
     width: 30rem;
     height: 35rem;
     border-radius: 20px;
     background-color: white;
+    border: 10px solid #AB5F96;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
 
-.vitrine .prod1 {
-    background-image: url(../imagens/macacaoVerde.jpg);
-    background-size: cover;
-    background-position: center center;
-    
+.vitrine .produtos .preco {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    font-size: 1.5rem;
+    background-color: #8C207A;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
 }
 
-.vitrine .prod2 {
-    background-image: url(../imagens/macacoCinza.jpg);
-    background-size: cover;
-    background-position: center center;
+.vitrine .produtos2 {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, .9);
+    padding: 2rem;
+    padding-top: 5rem;
+    text-align: center;
+    transition: all .2s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.vitrine .prod3 {
-    background-image: url(../imagens/macacaoBege.jpg);
-    background-size: cover;
-    background-position: center center;
+.vitrine .produtos2 h4 {
+    font-size: 3rem;
+    color: #3F0C40;
 }
 
-.vitrine .prod4 {
-    background-image: url(../imagens/macacaoAzul.jpg);
-    background-size: cover;
-    background-position: center center;
+.vitrine .produtos2 p {
+    font-size: 2rem;
+    color: #8C207A;
+    padding: 2rem 0;
 }
+
+.vitrine .produtos2 a {
+    font-size: 2rem;
+    color: #E2FDD5;
+    padding: 1.5rem;
+    background-color: #204F46;
+    border-radius: 15px;
+    border: 4px solid #E2FDD5;
+}
+
+.vitrine .produtos2 a span {
+    padding-left: .5rem;
+}
+
+
+.vitrine .produtos .produtos2 .secImg {
+    width: 100%;
+    object-fit: cover;
+}
+
+.vitrine .produtos:hover .produtos2 {
+    top: 0;
+}
+
+.vitrine .produtos img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 .modelos {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     padding: 2rem 0;
-    column-gap: 10rem;
-    background-color: white;
-    column-gap: 25rem;
+    column-gap: 20rem;
+    row-gap: 2rem;
+    background: linear-gradient(to right, #3F0C40, #8C207A, #EEE9D3);
     background-color: #EEE9D3;
 }
 
@@ -216,6 +283,7 @@ main {
     font-weight: bold;
     color: white;
     border: 10px solid white;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
 
 .efeitoTexto{
@@ -268,6 +336,39 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.contato .contatoConteudo {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contato .contatoConteudo img {
+    width: 25rem;
+    margin: 0 5rem;
+}
+
+.contato .contatoConteudo .zap {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    background: linear-gradient(45deg, #25D366, #54E39F, #DCF8C6);
+}
+
+.contato .contatoConteudo .insta {
+    display: flex;
+    justify-content: end;
+    padding: 2rem;
+    align-items: center;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.contato .contatoConteudo h1 {
+    color: white;
+    font-size: 5rem;
+}
+
 
 
 
