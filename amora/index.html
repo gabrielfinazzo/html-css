@@ -101,14 +101,43 @@
         <section class="contato">
             <div class="contatoConteudo">
                 <div class="zap">
-                    <img src="imagens/whatsappLogo.png" alt="">
-                    <h1> ACESSE NOSSO WHATSAPP PARA CONTATO</h1>
+                    <a href="">
+                        <img src="imagens/whatsappLogo.png" alt="">
+                        <h1 class="hover-effect zapTexto"> ACESSE NOSSO WHATSAPP PARA CONTATO</h1>
+                    </a>
                 </div>
                 <div class="insta">
-                    <h1>ACESSE NOSSA LOJA NO INSTAGRAM</h1>
-                    <img src="imagens/instagramLogo.png" alt="">
-                    
+                    <a href="">
+                        <h1 class="hover-effect instaTexto">ACESSE NOSSA LOJA NO INSTAGRAM</h1>
+                        <img src="imagens/instagramLogo.png" alt="">
+                    </a>
                 </div>
+                <form action="" method="post">
+                    <div class="form-items" id="name">
+                        <label for="nome">Nome:</label><br>
+                        <input type="text" name="name" id="nome" required>
+                    </div>
+                    <div class="form-items">
+                        <label for="itel">Fone:</label><br>
+                        <input type="tel" name="tel" id="itel" required>
+                    </div>
+                    <div class="form-items">
+                        <label for="iemail">E-mail:</label><br>
+                        <input type="email" name="email" id="iemail" required>
+                    </div>
+                    <div class="form-mensage">
+                        <label for="imsg">Mensagem:</label><br>
+                        <textarea name="msg" id="imsg" rows="10" style="resize: none;"></textarea>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Enviar" class="button">
+                        <input type="reset"  value="Redefinir" class="button">
+                    </div>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="Cliente interessado">
+                    <input type="hidden" name="_honey" style="display:none">
+                    <input type="hidden" name="_next" value="https://gabrielfinazzo.github.io/html-css/new_ARTLaudo/">
+                </form>
             </div>
         </section>
         
