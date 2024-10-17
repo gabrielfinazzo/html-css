@@ -152,18 +152,22 @@ main {
     padding: 2rem 0;
 }
 .sobre {
-    height: 250px;
     display: flex;
     background-color: #EEE9D3;
 }
 
 .sobre p {
-    width: 70%;
+    width: 50%;
     padding: 2rem;
     margin: auto;
     font-size: 2.5rem;
     text-align: justify;
     color: #3F0C40;
+    line-height: 3.5rem;
+}
+
+.sobre p span {
+    font-weight: bold;
 }
 
 .vitrine {
@@ -426,6 +430,14 @@ form {
 .submit input {
     padding: .5rem;
     cursor: pointer;
+    border: 1px solid black;
+    background-color: #EEE9D3;
+}
+
+.submit input:hover {
+    background-color: #818C2E;
+    
+    
 }
 
 
@@ -434,8 +446,38 @@ footer {
     background-color: #EEE9D3;
     height: 300px;
     border-top: 40px solid #3F0C40;
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
 }
 
+.contatoFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 3rem;
+    font-size: 2rem;
+}
+
+.contatoFooter a {
+    color: black;
+    transition: transform 0.3s ease;
+}
+
+.contatoFooter a:hover {
+    transform: translateX(10px);
+}
+
+.contatoFooter span {
+    padding-left: 1rem;
+}
+
+.logoAmoraF {
+    font-family: "Source Serif 4", serif;
+    font-size: 10rem;
+    color: #8C207A;
+    text-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
 
 
 
