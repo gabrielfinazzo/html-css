@@ -9,7 +9,7 @@
 <body>
     <header>
         <div class="topMenu">
-            <a href="">
+            <a href="https://api.whatsapp.com/send?phone=5511916503925" target="_blank">
                 <i class="fa-brands fa-whatsapp"></i>
                 <p>Contato</p>
             </a>
@@ -25,10 +25,10 @@
             </div>
             <div class="menu">
                 <ul id="menu-list">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Sobre</a></li>
-                    <li><a href="">Produtos</a></li>
-                    <li><a href="">Contatos</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#start-sobre">Sobre</a></li>
+                    <li><a href="#start-produtos">Produtos</a></li>
+                    <li><a href="#start-contato">Contatos</a></li>
                 </ul>
             </div>
             <div id="menu-bar" class="fas fa-bars"></div>
@@ -38,12 +38,15 @@
         <section class="modaInfantil section">
             <h2>MODA INFANTIL</h2>
         </section>
-        <section class="sobre section">
+        <section class="sobre section" id="start-sobre">
+            <p class="texto1">
+                O site Amora é a vitrine perfeita para conhecer o estilo e a qualidade das roupas infantis oferecidas pela nossa loja. Aqui, você pode explorar nossas <span>coleções cheias de charme</span>, que vão desde peças confortáveis para o dia a dia até looks mais sofisticados, sempre priorizando o bem-estar e o estilo dos pequenos. 
+            </p>
             <p>
-                O site Amora é a vitrine perfeita para conhecer o estilo e a qualidade das roupas infantis oferecidas pela nossa loja. Aqui, você pode explorar nossas <span>coleções cheias de charme</span>, que vão desde peças confortáveis para o dia a dia até looks mais sofisticados, sempre priorizando o bem-estar e o estilo dos pequenos. Navegue pelo site para conhecer as novidades e inspirações, e quando encontrar o que procura, entre em contato conosco através do nosso WhatsApp ou Instagram para realizar suas compras. Amora está sempre pronta para atender você com todo o carinho e dedicação!
+                Navegue pelo site para conhecer as novidades e inspirações, e quando encontrar o que procura, entre em contato conosco através do nosso <span>WhatsApp</span> ou <span>Instagram</span> para realizar suas compras. Amora está sempre pronta para atender você com todo o carinho e dedicação!
             </p>
         </section>
-        <section class="vitrine section">
+        <section class="vitrine section" id="start-produtos">
             <div class="produtos prod1">
                 <span class="preco">R$ 50,00</span>
                 <div class="produtos2">
@@ -82,26 +85,26 @@
             </div>
         </section>
         <section class="modelos section">
-            <a href="">
+            <a href="menino.html">
                 <div class="masculino redondo">
                     <p class="efeitoTexto">MENINO</p>
                 </div>
             </a>
-            <a href="">
+            <a href="menina.html">
                 <div class="feminino redondo">
                     <P class="efeitoTexto">MENINA</P>
                 </div>
             </a>
-            <a href="">
+            <a href="bebe.html">
                 <div class="bebe redondo">
                     <P class="efeitoTexto">BEBÊ</P>
                  </div>
             </a>
         </section>
-        <section class="contato">
+        <section class="contato" id="start-contato">
             <div class="contatoConteudo">
                 <div class="zap">
-                    <a href="">
+                    <a href="https://api.whatsapp.com/send?phone=5511916503925" target="_blank">
                         <img src="imagens/whatsappLogo.png" alt="">
                         <h1 class="hover-effect zapTexto"> ACESSE NOSSO WHATSAPP PARA CONTATO</h1>
                     </a>
@@ -112,39 +115,43 @@
                         <img src="imagens/instagramLogo.png" alt="">
                     </a>
                 </div>
-                <form action="" method="post">
-                    <div class="form-items" id="name">
-                        <label for="nome">Nome:</label><br>
-                        <input type="text" name="name" id="nome" required>
-                    </div>
-                    <div class="form-items">
-                        <label for="itel">Fone:</label><br>
-                        <input type="tel" name="tel" id="itel" required>
-                    </div>
-                    <div class="form-items">
-                        <label for="iemail">E-mail:</label><br>
-                        <input type="email" name="email" id="iemail" required>
-                    </div>
-                    <div class="form-mensage">
-                        <label for="imsg">Mensagem:</label><br>
-                        <textarea name="msg" id="imsg" rows="10" style="resize: none;"></textarea>
-                    </div>
-                    <div class="submit">
-                        <input type="submit" value="Enviar" class="button">
-                        <input type="reset"  value="Redefinir" class="button">
-                    </div>
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_subject" value="Cliente interessado">
-                    <input type="hidden" name="_honey" style="display:none">
-                    <input type="hidden" name="_next" value="https://gabrielfinazzo.github.io/html-css/new_ARTLaudo/">
-                </form>
+                <div class="formulario">
+                    <h1 class="mensagem">Entre em contato:</h1>
+                    <form action="" method="post">
+                        <div class="form-items" id="name">
+                            <label for="nome">Nome:</label><br>
+                            <input type="text" name="name" id="nome" required>
+                        </div>
+                        <div class="form-items">
+                            <label for="itel">Fone:</label><br>
+                            <input type="tel" name="tel" id="itel" required>
+                        </div>
+                        <div class="form-items">
+                            <label for="iemail">E-mail:</label><br>
+                            <input type="email" name="email" id="iemail" required>
+                        </div>
+                        <div class="form-mensage">
+                            <label for="imsg">Mensagem:</label><br>
+                            <textarea name="msg" id="imsg" rows="10" style="resize: none;"></textarea>
+                        </div>
+                        <div class="submit">
+                            <input type="submit" value="Enviar" class="button">
+                            <input type="reset"  value="Redefinir" class="button">
+                        </div>
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_subject" value="Cliente interessado">
+                        <input type="hidden" name="_honey" style="display:none">
+                        <input type="hidden" name="_next" value="https://gabrielfinazzo.github.io/html-css/new_ARTLaudo/">
+                    </form>
+                </div>
+                
             </div>
         </section>
         
     </main>
     <footer>
         <div class="contatoFooter">
-            <a href="">
+            <a href="https://api.whatsapp.com/send?phone=5511916503925" target="_blank">
                 <i class="fa-brands fa-whatsapp"></i>
                 <span>11 91650-3925</span>
             </a>
@@ -157,7 +164,7 @@
                 <span>Instagram</span>
             </a>
         </div>
-        <img src="imagens/logoMenu.jpeg" alt="">
+        <img src="imagens/logoMenu.jpeg" alt="" class="logoFooter">
         <h1 class="logoAmoraF">AMORA</h1>
     </footer>
     <script src="javascript/script.js"></script>
