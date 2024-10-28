@@ -18,20 +18,22 @@ menuItems.forEach(item => {
 
 
 /* E-mail */
-const form = document.getElementById("form");
-    form.addEventListener("submit", formSubmit);
+document.getElementById('form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Impede o envio imediato para que possamos gerenciar o fechamento
+    const form = this;
 
-    function formSubmit(e) {
-        e.preventDefault();
-        const formData = new FormData(e.target);
-
-        fetch("https://getform.io/f/aejjygpb", {
-            method: "POST",
-            body: formData,
-            headers: {
-                "Accept": "application/json",
-            },
-        })
-        .then(response => console.log(response))
-        .catch(error => console.log(error))
-    }
+    // Envia o formulário via AJAX
+    fetch(form.action, {
+        method: form.method,
+        body: new FormData(form),
+    }).then(response => {
+        if (response.ok) {
+            window.close(); // Fecha a janela após o envio bem-sucedido
+        } else {
+            alert('Erro ao enviar o formulário. Tente novamente.');
+        }
+    }).catch(error => {
+        alert('Ocorreu um erro. Tente novamente.');
+        console.error(error);
+    });
+});
