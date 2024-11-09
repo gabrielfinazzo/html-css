@@ -148,7 +148,7 @@ header {
 .menu-cont {
     width: 60%;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     overflow: hidden;
 }
@@ -215,7 +215,7 @@ header {
 }
 
 #backDesm {
-    background-image: url(imagens/resptecnicpserv.png);
+    background-image: url(imagens/resptecnicpserv2.png);
     background-attachment: scroll;
     background-position: bottom 45% center;
 }
