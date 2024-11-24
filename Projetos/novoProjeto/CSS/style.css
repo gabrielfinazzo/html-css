@@ -40,3 +40,29 @@ header nav {
 .itemLista a:hover {
     color: #009CDA;
 }
+
+main {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    text-align: center;
+    display: flex;
+}
+
+.sessoes {
+    border-radius: 8px;
+    width: 800px;
+    max-width: 800px;
+    height: 700px;
+}
+
+.sessao1 {
+    width: 300px;
+    background-color: #DF220F;
+    margin: 2rem 4rem;
+}
+
+.sessao2 {
+    background-color: #009CDA; 
+    margin: 2rem auto;
+}
