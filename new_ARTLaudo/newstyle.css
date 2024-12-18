@@ -985,6 +985,8 @@ footer {
 
 }
 
+
+
 .mensagem-padrao {
     padding-left: 50rem;
     padding-top: 2rem;
@@ -1021,6 +1023,17 @@ footer {
 #frame {
     background-color: #ECEAEA;
     padding-top: 100px;
+    
+}
+/* Novo Iframe Linkedin Teste */
+.corpoIframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newIframe {
+    margin-bottom: 80px;
 }
 
 
