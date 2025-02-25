@@ -522,7 +522,7 @@ section.sobre {
 
 .servico {
     width: 35rem;
-    height: 32rem;
+    height: 33rem;
     background-color: #e0e0e6;
     border-radius: 1rem;
     overflow: hidden;
@@ -543,9 +543,7 @@ section.sobre {
     display: flex;
     padding: 1.5rem 1.5rem .5rem 1.5rem;
     color: rgb(65, 66, 61);
-    align-items: center;
-
-    
+    align-items: center; 
 }
 
 .title-serv > h4 {
@@ -573,6 +571,28 @@ section.sobre {
     color: rgb(65, 66, 61);
 }
 
+.descritivoServico{
+   padding: .5rem 1.5rem; 
+   font-size: 1.2rem;
+   font-family: 'Dosis', sans-serif;
+   color: rgb(65, 66, 61);
+}
+
+.botaoContato > a {
+    display: inline-block;
+    padding: .5rem 1.5rem; 
+    background-color:#25d366;
+    margin-left: 1.5rem;
+    border-radius: .2rem;
+    font-size: 1.5rem;
+    color: white;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.botaoContato:hover > a {
+    background-color: #128c7e;
+}
 
 
 #nr12 {
@@ -1036,6 +1056,28 @@ footer {
     margin-bottom: 80px;
 }
 
+/* Estilo do botão do WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366; /* Cor verde do WhatsApp */
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button img {
+    width: 40px;
+    height: 40px;
+}
+
+.whatsapp-button:hover {
+    background-color: #128c7e; /* Cor verde mais escura ao passar o mouse */
+}
+
 
 /* Media Querys */
 
@@ -1326,6 +1368,17 @@ footer {
 
     .button {
         width: 15rem;
+    }
+
+    .whatsapp-button {
+        padding: 10px; /* Reduz o padding */
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .whatsapp-button img {
+        width: 30px; /* Reduz o tamanho do ícone */
+        height: 30px;
     }
 
 }
