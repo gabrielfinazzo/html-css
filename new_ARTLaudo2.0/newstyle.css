@@ -521,6 +521,9 @@ section.sobre {
 }
 
 .servico {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     width: 35rem;
     height: 50rem;
     background-color: #e0e0e6;
@@ -532,7 +535,7 @@ section.sobre {
 
 .img-serv {
     width: 100%;
-    height: 41%;
+    height: 42%;
     overflow: hidden;
     position: relative;
     transition: all 0.3s;
@@ -571,18 +574,45 @@ section.sobre {
     color: rgb(65, 66, 61);
 }
 
+.titlePservic {
+    overflow: hidden;
+    height: 5rem;
+}
+
+.titlePservic2 {
+    overflow: hidden;
+    height: 10.8rem;
+}
+
+.descritivoBotao {
+      display: flex;
+      flex-direction: column;
+      row-gap: 8rem;
+}
+
+.descritivoBotao2 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.3rem;
+}
+
 .descritivoServico{
-   padding: 2rem 1.5rem 1rem 1.5rem; 
+    overflow: hidden;
+   height: 10rem;
+   padding: 2.5rem 1.5rem 0 1.5rem; 
    font-size: 1.5rem;
    font-family: 'Dosis', sans-serif;
    color: rgb(65, 66, 61);
+}
+
+.botaoContato {
+    margin: 0 1.5rem;
 }
 
 .botaoContato > a {
     display: inline-block;
     padding: 0.6rem; 
     background-color:rgb(235, 153, 67);
-    margin-left: 1.5rem;
     border-radius: 1rem;
     font-size: 1.5rem;
     color: white;
