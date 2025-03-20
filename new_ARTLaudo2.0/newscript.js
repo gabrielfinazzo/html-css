@@ -37,3 +37,34 @@ document.getElementById('form').addEventListener('submit', function(event) {
         console.error(error);
     });
 });
+
+
+
+/* Aproximação do botão solicitar orçamento */
+
+document.addEventListener('mousemove', function(event) {
+    const buttons = document.getElementsByClassName('solicitarOrcamento');
+
+    for (let button of buttons) {
+        const rect = button.getBoundingClientRect();
+        const buttonCenterX = rect.left + rect.width / 2;
+        const buttonCenterY = rect.top + rect.height / 2;
+
+        const mouseX = event.clientX;
+        const mouseY = event.clientY;
+
+        const distanceX = mouseX - buttonCenterX;
+        const distanceY = mouseY - buttonCenterY;
+
+        const distance = Math.sqrt(distanceX * distanceX + distanceY * distanceY);
+
+        if (distance < 100) { // Ajuste a distância de ativação conforme necessário
+            const moveX = distanceX * 0.1; // Ajuste a sensibilidade do movimento
+            const moveY = distanceY * 0.1;
+
+            button.style.transform = `translate(${moveX}px, ${moveY}px)`;
+        } else {
+            button.style.transform = 'translate(0, 0)';
+        }
+    }
+});

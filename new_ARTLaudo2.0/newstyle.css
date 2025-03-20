@@ -600,7 +600,7 @@ section.sobre {
 
 .botaoContato {
     text-align: center;
-
+    position: relative;
 }
 
 .botaoContato > a {
@@ -615,6 +615,7 @@ section.sobre {
     text-transform: uppercase;
     transition: background-color 0.3s ease;
     letter-spacing: .2rem;
+    position: relative;
 }
 
 .botaoContato:hover > a {
@@ -1094,6 +1095,7 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1000;
     transition: background-color 0.3s ease;
+    animation: float 3s ease-in-out infinite;
 }
 
 .whatsapp-button img {
@@ -1103,6 +1105,16 @@ footer {
 
 .whatsapp-button:hover {
     background-color: #128c7e; /* Cor verde mais escura ao passar o mouse */
+    animation-play-state: paused;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Move o botão 10px para cima */
+    }
 }
 
 
