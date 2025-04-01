@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/2dc18bdcf3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
     <header class="menu-fixo">
@@ -138,6 +139,53 @@
             </div>
         </section>
     </main>
+    <section class="depoimentos">
+        <h3 class="titulo-depoimentos">O que nossos clientes dizem</h3>
+        
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <!-- Item 1 -->
+            <div class="swiper-slide depoimento-item">
+              <div class="depoimento-conteudo">
+                <h3 class="nome-cliente">João Silva</h3>
+                <p class="texto-depoimento">"Adorei o serviço! Foi rápido e super profissional. Recomendo muito!"</p>
+              </div>
+            </div>
+            
+            <!-- Item 2 -->
+            <div class="swiper-slide depoimento-item">
+              <div class="depoimento-conteudo">
+                <h3 class="nome-cliente">Maria Souza</h3>
+                <p class="texto-depoimento">"Atendimento excelente e resultado acima da minha expectativa. Voltarei sempre!"</p>
+              </div>
+            </div>
+            
+            <!-- Item 3 -->
+            <div class="swiper-slide depoimento-item">
+              <div class="depoimento-conteudo">
+                <h3 class="nome-cliente">Carlos Oliveira</h3>
+                <p class="texto-depoimento">"Profissionais muito competentes. Meu problema foi resolvido em poucos dias."</p>
+              </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="swiper-slide depoimento-item">
+                <div class="depoimento-conteudo">
+                  <h3 class="nome-cliente">Julio Oliveira</h3>
+                  <p class="texto-depoimento">"Profissionais muito competentes. Meu problema foi resolvido em poucos dias."</p>
+                </div>
+              </div>
+          </div>
+          
+          <!-- Paginação e navegação (opcional) -->
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section>
     <footer></footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="JS/script.js"></script>
 </body>
 </html>
