@@ -1,24 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* font-family: "Playfair Display", serif; */
+
+* {
+    font-family: 'Dosis', 'Montserrat';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
 body {
-    width: 100vw;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2rem;
+    background-color: #F5F5F5;
+    border-bottom: 1px solid #E0E0E0;
+    z-index: 100; 
+}
+
+header img {
+    
+}
+
+header ul>li {
+    display: inline-block;
+    padding: .5rem 1rem;
+    
+}
+
+header ul>li>a {
+    color: #5c6b7e;
+}
+
+header ul>li>a:hover {
+    color: #3AA8C1;
+}
+
+
+.hero-section {
+    width: 100%;
+    height: 70vh;
+    background-image: url(../imagens/predios5.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #002366;
+    opacity: 0.5;
+}
+
+.hero-content {
+    padding-top: 10rem;
+    position: relative;
+    z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10rem;
+    color: white;
+    gap: 2rem;
 }
 
-.testeCores {
-    width: 250px;
-    height: 250px;
+.hero-content .hero-contentText h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 5rem;
 }
 
-.teste1 {
+.hero-content .hero-contentText p {
+    font-size: 2.5rem;
+    width: 70rem;
+    margin-bottom: 3rem;
+}
+
+.hero-content .hero-contentText .botao-hero {
+    background-color: #3AA8C1;
+    font-size: 2.5rem;
+    padding: 1.5rem;
+    color: white;
+    border-radius: .5rem;
+    transition: background-color .3s ease;
+}
+
+.hero-content .hero-contentText .botao-hero:hover {
+    background-color:#F5F5F5;
+    color: #3AA8C1;
+}
+
+.heroImg {
+    border-radius: 50%;
+    background-color: white;
+    overflow: hidden;
+    margin-top: 4rem;
+    border: 5px solid #D4AF37;
+}
+
+.heroImg img {
+    vertical-align: middle;
+}
+
+.section1 {
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #5C6B7E;
+    border-top: 3px solid #D4AF37;
+    border-bottom: 3px solid #D4AF37;
+}
+
+.section1 h3 {
+    padding-bottom: 1.5rem;
+}
+
+section h3 {
+    font-size: 3rem;
+    color: #002366;
+}
+
+.section1 ul {
+    padding: 0 40rem;
+}
+
+.section1 ul>li {
+    padding: 1.5rem 0;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.section1 ul>li>i {
+    color: #002366;
+    
+}
+
+.section2 h3{
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.section2 {
+    padding: 3rem 0;
+}
+
+.section2 .servicos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.section2 .servicos .box-servicos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    height: 410px;
+    background-color: #F5F5F5;
+    border: 3px solid #5C6B7E;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.box-servicos .img-box-servicos {
+    height: 60%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.box-servicos .box-servicos-conteudo {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.box-servicos .box-servicos-conteudo h4 {
+    font-size: 2rem;
+    color: #002366;
+}
+
+.box-servicos .box-servicos-conteudo p {
+    font-size: 1.5rem;
+    padding: 1.5rem 0;
+}
+
+.box-servicos .box-servicos-conteudo a {
+    font-size: 2rem;
+    padding: 1rem;
+    color: white;
+    background-color: #3AA8C1;
+    border-radius: .5rem;
+    transition: background-color .3s ease;
+}
+
+.box-servicos .box-servicos-conteudo a:hover {
     background-color: #002366;
 }
 
-.teste2 {
-    background-color: #5C6B7E;
+.section3 h3 {
+    text-align: center;
+    padding: 3rem 0;
 }
 
-.teste3 {
+.section3 {
     background-color: #F5F5F5;
+    padding-bottom: 1.5rem;
+}
+
+.section3 .box-experiencia {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section3 .box-experiencia p {
+    font-size: 2rem;
+    color: #5C6B7E;
+    padding: 1.5rem 0;
+}
+
+.section3 .box-experiencia p span {
+    font-weight: bold;
+}
+
+
+
+
+
+
+footer {
+    width: 100%;
+    height: 150px;
+    background-color: #002366;
 }
