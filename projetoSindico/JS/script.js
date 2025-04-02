@@ -44,19 +44,19 @@ document.addEventListener('DOMContentLoaded', function() {
     const depoimentos = [
         {
             titulo: "Experiência Incrível",
-            descricao: "O serviço foi excelente desde o primeiro contato. A equipe foi muito atenciosa e resolveu meu problema rapidamente. Recomendo a todos!"
+            descricao: "Profissionalismo, transparência e atenção aos detalhes fazem toda a diferença. Problemas que se arrastavam há anos foram resolvidos em poucos meses, e a comunicação com os moradores melhorou significativamente. Recomendo de olhos fechados!"
         },
         {
             titulo: "Profissionalismo Exemplar",
-            descricao: "Fiquei impressionado com a qualidade do atendimento. Tudo foi feito com muita competência e dentro do prazo prometido. Superou minhas expectativas."
+            descricao: "O Roberto trouxe organização e eficiência para o nosso condomínio, sempre com soluções práticas e respeito às normas."
         },
         {
             titulo: "Resultados Surpreendentes",
-            descricao: "Depois de contratar o serviço, vi uma diferença significativa nos resultados. Valeu cada centavo investido e certamente contratarei novamente."
+            descricao: "As reuniões passaram a ser mais objetivas, as contas estão em dia, e os moradores finalmente se sentem ouvidos. Um serviço de síndico que realmente entrega resultados!"
         },
         {
             titulo: "Atendimento Personalizado",
-            descricao: "Adorei como entenderam exatamente minhas necessidades e criaram uma solução sob medida. O acompanhamento pós-venda também é excelente."
+            descricao: "Ético, dedicado e sempre disponível para esclarecer dúvidas. Nota 10!"
         }
     ];
 
