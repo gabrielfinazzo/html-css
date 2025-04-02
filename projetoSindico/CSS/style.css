@@ -22,6 +22,16 @@ body {
     width: 100%;
 }
 
+#start-servicos, #start-contratar, #start-formacao, #start-objetivo {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    left: 0;
+    margin-top: -90px; /* esse valor varia de acordo com a altura do seu Header, se ele tiver 200px de altura coloque aqui -220px por exemplo */
+    background-color: transparent;
+    z-index: -1;
+}
+
 header {
     width: 100%;
     position: fixed;
