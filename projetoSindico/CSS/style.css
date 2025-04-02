@@ -456,24 +456,6 @@ section h3 {
     background-color: #333;
 }
 
-/* Responsivo */
-@media (max-width: 768px) {
-    .depoimentos-titulo {
-        font-size: 2rem;
-    }
-    
-    .depoimento {
-        padding: 20px;
-    }
-    
-    .carrossel-btn {
-        padding: 10px;
-        font-size: 1.2rem;
-    }
-
-}
-
-
 
 
 footer {
@@ -505,6 +487,41 @@ footer p i {
     align-self: flex-end;
     padding: 0;
 }
+
+/* Estilo do botão do WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366; /* Cor verde do WhatsApp */
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    animation: float 3s ease-in-out infinite;
+}
+
+.whatsapp-button img {
+    width: 30px;
+    height: 30px;
+}
+
+.whatsapp-button:hover {
+    background-color: #128c7e; /* Cor verde mais escura ao passar o mouse */
+    animation-play-state: paused; /* Pausa a animação ao passar o mouse */
+}
+
+/* Definição da animação */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Move o botão 10px para cima */
+    }
+}
+
 
 /* Media */
 
@@ -630,6 +647,23 @@ footer p i {
     }
 }
 
+
+/* Responsivo Depoimento*/
+@media (max-width: 768px) {
+    .depoimentos-titulo {
+        font-size: 2rem;
+    }
+    
+    .depoimento {
+        padding: 20px;
+    }
+    
+    .carrossel-btn {
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+
+}
 
 @media(max-width:750px) {
     .heroImg img {
