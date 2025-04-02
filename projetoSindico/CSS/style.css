@@ -143,6 +143,7 @@ header ul>li>a:hover {
 section h3 {
     font-size: 3rem;
     color: #002366;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .section1 ul {
@@ -239,6 +240,8 @@ section h3 {
 .section3 {
     background-color: #F5F5F5;
     padding-bottom: 1.5rem;
+    border-top: 3px solid #5C6B7E;
+    border-bottom: 3px solid #5C6B7E;
 }
 
 .section3 .box-experiencia {
@@ -270,10 +273,47 @@ section h3 {
     font-size: 2rem;
 }
 
+.fale-comigo a{
+    font-size: 2.5rem;
+    color: white;
+    background-color: #3AA8C1;
+    padding: 1rem;
+    border-radius: .5rem;
+}
 
+.fale-comigo h4 {
+    font-size: 2.5rem;
+    color: #002366;
+}
 
+.fale-comigo h4 span {
+    color: #D4AF37;
+}
 
+.fale-comigo p {
+    margin-bottom: 1rem;
+}
 
+.section4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20%;
+    padding-bottom: 1rem;
+}
+
+.section4 h3 {
+    padding: 3rem 0;
+}
+
+.section4 p {
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    color: #5C6B7E;
+    text-align: justify;
+}
 
 
 
@@ -296,6 +336,7 @@ section h3 {
     padding: 3rem 2rem;
     background-color: #f9f9f9;
     text-align: center;
+    border-bottom: 3px solid #D4AF37;
 }
 
 .depoimentos-titulo {
@@ -309,11 +350,13 @@ section h3 {
     margin: 0 auto;
     position: relative;
     overflow: hidden;
+    
 }
 
 .depoimentos-container {
     display: flex;
     transition: transform 0.5s ease;
+    
 }
 
 .depoimento {
@@ -341,13 +384,14 @@ section h3 {
     font-size: 1.5rem;
     line-height: 1.6;
     color: #5C6B7E;
+    padding: 0 5rem;
 }
 
 .carrossel-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #002366;
     color: white;
     border: none;
     cursor: pointer;
@@ -356,10 +400,11 @@ section h3 {
     border-radius: 50%;
     transition: background-color 0.3s;
     z-index: 10;
+    opacity: .7;
 }
 
 .carrossel-btn:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #3AA8C1;
 }
 
 .carrossel-prev {
@@ -413,4 +458,13 @@ footer {
     width: 100%;
     height: 150px;
     background-color: #002366;
+}
+
+
+
+
+@media(max-width:991px) {
+    html {
+        font-size: 55%;
+    }
 }
