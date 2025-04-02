@@ -1,3 +1,43 @@
+let menu = document.querySelector('#menu-bar');
+let navbar = document.querySelector('.navbar');
+let menuItems = document.querySelectorAll('.menu-item');
+
+ menu.onclick = () => {
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
+}
+
+/* menu.addEventListener("click", () => 
+navbar.classList.toggle("active"));  */
+
+menuItems.forEach(item => {
+    item.addEventListener('click', () => {
+        menu.classList.remove('fa-times');
+        navbar.classList.remove('active');
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Depoimentos  */
 document.addEventListener('DOMContentLoaded', function() {
     // Dados dos depoimentos (pode ser substituído por uma chamada API)

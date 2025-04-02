@@ -34,10 +34,6 @@ header {
     z-index: 100; 
 }
 
-header img {
-    
-}
-
 header ul>li {
     display: inline-block;
     padding: .5rem 1rem;
@@ -52,10 +48,19 @@ header ul>li>a:hover {
     color: #3AA8C1;
 }
 
+#menu-bar {
+    display: none;
+    color: #002366;
+    font-size: 2.5rem;
+}
+
+section {
+    overflow: hidden;
+}
 
 .hero-section {
     width: 100%;
-    height: 70vh;
+    min-height: 600px;
     background-image: url(../imagens/predios5M.jpg);
     background-position: center;
     background-size: cover;
@@ -138,6 +143,7 @@ header ul>li>a:hover {
 
 .section1 h3 {
     padding-bottom: 1.5rem;
+    text-align: center;
 }
 
 section h3 {
@@ -187,7 +193,7 @@ section h3 {
     align-items: center;
     flex-direction: column;
     width: 350px;
-    height: 410px;
+    height: 400px;
     background-color: #F5F5F5;
     border: 3px solid #5C6B7E;
     border-radius: 1rem;
@@ -197,7 +203,7 @@ section h3 {
 }
 
 .box-servicos .img-box-servicos {
-    height: 60%;
+    height: 230px;
     width: 100%;
     overflow: hidden;
 }
@@ -449,6 +455,7 @@ section h3 {
         padding: 10px;
         font-size: 1.2rem;
     }
+
 }
 
 
@@ -456,15 +463,224 @@ section h3 {
 
 footer {
     width: 100%;
-    height: 150px;
     background-color: #002366;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem 1rem 4rem;
+    overflow: hidden;
+}
+
+footer img {
+    border-radius: .5rem;
+}
+
+footer p {
+    font-size: 1.5rem;
+    color: white;
+    padding: 1rem 0;
+}
+
+footer p i {
+    padding-right: 1.5rem;
+    color: #D4AF37;
+}
+
+.copyright {
+    align-self: flex-end;
+    padding: 0;
+}
+
+/* Media */
+
+@media(max-width:1500px) {
+    .section1 ul {
+        padding: 0 20rem;
+    }
+
+    .section3 .box-experiencia {
+        flex-direction: column;
+    }
+
+    .section3 .box-experiencia .box-experiencia-estudos {
+        padding-bottom: 3rem;
+    }
+
+    .fale-comigo {
+        padding-bottom: 3rem;
+    }
+
+    .copyright {
+        width: 40rem;
+        text-align: center;
+    }
 }
 
 
+@media(max-width:1200px) {
+    .hero-content {
+        gap: 0;
+        padding-top: 20rem;
+    }
+
+    .heroImg {
+        margin-top: 0rem; 
+    }
+
+    .heroImg img {
+        width: 200px;
+        
+    }
+
+    .hero-content .hero-contentText h1 {
+        font-size: 3rem;
+    }
+
+    .hero-content .hero-contentText p {
+        width: 55rem;
+    }
+
+    .copyright {
+        width: 25rem;
+        text-align: center;
+    }
+}
 
 
 @media(max-width:991px) {
     html {
         font-size: 55%;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    header nav {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 96px;
+        left: -100%;
+        background-color: #F5F5F5;
+        transition: all 0.5s ease;
+    }
+
+    header nav ul {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: #F5F5F5;
+        top: 96px;
+        text-align: center;
+    }
+
+    header ul>li {
+        display: block;
+        padding: .5rem 1rem;
+        font-size: 3rem;
+        padding: 4rem 0;
+    }
+
+    header ul>li a {
+        color: #002366;
+        text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    #menu-bar {
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    .navbar.active {
+        left: 0;
+    }
+
+    section h3 {
+        font-size: 2.5rem;
+    }
+    
+    .section4 {
+        margin: 0 10%;
+    }
+
+    footer img {
+        display: none;
+    }
+
+    .copyright {
+        width: 40rem;
+    }
+}
+
+
+@media(max-width:750px) {
+    .heroImg img {
+        width: 150px;
+        
+    }
+
+    .heroImg {
+        align-self: flex-end;
+        margin-right: 5rem;
+    }
+
+    .hero-content {
+        flex-direction: column;
+    }
+
+    .section1 ul {
+        padding: 0 10rem;
+    }
+
+    .copyright {
+        width: 25rem;
+    }
+
+    .section3 .box-experiencia p {
+        width: 50rem;
+    }
+
+    .section3 {
+        padding: 0 5%;
+    }
+}
+
+@media(max-width:500px) {
+    .hero-content {
+        padding-left: 2rem;
+        align-items: flex-start;
+    }
+
+    .hero-content .hero-contentText {
+        padding-left: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .hero-content .hero-contentText h1 {
+        font-family: "Playfair Display", serif;
+        font-size: 2rem;
+        width: 30rem;
+    }
+
+    .hero-content .hero-contentText p {
+        font-size: 2rem;
+        width: 30rem;
+    }
+
+    .section3 .box-experiencia p {
+        width: 40rem;
+    }
+
+    .fale-comigo a {
+        font-size: 2rem;
+    }
+}
+
+@media(max-width:400px) {
+    .section3 .box-experiencia p {
+        width: 35rem;
     }
 }
