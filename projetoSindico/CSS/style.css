@@ -295,6 +295,11 @@ section h3 {
     background-color: #3AA8C1;
     padding: 1rem;
     border-radius: .5rem;
+    transition: background-color .3s ease;
+}
+
+.fale-comigo a:hover {
+    background-color: #D4AF37;
 }
 
 .fale-comigo h4 {
