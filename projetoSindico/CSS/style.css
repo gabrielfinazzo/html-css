@@ -726,6 +726,11 @@ footer p i {
     .fale-comigo a {
         font-size: 2rem;
     }
+
+    .whatsapp-button img {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 @media(max-width:400px) {
