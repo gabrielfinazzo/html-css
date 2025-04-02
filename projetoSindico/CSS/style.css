@@ -56,7 +56,7 @@ header ul>li>a:hover {
 .hero-section {
     width: 100%;
     height: 70vh;
-    background-image: url(../imagens/predios5.jpg);
+    background-image: url(../imagens/predios5M.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -154,7 +154,7 @@ section h3 {
     font-size: 2rem;
     display: flex;
     align-items: center;
-    gap: .5rem;
+    gap: 2rem;
 }
 
 .section1 ul>li>i {
@@ -177,6 +177,8 @@ section h3 {
     align-items: center;
     flex-wrap: wrap;
     gap: 4rem;
+    max-width: 1600px; /* Limite a largura total do container */
+    margin: 0 auto; /* Centraliza o container */
 }
 
 .section2 .servicos .box-servicos {
@@ -189,6 +191,8 @@ section h3 {
     border: 3px solid #5C6B7E;
     border-radius: 1rem;
     overflow: hidden;
+    flex: 0 0 auto; /* Impede que os itens estiquem ou encolham */
+    margin-bottom: 4rem; /* Mantém o espaçamento inferior */
 }
 
 .box-servicos .img-box-servicos {
@@ -214,7 +218,7 @@ section h3 {
     padding: 1.5rem 0;
 }
 
-.box-servicos .box-servicos-conteudo a {
+/* .box-servicos .box-servicos-conteudo a {
     font-size: 2rem;
     padding: 1rem;
     color: white;
@@ -225,7 +229,7 @@ section h3 {
 
 .box-servicos .box-servicos-conteudo a:hover {
     background-color: #002366;
-}
+} */
 
 .section3 h3 {
     text-align: center;
@@ -253,6 +257,38 @@ section h3 {
 .section3 .box-experiencia p span {
     font-weight: bold;
 }
+
+.section3 .box-experiencia ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.section3 .box-experiencia ul li i {
+    color: #002366;
+    font-size: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Carrossel Depoimentos */
