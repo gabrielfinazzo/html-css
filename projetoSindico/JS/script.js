@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const depoimentos = [
         {
             titulo: "Experiência Incrível",
-            descricao: "Profissionalismo, transparência e atenção aos detalhes fazem toda a diferença. Problemas que se arrastavam há anos foram resolvidos em poucos meses, e a comunicação com os moradores melhorou significativamente. Recomendo de olhos fechados!"
+            descricao: " Problemas que se arrastavam há anos foram resolvidos em poucos meses, e a comunicação com os moradores melhorou significativamente. Recomendo de olhos fechados!"
         },
         {
             titulo: "Profissionalismo Exemplar",
