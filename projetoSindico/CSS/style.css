@@ -579,7 +579,7 @@ footer p i {
 }
 
 
-@media(max-width:991px) {
+@media(max-width:1020px) {
     html {
         font-size: 55%;
     }
