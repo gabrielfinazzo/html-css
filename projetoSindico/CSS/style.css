@@ -731,10 +731,58 @@ footer p i {
         width: 20px;
         height: 20px;
     }
+
+    #menu-bar {
+        top: 40px;
+        right: 20px;
+    }
 }
 
 @media(max-width:400px) {
     .section3 .box-experiencia p {
         width: 35rem;
+    }
+
+    .menu-fixo a img {
+        width: 200px;
+    }
+
+    #menu-bar {
+        top: 25px;
+        right: 20px;
+    }
+
+    .section1 ul {
+        padding: 0 5rem;
+    }
+
+    .section3 .box-experiencia ul li {
+        gap: 0.5rem;
+    }
+
+    .section3 .box-experiencia p {
+        font-size: 1.5rem;
+        width: 30rem;
+    }
+
+    .fale-comigo a {
+        font-size: 1.5rem;
+    }
+
+    .section2 .servicos .box-servicos {
+        width: 300px;
+    }
+
+    header nav {
+        top: 68px;
+    }
+
+    .copyright {
+        font-size: 1rem;
+        align-self: center;
+    }
+
+    footer {
+        gap: 1.5rem;
     }
 }
