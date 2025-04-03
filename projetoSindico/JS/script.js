@@ -1,3 +1,5 @@
+/* Menu Responsivo */
+
 let menu = document.querySelector('#menu-bar');
 let navbar = document.querySelector('.navbar');
 let menuItems = document.querySelectorAll('.menu-item');
@@ -16,27 +18,6 @@ menuItems.forEach(item => {
         navbar.classList.remove('active');
     });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Depoimentos  */
 document.addEventListener('DOMContentLoaded', function() {
