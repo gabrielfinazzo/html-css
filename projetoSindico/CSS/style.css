@@ -798,4 +798,8 @@ footer p i {
     footer {
         gap: 1.5rem;
     }
+
+    #start-servicos, #start-contratar, #start-formacao, #start-objetivo {
+        margin-top: -65px; /* esse valor varia de acordo com a altura do seu Header, se ele tiver 200px de altura coloque aqui -220px por exemplo */
+    }
 }
