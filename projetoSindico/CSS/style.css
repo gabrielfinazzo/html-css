@@ -138,6 +138,45 @@ section {
     vertical-align: middle;
 }
 
+.sobreMim {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.fale-comigo {
+    margin: 0 20%;
+}
+
+.fale-comigo a{
+    font-size: 2.5rem;
+    color: white;
+    background-color: #3AA8C1;
+    padding: 1rem;
+    border-radius: .5rem;
+    transition: background-color .3s ease;
+}
+
+.fale-comigo a:hover {
+    background-color: #D4AF37;
+}
+
+.fale-comigo h4 {
+    font-size: 2.5rem;
+    color: #002366;
+    padding-bottom: 3rem;
+}
+
+.fale-comigo h4 span {
+    color: #D4AF37;
+}
+
+.fale-comigo p {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
 .section1 {
     padding-top: 3rem;
     padding-bottom: 1.5rem;
@@ -290,31 +329,7 @@ section h3 {
     font-size: 2rem;
 }
 
-.fale-comigo a{
-    font-size: 2.5rem;
-    color: white;
-    background-color: #3AA8C1;
-    padding: 1rem;
-    border-radius: .5rem;
-    transition: background-color .3s ease;
-}
 
-.fale-comigo a:hover {
-    background-color: #D4AF37;
-}
-
-.fale-comigo h4 {
-    font-size: 2.5rem;
-    color: #002366;
-}
-
-.fale-comigo h4 span {
-    color: #D4AF37;
-}
-
-.fale-comigo p {
-    margin-bottom: 1rem;
-}
 
 .section4 {
     display: flex;
