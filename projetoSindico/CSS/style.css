@@ -171,6 +171,7 @@ section {
 .section1 {
     padding-top: 3rem;
     padding-bottom: 1.5rem;
+    padding: 3rem 20% 1rem 20%;
     background-color: #F5F5F5;
     display: flex;
     flex-direction: column;
@@ -193,7 +194,7 @@ section h3 {
 }
 
 .section1 ul {
-    padding: 0 40rem;
+    
 }
 
 .section1 ul>li {
@@ -207,6 +208,22 @@ section h3 {
 .section1 ul>li>i {
     color: #002366;
     
+}
+
+.section1 a{
+    font-size: 2.5rem;
+    display: inline-block;
+    color: white;
+    background-color: #3AA8C1;
+    padding: 1rem;
+    border-radius: .5rem;
+    transition: background-color .3s ease;
+    align-self: flex-start;
+    margin-bottom: 2rem;
+}
+
+.section1 a:hover {
+    background-color: #002366;
 }
 
 .section2 h3{
@@ -344,21 +361,7 @@ section h3 {
     text-align: justify;
 }
 
-.section4 a{
-    font-size: 2.5rem;
-    display: inline-block;
-    color: white;
-    background-color: #3AA8C1;
-    padding: 1rem;
-    border-radius: .5rem;
-    transition: background-color .3s ease;
-    align-self: flex-start;
-    margin-bottom: 2rem;
-}
 
-.section4 a:hover {
-    background-color: #002366;
-}
 
 .img-ajustada {
     width: 100%;
@@ -552,9 +555,6 @@ footer p i {
 /* Media */
 
 @media(max-width:1500px) {
-    .section1 ul {
-        padding: 0 20rem;
-    }
 
     .section3 .box-experiencia {
         flex-direction: column;
@@ -605,7 +605,6 @@ footer p i {
         width: 25rem;
         text-align: center;
     }
-
 
     
 }
@@ -673,6 +672,7 @@ footer p i {
     
     .section4 {
         padding: 0 10%;
+        padding-bottom: 1rem;
     }
 
     .fale-comigo {
@@ -689,6 +689,10 @@ footer p i {
 
     .section3 .box-experiencia {
         margin: 0 10%;
+    }
+
+    .section1 {
+        padding: 3rem 10% 1rem 10%;
     }
 }
 
@@ -725,9 +729,6 @@ footer p i {
         flex-direction: column;
     }
 
-    .section1 ul {
-        padding: 0 10rem;
-    }
 
     .copyright {
         width: 25rem;
@@ -735,6 +736,10 @@ footer p i {
 
     .section3 .box-experiencia p {
         width: 50rem;
+    }
+
+    .section1 a {
+        margin-left: 4rem;
     }
 
 }
@@ -782,6 +787,10 @@ footer p i {
     .section4 a {
         font-size: 2rem;
     }
+
+    .section1 a {
+        font-size: 1.8rem;
+    }
 }
 
 @media(max-width:400px) {
@@ -798,9 +807,6 @@ footer p i {
         right: 20px;
     }
 
-    .section1 ul {
-        padding: 0 5rem;
-    }
 
     .section3 .box-experiencia ul li {
         gap: 0.5rem;
@@ -836,11 +842,14 @@ footer p i {
         margin-top: -65px; /* esse valor varia de acordo com a altura do seu Header, se ele tiver 200px de altura coloque aqui -220px por exemplo */
     }
 
+    .section1 a {
+        font-size: 1.5rem;
+    }
     
 }
 
-@media(max-width:400px) {
-    .section4 a {
-        font-size: 1.5rem;
+@media(max-width:350px) {
+    .section1 a {
+        font-size: 1.3rem;
     }
 }
