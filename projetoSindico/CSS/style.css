@@ -150,21 +150,6 @@ section {
     margin: 0 20%;
 }
 
-.section4 a{
-    font-size: 2.5rem;
-    display: inline-block;
-    color: white;
-    background-color: #3AA8C1;
-    padding: 1rem;
-    border-radius: .5rem;
-    transition: background-color .3s ease;
-    align-self: flex-start;
-    margin-bottom: 2rem;
-}
-
-.fale-comigo a:hover {
-    background-color: #D4AF37;
-}
 
 .fale-comigo h4 {
     font-size: 2.5rem;
@@ -357,6 +342,22 @@ section h3 {
     padding-bottom: 2rem;
     color: #5C6B7E;
     text-align: justify;
+}
+
+.section4 a{
+    font-size: 2.5rem;
+    display: inline-block;
+    color: white;
+    background-color: #3AA8C1;
+    padding: 1rem;
+    border-radius: .5rem;
+    transition: background-color .3s ease;
+    align-self: flex-start;
+    margin-bottom: 2rem;
+}
+
+.section4 a:hover {
+    background-color: #002366;
 }
 
 .img-ajustada {
@@ -777,6 +778,10 @@ footer p i {
         top: 40px;
         right: 20px;
     }
+
+    .section4 a {
+        font-size: 2rem;
+    }
 }
 
 @media(max-width:400px) {
@@ -829,5 +834,13 @@ footer p i {
 
     #start-servicos, #start-contratar, #start-formacao, #start-objetivo {
         margin-top: -65px; /* esse valor varia de acordo com a altura do seu Header, se ele tiver 200px de altura coloque aqui -220px por exemplo */
+    }
+
+    
+}
+
+@media(max-width:400px) {
+    .section4 a {
+        font-size: 1.5rem;
     }
 }
