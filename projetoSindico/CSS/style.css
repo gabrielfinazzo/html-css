@@ -142,7 +142,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 3rem 0;
+    padding: 3rem 0;
 }
 
 .fale-comigo {
@@ -151,11 +151,13 @@ section {
 
 .fale-comigo a{
     font-size: 2.5rem;
+    display: inline-block;
     color: white;
     background-color: #3AA8C1;
     padding: 1rem;
     border-radius: .5rem;
     transition: background-color .3s ease;
+    
 }
 
 .fale-comigo a:hover {
@@ -173,9 +175,10 @@ section {
 }
 
 .fale-comigo p {
-    margin-bottom: 1rem;
+    padding-bottom: 1.5rem;
     font-size: 2rem;
 }
+
 
 .section1 {
     padding-top: 3rem;
