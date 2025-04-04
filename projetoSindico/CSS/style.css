@@ -143,13 +143,14 @@ section {
     justify-content: center;
     align-items: center;
     padding: 3rem 0;
+    background-color: #F5F5F5;
 }
 
 .fale-comigo {
     margin: 0 20%;
 }
 
-.fale-comigo a{
+.section4 a{
     font-size: 2.5rem;
     display: inline-block;
     color: white;
@@ -157,7 +158,8 @@ section {
     padding: 1rem;
     border-radius: .5rem;
     transition: background-color .3s ease;
-    
+    align-self: flex-start;
+    margin-bottom: 2rem;
 }
 
 .fale-comigo a:hover {
@@ -177,6 +179,7 @@ section {
 .fale-comigo p {
     padding-bottom: 1.5rem;
     font-size: 2rem;
+    color: #5C6B7E;
 }
 
 
@@ -273,8 +276,9 @@ section h3 {
 }
 
 .box-servicos .box-servicos-conteudo p {
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 1.5rem 0;
+    color: #5C6B7E;
 }
 
 /* .box-servicos .box-servicos-conteudo a {
@@ -298,8 +302,6 @@ section h3 {
 .section3 {
     background-color: #F5F5F5;
     padding-bottom: 1.5rem;
-    border-top: 3px solid #5C6B7E;
-    border-bottom: 3px solid #5C6B7E;
 }
 
 .section3 .box-experiencia {
@@ -339,8 +341,10 @@ section h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 20%;
+    padding: 0 20%;
     padding-bottom: 1rem;
+    border-top: 3px solid #D4AF37;
+    border-bottom: 3px solid #D4AF37;
 }
 
 .section4 h3 {
@@ -376,9 +380,8 @@ section h3 {
 /* Carrossel Depoimentos */
 .depoimentos-section {
     padding: 3rem 2rem;
-    background-color: #f9f9f9;
+    background-color: #F5F5F5;
     text-align: center;
-    border-bottom: 3px solid #D4AF37;
 }
 
 .depoimentos-titulo {
@@ -487,6 +490,7 @@ footer {
     align-items: center;
     padding: 2rem 4rem 1rem 4rem;
     overflow: hidden;
+    border-top: 3px solid #D4AF37;
 }
 
 footer img {
@@ -667,6 +671,10 @@ footer p i {
     }
     
     .section4 {
+        padding: 0 10%;
+    }
+
+    .fale-comigo {
         margin: 0 10%;
     }
 
