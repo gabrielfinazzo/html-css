@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const depoimentos = [
         {
             titulo: "Experiência Incrível",
-            descricao: " Problemas que se arrastavam há anos foram resolvidos em poucos meses, e a comunicação com os moradores melhorou significativamente. Recomendo de olhos fechados!"
+            descricao: "Problemas que estavam difíceis de serem resolvidos foram solucionados  em poucos meses e a comunicação com os moradores melhorou significativamente. Recomendo!!!"
         },
         {
             titulo: "Profissionalismo Exemplar",
