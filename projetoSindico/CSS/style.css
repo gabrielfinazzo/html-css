@@ -289,19 +289,6 @@ section h3 {
     color: #5C6B7E;
 }
 
-/* .box-servicos .box-servicos-conteudo a {
-    font-size: 2rem;
-    padding: 1rem;
-    color: white;
-    background-color: #3AA8C1;
-    border-radius: .5rem;
-    transition: background-color .3s ease;
-}
-
-.box-servicos .box-servicos-conteudo a:hover {
-    background-color: #002366;
-} */
-
 .section3 h3 {
     text-align: center;
     padding: 3rem 0;
@@ -316,7 +303,7 @@ section h3 {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 5rem;
+    gap: 4rem;
     margin: 0 20%;
 }
 
@@ -590,13 +577,11 @@ footer p i {
         text-align: center;
     }
 
-    .section3 .box-experiencia {
-        flex-direction: column;
-        row-gap: 1rem;
-    }
+    
 
     .section3 .box-experiencia .box-experiencia-estudos {
         padding-bottom: 0rem;
+        width: 50rem;
     }
 
     .formImgRoberto {
@@ -700,6 +685,8 @@ footer p i {
         margin: 0 10%;
     }
 
+   
+
     footer img {
         display: none;
     }
@@ -710,7 +697,15 @@ footer p i {
 
     .section3 .box-experiencia {
         margin: 0 10%;
+        flex-direction: column;
+        row-gap: 1rem;
     }
+
+    .section3 .box-experiencia .box-experiencia-estudos {
+        
+        width: 100%;
+    }
+
 
     .section1 {
         padding: 3rem 10% 1rem 10%;
