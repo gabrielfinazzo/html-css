@@ -199,7 +199,29 @@ header {
 }
 
 
+#backVasos {
+    background-image: url(imagens/vasoPressaoPrincipal.JPG);
+    background-attachment: scroll;
+    background-position: bottom 40% center;
+}
 
+#backEstrturaMetal {
+    background-image: url(imagens/vigasMetalPrincipal.jpg);
+    background-attachment: scroll;
+    background-position: bottom 60% center;
+}
+
+#backPlayGround {
+    background-image: url(imagens/playgroundPrincipal.jpg);
+    background-attachment: scroll;
+    background-position: bottom 45% center;
+}
+
+#backElevador {
+    background-image: url(imagens/elevadoresPrincipal.jpg);
+    background-attachment: scroll;
+    background-position: bottom 45% center;
+}
 
 #backPmoc {
     background-image: url(imagens/Air-Conditioning-Repair.jpg);
@@ -535,6 +557,12 @@ section.sobre {
     box-sizing: border-box;
 }
 
+.servDescricao {
+    font-size: 2rem;
+    color: #393940;
+    padding-bottom: 2.5rem;
+    align-self: flex-start;
+}
 
 .img-serv {
     width: 100%;
@@ -599,7 +627,7 @@ section.sobre {
 .descritivoServico{
     overflow: hidden;
    height: 10rem;
-   padding: 2.5rem 1.5rem 0 1.5rem; 
+   padding: 1.5rem 1.5rem 0 1.5rem; 
    font-size: 1.5rem;
    font-family: 'Dosis', sans-serif;
    color: rgb(65, 66, 61);
@@ -638,16 +666,10 @@ section.sobre {
     height: 100%;
 }
 
-#ltcat, #GRO, #lip, #eat, #esocial, #sst, #respTec {
-    width: 100%;
-    
-}
-
-
-
 
 .imgServico {
     transition: all 0.3s;
+    width: 100%;
 }
 
 .img-serv:hover > .saibaMais {
@@ -932,11 +954,11 @@ footer {
 
 .itens > a {
     display: flex;
-    align-items: center;
-    width: 300px;
+    width: 340px;
     height: 40px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: rgb(65, 66, 61);
+    font-weight: bold;
 }
 
 .itens > a:hover .checklista{
@@ -947,7 +969,7 @@ footer {
     border: 1px solid rgb(65, 66, 61);
     height: 100%;
     width: 100%;
-    padding-top: .8rem;
+    padding-top: 1rem;
     padding-left: 1rem;
 }
 
@@ -1123,6 +1145,43 @@ footer {
         transform: translateY(-10px); /* Move o botão 10px para cima */
     }
 }
+
+/* Página Playground */
+
+.playgroundAreas {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 3rem 0 1.5rem 0;
+}
+
+.playCont {
+    width: 320px;
+    height: 280px;
+    border-radius: 1rem;
+    display: flex;
+    
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #e0e0e6;
+}
+
+.playCont img {
+    height: 230px;
+}
+
+.playCont h4 {
+    font-size: 2rem;
+    color: rgb(65, 66, 61);
+    text-align: center;
+    padding-top: 1.2rem;
+}
+
+
 
 
 /* Media Querys */
