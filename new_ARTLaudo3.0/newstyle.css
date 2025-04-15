@@ -471,9 +471,9 @@ section.sobre {
 
 
 /* Início Especializações */
-.margen-espec {
+/* .margen-espec {
     padding: 0 31rem;
-}
+} */
 
 .espec {
     display: flex;
@@ -557,12 +557,6 @@ section.sobre {
     box-sizing: border-box;
 }
 
-.servDescricao {
-    font-size: 2rem;
-    color: #393940;
-    padding-bottom: 2.5rem;
-    align-self: flex-start;
-}
 
 .img-serv {
     width: 100%;
@@ -584,6 +578,35 @@ section.sobre {
     align-items: center; 
 }
 
+.title-avcb {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: .5rem;
+    
+}
+
+.checkAvcb {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+.checkAvcb h4 {
+    font-size: 1.8rem;
+    padding-left: .5rem;
+}
+
+.checkAvcb > .check {
+    margin-top: 3px;
+    height: 12.7px;
+    width: 16px;
+}
+
+
+
+
 .title-serv > h4 {
     font-size: 1.8rem;
     padding-left: .5rem;
@@ -603,6 +626,8 @@ section.sobre {
 
 .check {
     width: 16px;
+    align-self: flex-start;
+    margin-top: 3px;
 }
 
 .serv-titulo {
@@ -613,14 +638,14 @@ section.sobre {
 
 .titlePservic {
     overflow: hidden;
-    height: 8rem;
+    height: 9.5rem;
 }
 
 
 .descritivoBotao {
       display: flex;
       flex-direction: column;
-      row-gap: 3rem;
+      row-gap: 2.5rem;
 }
 
 
@@ -954,11 +979,11 @@ footer {
 
 .itens > a {
     display: flex;
-    width: 340px;
+    width: 345px;
     height: 40px;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: rgb(65, 66, 61);
-    font-weight: bold;
+    
 }
 
 .itens > a:hover .checklista{
@@ -1065,7 +1090,7 @@ footer {
 
 
 .mensagem-padrao {
-    padding-left: 50rem;
+    padding-left: 54.5rem;
     padding-top: 2rem;
     font-size: 2rem;
     color: rgb(65, 66, 61);
@@ -1160,11 +1185,10 @@ footer {
 }
 
 .playCont {
-    width: 320px;
-    height: 280px;
+    width: 300px;
+    height: 260px;
     border-radius: 1rem;
     display: flex;
-    
     flex-direction: column;
     overflow: hidden;
     background-color: #e0e0e6;
@@ -1178,7 +1202,7 @@ footer {
     font-size: 2rem;
     color: rgb(65, 66, 61);
     text-align: center;
-    padding-top: 1.2rem;
+    padding: 1rem;
 }
 
 
@@ -1211,9 +1235,9 @@ footer {
         padding: 0 15rem;
     } 
 
-    .margen-espec {
+    /* .margen-espec {
         padding: 0 6rem;
-    }
+    } */
 
     .navbar > a {
         padding: 2rem 3rem;
@@ -1279,9 +1303,9 @@ footer {
        font-size: 2rem;
     }
     
-    .margen-espec {
+    /* .margen-espec {
         padding: 0 0rem;
-    }
+    } */
 
     .geral-espec {
         gap: 0;
