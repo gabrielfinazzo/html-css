@@ -697,6 +697,10 @@ section.sobre {
     width: 100%;
 }
 
+#nr12 {
+    transition: all 0.3s;
+}
+
 .img-serv:hover > .saibaMais {
     display: block;
 }
@@ -721,6 +725,13 @@ section.sobre {
     cursor: pointer;
 }
 
+#nr12:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transition: scale(1.1);
+    transform: scale(1.4);
+    filter: grayscale();
+    cursor: pointer;
+}
 
 
 /* CONTATO */

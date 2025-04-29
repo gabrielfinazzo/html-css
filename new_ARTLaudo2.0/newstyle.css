@@ -450,7 +450,7 @@ section.sobre {
 
 /* Início Especializações */
 .margen-espec {
-    padding: 0 31rem;
+    padding: 0 15rem 0 6.5rem;
 }
 
 .espec {
@@ -1133,6 +1133,10 @@ footer {
         height: 100%;
         padding: 0 15rem;
     } 
+
+    .margen-espec {
+        padding: 0 15rem 0 6.5rem;
+    }
     
     #pmoc {
         margin-left: 0;
@@ -1153,7 +1157,7 @@ footer {
     } 
 
     .margen-espec {
-        padding: 0 6rem;
+        padding: 0 15rem 0 6.5rem;
     }
 
     .navbar > a {
@@ -1172,11 +1176,22 @@ footer {
         padding: 0 5rem;
     } 
 
+    .margen-espec {
+        padding: 0 15rem 0 5rem;
+    }
+
     .carimbo > img {
         width: 200px;
         height: 200px;
     }
 
+    .descritivoMv {
+        padding: 0 4rem 2.5rem 2rem;
+    }
+
+    .valores {
+        padding: 2.5rem 0 0 0;
+    }
 }
 
 
@@ -1221,7 +1236,11 @@ footer {
     }
     
     .margen-espec {
-        padding: 0 0rem;
+        padding: 0 2rem;
+    }
+
+    .descritivoMv {
+        padding: 0 4rem 2.5rem 1rem;
     }
 
     .geral-espec {
