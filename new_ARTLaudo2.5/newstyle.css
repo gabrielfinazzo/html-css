@@ -340,11 +340,11 @@ section.sobre {
     padding-top: 2.5rem;
     font-size: 4rem;
     font-family: 'bellgothic';
-    color: #005F73;
+    color: #003366;
 }
 
 .cont-sobre > h2 #laranja {
-    color: #003366;
+    color: #006D77;
     font-weight: bold;
     font-family: 'cocogoose';
 }
@@ -360,6 +360,11 @@ section.sobre {
     justify-content: start;
     align-items: start;
     padding-top: 2.5rem;
+}
+
+.margemIdentidade {
+    border-top: 3px solid #003366;
+    border-bottom: 3px solid #003366;
 }
 
 .cont-identidade {
@@ -423,13 +428,14 @@ section.sobre {
     display: flex;
     align-items: center;
     font-size: 2rem;
-    color: #393940;
+    color: #555555;
     text-align: justify;
 }
 
 .missaoVisao h3 {
     font-size: 2.6rem;
     padding-bottom: 1rem;
+    color: #003366;
 }
 
 .logoMv > img {
@@ -450,6 +456,8 @@ section.sobre {
 /* Início Especializações */
 .margen-espec {
     padding: 0 15rem 0 6.5rem;
+    border-top: 3px solid #003366;
+    border-bottom: 3px solid #003366;
 }
 
 .espec {
@@ -527,7 +535,7 @@ section.sobre {
     justify-content: flex-start;
     width: 35rem;
     height: 50rem;
-    background-color: #e0e0e6;
+    background-color: #EDF6F9;
     border-radius: 1rem;
     overflow: hidden;
     flex: 0 0 auto;
@@ -552,7 +560,7 @@ section.sobre {
 .title-serv {
     display: flex;
     padding: 1rem 1.5rem .5rem 1.5rem;
-    color: rgb(65, 66, 61);
+    color: #003366;
     align-items: center; 
 }
 
@@ -565,7 +573,7 @@ section.sobre {
     padding: 0 1.5rem;
     margin-left: 1.7rem;
     font-size: 1.5rem;
-    color: rgb(65, 66, 61);
+    color: #555555;
 }
 
 
@@ -585,14 +593,14 @@ section.sobre {
 
 .titlePservic {
     overflow: hidden;
-    height: 8rem;
+    height: 9rem;
 }
 
 
 .descritivoBotao {
       display: flex;
       flex-direction: column;
-      row-gap: 3rem;
+      row-gap: 1.5rem;
 }
 
 
@@ -614,7 +622,7 @@ section.sobre {
     font-family: 'Dosis', sans-serif;
     display: inline-block;
     padding: 1.5rem; 
-    background-color: rgb(235, 153, 67);
+    background-color: #005F73;
     border-radius: 1rem;
     font-size: 1.5rem;
     font-weight: 600;
@@ -626,7 +634,7 @@ section.sobre {
 }
 
 .botaoContato:hover > a {
-    background-color: rgb(206, 107, 0);
+    background-color: #4DA8DA;
 }
 
 
@@ -661,7 +669,7 @@ section.sobre {
     right: 35%;
     font-size: 2rem;
     padding: 0.6rem;
-    background-color: rgb(206, 107, 0);
+    background-color: #0077B6;
     border-radius: 1rem;
     display: none;
 }
@@ -682,7 +690,11 @@ section.sobre {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: rgb(65, 66, 61);
+    color: #555555;
+}
+
+.contato h3 {
+    color: #003366;
 }
 
 .conteudoContato {
@@ -771,8 +783,8 @@ section.sobre {
 
 .button:hover {
     background-color: white;
-    color: rgb(206, 107, 0);
-    border-color: rgb(206, 107, 0);
+    color: #005F73;
+    border-color: #005F73;
 }
 
 
@@ -782,6 +794,7 @@ footer {
     background-color: #006D77;
     overflow-x: hidden;
     flex-direction: column;
+    border-top: 3px solid #003366;
 }
 
 .conteudo-footer {
@@ -866,14 +879,14 @@ footer {
 .servicos-base {
     padding-top: 130px;
     width: 100vw;
-    background-color: rgb(236, 234, 234);
+    background-color: #EDF6F9;
 }
 
 .titulo-principal {
     text-align: center;
     margin: 0;
-    background-color: #e0e0e6;
-    color: rgb(65, 66, 61);
+    background-color: white;
+    color: #003366;
     font-weight: bold;
 }
 
@@ -886,7 +899,7 @@ footer {
 .titulo-principal2 {
     display: flex;
     justify-content: space-between;
-    
+    border-top: 3px solid #003366;
 }
 
 .paddingTitulo {
@@ -902,13 +915,13 @@ footer {
 }
 
 .avcb {
-    background-color: rgb(65, 66, 61);
+    background-color: #003366;
     color: white;
 }
 
 .clcb {
-    background-color: #e0e0e6;
-    color: rgb(65, 66, 61);
+    background-color: white;
+    color: #003366;
 }
 
 
@@ -918,6 +931,8 @@ footer {
     padding: 1.5rem 0;
     gap: 10rem;
     overflow-x: hidden;
+    border-top: 3px solid #003366;
+    border-bottom: 3px solid #003366;
 }
 
 .conteudo-servicos  aside > .menu {
@@ -936,7 +951,7 @@ footer {
     width: 300px;
     height: 40px;
     font-size: 2rem;
-    color: rgb(65, 66, 61);
+    color: #555555;
 }
 
 .itens > a:hover .checklista{
@@ -944,7 +959,7 @@ footer {
 }
 
 .itens > a > span {
-    border: 1px solid rgb(65, 66, 61);
+    border: 1px solid #555555;
     height: 100%;
     width: 100%;
     padding-top: .8rem;
@@ -957,7 +972,7 @@ footer {
     align-items: center;
     height: 100%;
     width: 15%;
-    border: 1px solid rgb(65, 66, 61);
+    border: 1px solid #555555;
     border-right: none;
     
 }
@@ -978,14 +993,14 @@ footer {
 
 .cont-serv h3 {
     font-size: 3rem;
-    color: rgb(65, 66, 61);
+    color: #003366;
     padding-top: 1.5rem;
     padding-bottom: 0.5rem;
 }
 
 .cont-serv p {
     font-size: 2rem;
-    color: rgb(65, 66, 61);
+    color: #555555;
     
 }
 
@@ -1031,7 +1046,7 @@ footer {
 
 #fontSizeH4 {
     font-size: 2rem;
-    color: rgb(65, 66, 61);
+    color: #003366;
     font-weight: bold;
 }
 
@@ -1046,9 +1061,9 @@ footer {
     padding-left: 50rem;
     padding-top: 2rem;
     font-size: 2rem;
-    color: rgb(65, 66, 61);
+    color: #555555;
     padding-right: 15rem;
-    background-color: #e0e0e6;
+    background-color: white;
 }
 
 .mensagem-padrao p {
