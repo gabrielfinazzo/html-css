@@ -142,6 +142,7 @@ header {
     display: none;
     margin-right: 2rem;
     z-index: 1000;
+    color: #003366;
 }
 
 .menu-cont {
@@ -1331,7 +1332,7 @@ footer {
         right: 0; 
         height: 100vh;
         top: -1000%;
-        background: rgb(206, 107, 0);
+        background: #006D77;
         border-top: .1rem solid rgba(0, 0, 0, .1);
         flex-direction: column;
         justify-content: space-around;
