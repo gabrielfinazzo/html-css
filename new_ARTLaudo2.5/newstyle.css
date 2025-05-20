@@ -960,7 +960,7 @@ footer {
 }
 
 .itens > a > span {
-    border: 1px solid #555555;
+    border: 1px solid #006D77;
     height: 100%;
     width: 100%;
     padding-top: .8rem;
@@ -973,7 +973,7 @@ footer {
     align-items: center;
     height: 100%;
     width: 15%;
-    border: 1px solid #555555;
+    border: 1px solid #006D77;
     border-right: none;
     
 }
